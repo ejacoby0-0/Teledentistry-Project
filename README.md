@@ -7,9 +7,9 @@ The purpose of this project is to provide a digital environment where patients a
 
 ## Tech Stack
 1. Frontend/Languages: Java
-2. Backend: PHP
-3. Framework: Bootstrap
-4. Database: MySQL
+2. UI Framework: Jetpack Compose
+3. IDE: Android Studio
+4. Backend/Database: MySQL
 
 ## Features
 1. Virtual Consultations

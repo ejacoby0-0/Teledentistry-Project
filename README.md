@@ -21,7 +21,7 @@ The purpose of this project is to provide a digital environment where patients a
 7. Patient Education Resource
 
 ## Getting Started
-To use this repo, you will need to get a local copy up and running. Follow these steps.
+To use this repo, you will need to set up a local copy and get it running. Follow these steps.
 
 ### Prerequisites
 
@@ -39,54 +39,43 @@ mkdir -p .github/workflows
 Name the file ci.yml
 This file handles Continuous Integration (CI) by validating every pull request and Continuous Delivery (CD) by deploying only when code merges into the main branch.
 
-name: CI/CD Pipeline
+name: Android CI/CD Pipeline
 
-# 1. Define the triggering events
 on:
   push:
-    branches: [ main ]
+    branches: [ "main", "develop" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
 
 jobs:
-  # 2. Continuous Integration Job (Build & Test)
-  build-and-test:
+  test_and_build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout Code
       uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
       with:
-        node-version: '20'
+        distribution: 'temurin'
+        java-version: '17'
+        cache: 'gradle' 
 
-    - name: Install Dependencies
-      run: npm ci
+    - name: Grant Execute Permission
+      run: chmod +x gradlew
 
-    - name: Run Linter and Tests
-      run: |
-        npm run lint
-        npm test
+    - name: Run Unit Tests
+      run: ./gradlew test
 
-  # 3. Continuous Deployment Job
-  deploy:
-    needs: build-and-test # Only run if the test job passes
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-    runs-on: ubuntu-latest
+    - name: Build Debug APK
+      run: ./gradlew assembleDebug
 
-    steps:
-    - name: Checkout Code
-      uses: actions/checkout@v4
-
-    - name: Deploy to Cloud Provider
-      env:
-        DEPLOY_API_KEY: ${{ secrets.DEPLOY_API_KEY }}
-      run: |
-        echo "Connecting to hosting server..."
-        # Replace this line with your actual cloud CLI or deployment script
-        curl -X POST -H "Authorization: Bearer $DEPLOY_API_KEY" https://yourprovider.com
+    - name: Upload Debug APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: debug-apk
+        path: app/build/outputs/apk/debug/app-debug.apk
 
 
 ```

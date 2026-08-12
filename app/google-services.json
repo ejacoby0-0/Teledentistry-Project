@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "224497665524",
+    "project_id": "teledentistry-project",
+    "storage_bucket": "teledentistry-project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224497665524:android:cbc40c9db30d208181a5a1",
+        "android_client_info": {
+          "package_name": "com.example.teledentistry_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeH-P7rQqVj71cZCpU0fBE05O5cd0qIEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

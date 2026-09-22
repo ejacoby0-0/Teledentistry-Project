@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Teledentistry-Project</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="log_in">Log In</string>
+    <string name="email_address">Email Address</string>
 </resources>

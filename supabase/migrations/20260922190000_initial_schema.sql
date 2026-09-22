@@ -1,6 +1,6 @@
 -- ============================================================
 -- Smil-E - Initial Database Schema
--- Project: Smil-E Tele-Dentistry
+-- Project: Smil-E Teledentistry
 -- Backend: Supabase / PostgreSQL
 -- ============================================================
 

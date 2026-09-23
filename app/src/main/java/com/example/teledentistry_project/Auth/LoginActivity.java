@@ -1,4 +1,4 @@
-package com.example.teledentistry_project.Auth;
+/*package com.example.teledentistry_project.Auth;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -68,3 +68,4 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 }
+*/

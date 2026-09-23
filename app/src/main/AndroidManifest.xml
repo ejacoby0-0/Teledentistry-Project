@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--Internet permission for Supabase's Android documentation to
+     requires the Internet permission for network communication.-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TeledentistryProject">
         <activity
-            android:name=".Auth.LoginActivity"
+            android:name=".ui.auth.SupabaseTestActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

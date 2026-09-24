@@ -6,7 +6,9 @@ public class AuthResponse {
     private String refresh_token;
     private String token_type;
     private Integer expires_in;
-    private String user;
+    private Integer expires_at;
+
+    private SupabaseUser user;
 
     public String getAccessToken() {
         return access_token;
@@ -24,7 +26,11 @@ public class AuthResponse {
         return expires_in;
     }
 
-    public String getUser() {
+    public Integer getExpiresAt() {
+        return expires_at;
+    }
+
+    public SupabaseUser getUser() {
         return user;
     }
 }

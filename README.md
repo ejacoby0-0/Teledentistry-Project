@@ -28,7 +28,7 @@ To use this repo, you will need to set up a local copy and get it running. Follo
 
   ```sh
   -Android Studio
-  -No npm (Node Package Manager) used for this project 
+  -Download Node.js to use npm (Node Package Manager) for this project 
   ```
 
 ### Installation
@@ -38,6 +38,8 @@ To use this repo, you will need to set up a local copy and get it running. Follo
    git clone https://github.com/ejacoby0-0/Teledentistry-Project
    cd Teledentistry-Project
    ```
+2. npm install
+3. npx supabase start
 
 ### Contribution Guideline
 

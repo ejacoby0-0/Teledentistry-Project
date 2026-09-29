@@ -12,4 +12,8 @@
 /captures
 .externalNativeBuild
 .cxx
+# PocketBase local database/data
+pocketbase/pb_data/
+# PocketBase executable
+pocketbase/pocketbase.exe
 local.properties

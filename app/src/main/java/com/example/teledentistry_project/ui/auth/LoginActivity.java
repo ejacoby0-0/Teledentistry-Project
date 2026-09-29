@@ -9,12 +9,14 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.teledentistry_project.R;
-import com.example.teledentistry_project.data.model.auth.AuthResponse;
 import com.example.teledentistry_project.data.repository.AuthRepository;
+import com.example.teledentistry_project.ui.patient.PatientDashboardActivity;
 import com.example.teledentistry_project.utils.SessionManager;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.example.teledentistry_project.data.model.auth.PocketBaseAuthResponse;
+import com.example.teledentistry_project.data.model.auth.PocketBaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -39,6 +41,12 @@ public class LoginActivity extends AppCompatActivity {
 
         authRepository = new AuthRepository();
         sessionManager = new SessionManager(this);
+
+        if (sessionManager.isLoggedIn()) {
+
+            validateExistingSession();
+            return;
+        }
 
         btnLogin.setOnClickListener(view -> attemptLogin());
 
@@ -85,19 +93,73 @@ public class LoginActivity extends AppCompatActivity {
                 new AuthRepository.AuthCallback() {
 
                     @Override
-                    public void onSuccess(AuthResponse response) {
+                    public void onRegistrationSuccess(
+                            PocketBaseUser user
+                    ) {
+                        // Not used during login.
+                    }
+
+                    @Override
+                    public void onLoginSuccess(
+                            PocketBaseAuthResponse response
+                    ) {
 
                         setLoading(false);
 
-                        if (response.getAccessToken() != null
-                                && response.getUser() != null) {
+                        if (response.getToken() != null
+                                && response.getRecord() != null) {
+
+                            PocketBaseUser user =
+                                    response.getRecord();
 
                             sessionManager.saveSession(
-                                    response.getAccessToken(),
-                                    response.getRefreshToken(),
-                                    response.getUser().getId(),
-                                    response.getUser().getEmail()
+                                    response.getToken(),
+                                    user.getId(),
+                                    user.getEmail(),
+                                    user.getRole()
                             );
+
+                            if ("patient".equals(user.getRole())) {
+
+                                Intent intent = new Intent(
+                                        LoginActivity.this,
+                                        PatientDashboardActivity.class
+                                );
+
+                                intent.setFlags(
+                                        Intent.FLAG_ACTIVITY_NEW_TASK
+                                                | Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                );
+
+                                startActivity(intent);
+                                finish();
+                            }
+
+
+                            // Temp testing to see if session is working
+                            android.util.Log.d(
+                                    "SmilESession",
+                                    "User ID: " + sessionManager.getUserId()
+                            );
+
+                            android.util.Log.d(
+                                    "SmilESession",
+                                    "Email: " + sessionManager.getEmail()
+                            );
+
+                            android.util.Log.d(
+                                    "SmilESession",
+                                    "Role: " + sessionManager.getRole()
+                            );
+
+                            android.util.Log.d(
+                                    "SmilESession",
+                                    "Logged in: " + sessionManager.isLoggedIn()
+                            );
+
+
+                            //
+
 
                             Toast.makeText(
                                     LoginActivity.this,
@@ -105,15 +167,6 @@ public class LoginActivity extends AppCompatActivity {
                                     Toast.LENGTH_SHORT
                             ).show();
 
-                            /*
-                             * Later:
-                             *
-                             * Redirect the user according to their role:
-                             *
-                             * Patient      -> Patient dashboard
-                             * Practitioner -> Dentist dashboard
-                             * Admin        -> Admin dashboard
-                             */
                         } else {
 
                             Toast.makeText(
@@ -201,5 +254,78 @@ public class LoginActivity extends AppCompatActivity {
         } else {
             btnLogin.setText("Sign In");
         }
+    }
+
+    //Validate existing session method
+    private void validateExistingSession() {
+
+        setLoading(true);
+
+        authRepository.validateSession(
+                sessionManager.getAuthToken(),
+                new AuthRepository.SessionCallback() {
+
+                    @Override
+                    public void onValid(
+                            PocketBaseAuthResponse response
+                    ) {
+
+                        setLoading(false);
+
+                        PocketBaseUser user =
+                                response.getRecord();
+
+                        // Save the refreshed token and latest user data.
+                        sessionManager.saveSession(
+                                response.getToken(),
+                                user.getId(),
+                                user.getEmail(),
+                                user.getRole()
+                        );
+
+                        if ("patient".equals(user.getRole())) {
+
+                            Intent intent = new Intent(
+                                    LoginActivity.this,
+                                    PatientDashboardActivity.class
+                            );
+
+                            intent.setFlags(
+                                    Intent.FLAG_ACTIVITY_NEW_TASK
+                                            | Intent.FLAG_ACTIVITY_CLEAR_TASK
+                            );
+
+                            startActivity(intent);
+                            finish();
+                        }
+                    }
+
+                    @Override
+                    public void onInvalid() {
+
+                        setLoading(false);
+
+                        sessionManager.clearSession();
+
+                        Toast.makeText(
+                                LoginActivity.this,
+                                "Your session has expired. Please sign in again.",
+                                Toast.LENGTH_SHORT
+                        ).show();
+                    }
+
+                    @Override
+                    public void onError(String error) {
+
+                        setLoading(false);
+
+                        Toast.makeText(
+                                LoginActivity.this,
+                                "Unable to verify your session. Check your connection.",
+                                Toast.LENGTH_LONG
+                        ).show();
+                    }
+                }
+        );
     }
 }

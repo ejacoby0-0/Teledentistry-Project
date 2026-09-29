@@ -48,5 +48,3 @@ To use this repo, you will need to set up a local copy and get it running. Follo
 3. Commit your changes (```git commit -m ...```)
 4. push to the branch (```git push origin ...```)
 5. Open a pull request
-
- 

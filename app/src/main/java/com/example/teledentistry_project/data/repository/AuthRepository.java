@@ -1,121 +1,131 @@
 package com.example.teledentistry_project.data.repository;
 
-import com.example.teledentistry_project.data.model.auth.HealthResponse;
-import com.example.teledentistry_project.data.model.auth.SignInRequest;
-import com.example.teledentistry_project.data.remote.SupabaseClient;
-import com.example.teledentistry_project.data.model.auth.AuthResponse;
-import com.example.teledentistry_project.data.model.auth.SignUpRequest;
+import com.example.teledentistry_project.data.model.auth.PocketBaseAuthResponse;
+import com.example.teledentistry_project.data.model.auth.PocketBaseLoginRequest;
+import com.example.teledentistry_project.data.model.auth.PocketBaseRegisterRequest;
+import com.example.teledentistry_project.data.model.auth.PocketBaseUser;
+import com.example.teledentistry_project.data.remote.PocketBaseClient;
 
+import java.io.IOException;
+
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import java.io.IOException;
-import okhttp3.ResponseBody;
+import android.util.Log;
 
 public class AuthRepository {
 
-    public void checkSupabaseConnection(
-            ConnectionCallback callback
+    /*
+     * Register a new patient account.
+     */
+    public void register(
+            String email,
+            String password,
+            String confirmPassword,
+            AuthCallback callback
     ) {
 
-        SupabaseClient.api
-                .checkAuthHealth()
-                .enqueue(new Callback<HealthResponse>() {
+        PocketBaseRegisterRequest request =
+                new PocketBaseRegisterRequest(
+                        email,
+                        password,
+                        confirmPassword,
+                        "patient"
+                );
+
+        PocketBaseClient.api.register(request)
+                .enqueue(new Callback<PocketBaseUser>() {
 
                     @Override
                     public void onResponse(
-                            Call<HealthResponse> call,
-                            Response<HealthResponse> response
+                            Call<PocketBaseUser> call,
+                            Response<PocketBaseUser> response
                     ) {
 
                         if (response.isSuccessful()
                                 && response.body() != null) {
 
-                            callback.onSuccess(
+                            callback.onRegistrationSuccess(
                                     response.body()
                             );
 
                         } else {
 
                             callback.onError(
-                                    "Supabase returned HTTP "
-                                            + response.code()
+                                    getErrorMessage(
+                                            response.errorBody(),
+                                            response.code()
+                                    )
                             );
                         }
                     }
 
                     @Override
                     public void onFailure(
-                            Call<HealthResponse> call,
+                            Call<PocketBaseUser> call,
                             Throwable t
                     ) {
 
+                        Log.e(
+                                "PocketBaseRegister",
+                                "Registration response error",
+                                t
+                        );
+
                         callback.onError(
-                                t.getMessage()
+                                "Registration response error. Check Logcat."
                         );
                     }
                 });
     }
 
-    //Register Method
-    public void register(
+
+    /*
+     * Login using email and password.
+     */
+    public void login(
             String email,
             String password,
             AuthCallback callback
     ) {
 
-        SignUpRequest request = new SignUpRequest(email, password);
+        PocketBaseLoginRequest request =
+                new PocketBaseLoginRequest(
+                        email,
+                        password
+                );
 
-        SupabaseClient.api.signUp(request)
-                .enqueue(new Callback<AuthResponse>() {
+        PocketBaseClient.api.login(request)
+                .enqueue(new Callback<PocketBaseAuthResponse>() {
 
                     @Override
                     public void onResponse(
-                            Call<AuthResponse> call,
-                            Response<AuthResponse> response
+                            Call<PocketBaseAuthResponse> call,
+                            Response<PocketBaseAuthResponse> response
                     ) {
 
                         if (response.isSuccessful()
                                 && response.body() != null) {
 
-                            callback.onSuccess(response.body());
+                            callback.onLoginSuccess(
+                                    response.body()
+                            );
 
                         } else {
 
-                            String errorMessage =
-                                    "Registration failed. HTTP "
-                                            + response.code();
-
-                            ResponseBody errorBody =
-                                    response.errorBody();
-
-                            if (errorBody != null) {
-
-                                try {
-
-                                    String supabaseError =
-                                            errorBody.string();
-
-                                    errorMessage =
-                                            errorMessage
-                                                    + "\n"
-                                                    + supabaseError;
-
-                                } catch (IOException e) {
-
-                                    errorMessage =
-                                            errorMessage
-                                                    + "\nUnable to read error response.";
-                                }
-                            }
-
-                            callback.onError(errorMessage);
+                            callback.onError(
+                                    getErrorMessage(
+                                            response.errorBody(),
+                                            response.code()
+                                    )
+                            );
                         }
                     }
 
                     @Override
                     public void onFailure(
-                            Call<AuthResponse> call,
+                            Call<PocketBaseAuthResponse> call,
                             Throwable t
                     ) {
 
@@ -127,70 +137,115 @@ public class AuthRepository {
     }
 
 
-    //Login Method
-    public void login(
-            String email,
-            String password,
-            AuthCallback callback
+    //Session Validation
+    public void validateSession(
+            String authToken,
+            SessionCallback callback
     ) {
 
-        SignInRequest request =
-                new SignInRequest(email, password);
-
-        SupabaseClient.api
-                .signIn(request)
-                .enqueue(new Callback<AuthResponse>() {
+        PocketBaseClient.api.refreshAuth(authToken)
+                .enqueue(new Callback<PocketBaseAuthResponse>() {
 
                     @Override
                     public void onResponse(
-                            Call<AuthResponse> call,
-                            Response<AuthResponse> response
+                            Call<PocketBaseAuthResponse> call,
+                            Response<PocketBaseAuthResponse> response
                     ) {
 
                         if (response.isSuccessful()
                                 && response.body() != null) {
 
-                            callback.onSuccess(
+                            callback.onValid(
                                     response.body()
                             );
 
                         } else {
 
-                            callback.onError(
-                                    "Login failed. HTTP "
-                                            + response.code()
-                            );
+                            callback.onInvalid();
                         }
                     }
 
                     @Override
                     public void onFailure(
-                            Call<AuthResponse> call,
+                            Call<PocketBaseAuthResponse> call,
                             Throwable t
                     ) {
 
+                        /*
+                         * Network failure does not necessarily mean
+                         * that the token itself is invalid.
+                         */
                         callback.onError(
-                                t.getMessage()
+                                "Unable to validate session: "
+                                        + t.getMessage()
                         );
                     }
                 });
     }
 
 
-    //Connection
-    public interface ConnectionCallback {
 
-        void onSuccess(HealthResponse response);
 
-        void onError(String error);
+    /*
+     * Temporary error reader.
+     *
+     * Later we can parse PocketBase's JSON error response
+     * into cleaner user-friendly messages.
+     */
+    private String getErrorMessage(
+            ResponseBody errorBody,
+            int statusCode
+    ) {
+
+        String message =
+                "Request failed. HTTP " + statusCode;
+
+        if (errorBody != null) {
+
+            try {
+
+                String pocketBaseError =
+                        errorBody.string();
+
+                message += "\n" + pocketBaseError;
+
+            } catch (IOException e) {
+
+                message +=
+                        "\nUnable to read PocketBase error.";
+            }
+        }
+
+        return message;
     }
 
-    //Callback
+
+    public interface SessionCallback {
+
+        void onValid(
+                PocketBaseAuthResponse response
+        );
+
+        void onInvalid();
+
+        void onError(
+                String error
+        );
+    }
+
+
     public interface AuthCallback {
 
-        void onSuccess(AuthResponse response);
+        void onRegistrationSuccess(
+                PocketBaseUser user
+        );
 
-        void onError(String error);
+        void onLoginSuccess(
+                PocketBaseAuthResponse response
+        );
+
+        void onError(
+                String error
+        );
     }
-
 }

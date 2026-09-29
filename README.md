@@ -10,7 +10,7 @@ The purpose of this project is to provide a digital environment where patients a
 2. Backend: Supabase
 3. UI Framework: XML layout
 4. IDE: Android Studio
-5. Database: Supabase
+5. Database: PocketBase
 
 ## Features
 1. Virtual Consultations

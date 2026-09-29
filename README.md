@@ -7,7 +7,7 @@ The purpose of this project is to provide a digital environment where patients a
 
 ## Tech Stack
 1. Frontend/Languages: Java
-2. Backend: Supabase
+2. Backend: PocketBase
 3. UI Framework: XML layout
 4. IDE: Android Studio
 5. Database: PocketBase

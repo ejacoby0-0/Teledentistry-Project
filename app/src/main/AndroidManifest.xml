@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--Internet permission for Pocketbase's Android documentation to
      requires the Internet permission for network communication.-->
@@ -17,7 +16,19 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.TeledentistryProject">
 
-        <!--Launches to the login page-->
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
         <activity
             android:name=".ui.patient.PatientDashboardActivity"
             android:exported="false" />
@@ -27,20 +38,65 @@
             android:exported="false" />
 
         <activity
-            android:name=".ui.auth.LoginActivity"
-            android:exported="true">
+            android:name=".ui.auth.SupabaseTestActivity"
+            android:exported="false" />
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <!-- Patient Portal Activities -->
+        <activity
+            android:name=".ui.patient.PatientHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.PatientProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.BookAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.UploadImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.TreatmentPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.BillingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.VideoCallActivity"
+            android:exported="false" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <!-- Practitioner Portal Activities -->
+        <activity
+            android:name=".ui.dentist.DentistHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dentist.PatientRecordsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dentist.UploadedImagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dentist.TreatmentManagementActivity"
+            android:exported="false" />
 
-
-
-
-
-        </activity>
+        <!-- Admin Portal Activities -->
+        <activity
+            android:name=".ui.admin.AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.PractitionerApprovalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.ManageUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.UserEnquiriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.ReportsActivity"
+            android:exported="false" />
 
     </application>
 

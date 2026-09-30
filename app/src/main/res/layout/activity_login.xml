@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="#F5FBFF">
+    android:background="@color/dental_background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:gravity="center_horizontal"
         android:paddingStart="28dp"
         android:paddingEnd="28dp"
-        android:paddingTop="70dp"
+        android:paddingTop="40dp"
         android:paddingBottom="30dp">
 
         <!-- App Name -->
@@ -22,9 +22,9 @@
             android:id="@+id/tvAppName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Smil-E"
-            android:textColor="#2196F3"
-            android:textSize="36sp"
+            android:text="TELEDENTISTRY"
+            android:textColor="@color/dental_primary"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
         <!-- Heading -->
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Welcome back"
-            android:textColor="#333333"
+            android:textColor="@color/text_primary"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -41,11 +41,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"
             android:gravity="center"
-            android:text="Sign in to continue to Smil-E."
-            android:textColor="#757575"
+            android:text="Sign in or jump directly to role portals below."
+            android:textColor="@color/text_secondary"
             android:textSize="14sp" />
 
         <!-- Email -->
@@ -88,25 +88,61 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginTop="28dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
             android:text="Sign In"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:backgroundTint="#2196F3"
             app:cornerRadius="12dp" />
+
+        <!-- Quick Access Section Divider -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:text="— Quick Preview Role Portals —"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <!-- 3 Quick Access Role Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnQuickPatient"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="8dp"
+            android:text="Open Patient Dashboard"
+            style="?attr/materialButtonOutlinedStyle"
+            app:cornerRadius="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnQuickDentist"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="8dp"
+            android:text="Open Practitioner Portal"
+            style="?attr/materialButtonOutlinedStyle"
+            app:cornerRadius="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnQuickAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Open Admin Portal"
+            style="?attr/materialButtonOutlinedStyle"
+            app:cornerRadius="10dp"/>
 
         <!-- Register Link -->
         <TextView
             android:id="@+id/tvRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:padding="8dp"
             android:text="Don't have an account? Create account"
-            android:textColor="#2196F3"
+            android:textColor="@color/dental_primary"
             android:textSize="14sp"
             android:textStyle="bold" />
 

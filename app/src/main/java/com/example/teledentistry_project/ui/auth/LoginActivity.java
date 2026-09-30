@@ -9,14 +9,17 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.teledentistry_project.R;
+import com.example.teledentistry_project.data.model.auth.PocketBaseAuthResponse;
+import com.example.teledentistry_project.data.model.auth.PocketBaseUser;
 import com.example.teledentistry_project.data.repository.AuthRepository;
+import com.example.teledentistry_project.ui.admin.AdminHomeActivity;
+import com.example.teledentistry_project.ui.dentist.DentistHomeActivity;
 import com.example.teledentistry_project.ui.patient.PatientDashboardActivity;
+import com.example.teledentistry_project.ui.patient.PatientHomeActivity;
 import com.example.teledentistry_project.utils.SessionManager;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-import com.example.teledentistry_project.data.model.auth.PocketBaseAuthResponse;
-import com.example.teledentistry_project.data.model.auth.PocketBaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -27,6 +30,9 @@ public class LoginActivity extends AppCompatActivity {
     private TextInputEditText etPassword;
 
     private MaterialButton btnLogin;
+    private MaterialButton btnQuickPatient;
+    private MaterialButton btnQuickDentist;
+    private MaterialButton btnQuickAdmin;
     private TextView tvRegister;
 
     private AuthRepository authRepository;
@@ -43,12 +49,26 @@ public class LoginActivity extends AppCompatActivity {
         sessionManager = new SessionManager(this);
 
         if (sessionManager.isLoggedIn()) {
-
             validateExistingSession();
             return;
         }
 
         btnLogin.setOnClickListener(view -> attemptLogin());
+
+        if (btnQuickPatient != null) {
+            btnQuickPatient.setOnClickListener(v ->
+                    startActivity(new Intent(LoginActivity.this, PatientHomeActivity.class)));
+        }
+
+        if (btnQuickDentist != null) {
+            btnQuickDentist.setOnClickListener(v ->
+                    startActivity(new Intent(LoginActivity.this, DentistHomeActivity.class)));
+        }
+
+        if (btnQuickAdmin != null) {
+            btnQuickAdmin.setOnClickListener(v ->
+                    startActivity(new Intent(LoginActivity.this, AdminHomeActivity.class)));
+        }
 
         tvRegister.setOnClickListener(view -> {
 
@@ -71,6 +91,9 @@ public class LoginActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
 
         btnLogin = findViewById(R.id.btnLogin);
+        btnQuickPatient = findViewById(R.id.btnQuickPatient);
+        btnQuickDentist = findViewById(R.id.btnQuickDentist);
+        btnQuickAdmin = findViewById(R.id.btnQuickAdmin);
         tvRegister = findViewById(R.id.tvRegister);
     }
 
@@ -119,47 +142,7 @@ public class LoginActivity extends AppCompatActivity {
                                     user.getRole()
                             );
 
-                            if ("patient".equals(user.getRole())) {
-
-                                Intent intent = new Intent(
-                                        LoginActivity.this,
-                                        PatientDashboardActivity.class
-                                );
-
-                                intent.setFlags(
-                                        Intent.FLAG_ACTIVITY_NEW_TASK
-                                                | Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                );
-
-                                startActivity(intent);
-                                finish();
-                            }
-
-
-                            // Temp testing to see if session is working
-                            android.util.Log.d(
-                                    "SmilESession",
-                                    "User ID: " + sessionManager.getUserId()
-                            );
-
-                            android.util.Log.d(
-                                    "SmilESession",
-                                    "Email: " + sessionManager.getEmail()
-                            );
-
-                            android.util.Log.d(
-                                    "SmilESession",
-                                    "Role: " + sessionManager.getRole()
-                            );
-
-                            android.util.Log.d(
-                                    "SmilESession",
-                                    "Logged in: " + sessionManager.isLoggedIn()
-                            );
-
-
-                            //
-
+                            routeToRoleHome(user.getRole());
 
                             Toast.makeText(
                                     LoginActivity.this,
@@ -283,21 +266,7 @@ public class LoginActivity extends AppCompatActivity {
                                 user.getRole()
                         );
 
-                        if ("patient".equals(user.getRole())) {
-
-                            Intent intent = new Intent(
-                                    LoginActivity.this,
-                                    PatientDashboardActivity.class
-                            );
-
-                            intent.setFlags(
-                                    Intent.FLAG_ACTIVITY_NEW_TASK
-                                            | Intent.FLAG_ACTIVITY_CLEAR_TASK
-                            );
-
-                            startActivity(intent);
-                            finish();
-                        }
+                        routeToRoleHome(user.getRole());
                     }
 
                     @Override
@@ -327,5 +296,23 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 }
         );
+    }
+
+    private void routeToRoleHome(String role) {
+        Intent intent;
+
+        if ("admin".equals(role)) {
+            intent = new Intent(LoginActivity.this, AdminHomeActivity.class);
+        } else if ("dentist".equals(role)) {
+            intent = new Intent(LoginActivity.this, DentistHomeActivity.class);
+        } else if ("patient".equals(role)) {
+            intent = new Intent(LoginActivity.this, PatientDashboardActivity.class);
+        } else {
+            intent = new Intent(LoginActivity.this, PatientHomeActivity.class);
+        }
+
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
     }
 }

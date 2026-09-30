@@ -29,9 +29,6 @@ public class LoginActivity extends AppCompatActivity {
     private TextInputEditText etPassword;
 
     private MaterialButton btnLogin;
-    private MaterialButton btnQuickPatient;
-    private MaterialButton btnQuickDentist;
-    private MaterialButton btnQuickAdmin;
 
     private TextView tvRegister;
 
@@ -59,36 +56,6 @@ public class LoginActivity extends AppCompatActivity {
 
         btnLogin.setOnClickListener(view -> attemptLogin());
 
-        /*
-         * These buttons exist in the collaborator's UI.
-         *
-         * We DO NOT allow them to bypass authentication.
-         * They currently explain which portal each role receives.
-         */
-        btnQuickPatient.setOnClickListener(view ->
-                Toast.makeText(
-                        LoginActivity.this,
-                        "Sign in with a patient account to open the Patient Portal.",
-                        Toast.LENGTH_SHORT
-                ).show()
-        );
-
-        btnQuickDentist.setOnClickListener(view ->
-                Toast.makeText(
-                        LoginActivity.this,
-                        "Sign in with a practitioner account to open the Practitioner Portal.",
-                        Toast.LENGTH_SHORT
-                ).show()
-        );
-
-        btnQuickAdmin.setOnClickListener(view ->
-                Toast.makeText(
-                        LoginActivity.this,
-                        "Sign in with an admin account to open the Admin Portal.",
-                        Toast.LENGTH_SHORT
-                ).show()
-        );
-
         tvRegister.setOnClickListener(view -> {
 
             Intent intent = new Intent(
@@ -109,13 +76,6 @@ public class LoginActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
 
         btnLogin = findViewById(R.id.btnLogin);
-
-        /*
-         * These IDs match activity_login.xml.
-         */
-        btnQuickPatient = findViewById(R.id.btnQuickPatient);
-        btnQuickDentist = findViewById(R.id.btnQuickDentist);
-        btnQuickAdmin = findViewById(R.id.btnQuickAdmin);
 
         tvRegister = findViewById(R.id.tvRegister);
     }

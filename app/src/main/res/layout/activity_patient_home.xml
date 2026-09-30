@@ -39,9 +39,10 @@
                         android:textColor="@color/text_secondary"/>
 
                     <TextView
+                        android:id="@+id/tvPatientName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sarah Williams"
+                        android:text="Patient"
                         android:textSize="22sp"
                         android:textStyle="bold"
                         android:textColor="@color/dental_primary"/>

@@ -17,6 +17,8 @@ android {
     namespace = "com.example.teledentistry_project"
     compileSdk = 36
 
+
+
     defaultConfig {
         applicationId = "com.example.teledentistry_project"
         minSdk = 24
@@ -25,18 +27,10 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
 
-        buildConfigField(
-            "String",
-            "SUPABASE_URL",
-            "\"${localProperties.getProperty("SUPABASE_URL", "")}\""
-        )
-
-        buildConfigField(
-            "String",
-            "SUPABASE_PUBLISHABLE_KEY",
-            "\"${localProperties.getProperty("SUPABASE_PUBLISHABLE_KEY", "")}\""
-        )
+    buildFeatures {
+        buildConfig = true
     }
 
     buildTypes {

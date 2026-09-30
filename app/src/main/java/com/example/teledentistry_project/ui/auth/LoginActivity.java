@@ -14,7 +14,6 @@ import com.example.teledentistry_project.data.model.auth.PocketBaseUser;
 import com.example.teledentistry_project.data.repository.AuthRepository;
 import com.example.teledentistry_project.ui.admin.AdminHomeActivity;
 import com.example.teledentistry_project.ui.dentist.DentistHomeActivity;
-import com.example.teledentistry_project.ui.patient.PatientDashboardActivity;
 import com.example.teledentistry_project.ui.patient.PatientHomeActivity;
 import com.example.teledentistry_project.utils.SessionManager;
 import com.google.android.material.button.MaterialButton;
@@ -33,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     private MaterialButton btnQuickPatient;
     private MaterialButton btnQuickDentist;
     private MaterialButton btnQuickAdmin;
+
     private TextView tvRegister;
 
     private AuthRepository authRepository;
@@ -48,6 +48,10 @@ public class LoginActivity extends AppCompatActivity {
         authRepository = new AuthRepository();
         sessionManager = new SessionManager(this);
 
+        /*
+         * If a PocketBase session already exists,
+         * validate it before showing the login screen.
+         */
         if (sessionManager.isLoggedIn()) {
             validateExistingSession();
             return;
@@ -55,20 +59,35 @@ public class LoginActivity extends AppCompatActivity {
 
         btnLogin.setOnClickListener(view -> attemptLogin());
 
-        if (btnQuickPatient != null) {
-            btnQuickPatient.setOnClickListener(v ->
-                    startActivity(new Intent(LoginActivity.this, PatientHomeActivity.class)));
-        }
+        /*
+         * These buttons exist in the collaborator's UI.
+         *
+         * We DO NOT allow them to bypass authentication.
+         * They currently explain which portal each role receives.
+         */
+        btnQuickPatient.setOnClickListener(view ->
+                Toast.makeText(
+                        LoginActivity.this,
+                        "Sign in with a patient account to open the Patient Portal.",
+                        Toast.LENGTH_SHORT
+                ).show()
+        );
 
-        if (btnQuickDentist != null) {
-            btnQuickDentist.setOnClickListener(v ->
-                    startActivity(new Intent(LoginActivity.this, DentistHomeActivity.class)));
-        }
+        btnQuickDentist.setOnClickListener(view ->
+                Toast.makeText(
+                        LoginActivity.this,
+                        "Sign in with a practitioner account to open the Practitioner Portal.",
+                        Toast.LENGTH_SHORT
+                ).show()
+        );
 
-        if (btnQuickAdmin != null) {
-            btnQuickAdmin.setOnClickListener(v ->
-                    startActivity(new Intent(LoginActivity.this, AdminHomeActivity.class)));
-        }
+        btnQuickAdmin.setOnClickListener(view ->
+                Toast.makeText(
+                        LoginActivity.this,
+                        "Sign in with an admin account to open the Admin Portal.",
+                        Toast.LENGTH_SHORT
+                ).show()
+        );
 
         tvRegister.setOnClickListener(view -> {
 
@@ -78,7 +97,6 @@ public class LoginActivity extends AppCompatActivity {
             );
 
             startActivity(intent);
-            finish();
         });
     }
 
@@ -91,9 +109,14 @@ public class LoginActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
 
         btnLogin = findViewById(R.id.btnLogin);
+
+        /*
+         * These IDs match activity_login.xml.
+         */
         btnQuickPatient = findViewById(R.id.btnQuickPatient);
         btnQuickDentist = findViewById(R.id.btnQuickDentist);
         btnQuickAdmin = findViewById(R.id.btnQuickAdmin);
+
         tvRegister = findViewById(R.id.tvRegister);
     }
 
@@ -129,35 +152,41 @@ public class LoginActivity extends AppCompatActivity {
 
                         setLoading(false);
 
-                        if (response.getToken() != null
-                                && response.getRecord() != null) {
-
-                            PocketBaseUser user =
-                                    response.getRecord();
-
-                            sessionManager.saveSession(
-                                    response.getToken(),
-                                    user.getId(),
-                                    user.getEmail(),
-                                    user.getRole()
-                            );
-
-                            routeToRoleHome(user.getRole());
-
-                            Toast.makeText(
-                                    LoginActivity.this,
-                                    "Login successful.",
-                                    Toast.LENGTH_SHORT
-                            ).show();
-
-                        } else {
+                        if (response.getToken() == null
+                                || response.getRecord() == null) {
 
                             Toast.makeText(
                                     LoginActivity.this,
                                     "Unable to create login session.",
                                     Toast.LENGTH_LONG
                             ).show();
+
+                            return;
                         }
+
+                        PocketBaseUser user =
+                                response.getRecord();
+
+                        /*
+                         * Save PocketBase session.
+                         */
+                        sessionManager.saveSession(
+                                response.getToken(),
+                                user.getId(),
+                                user.getEmail(),
+                                user.getRole()
+                        );
+
+                        Toast.makeText(
+                                LoginActivity.this,
+                                "Login successful.",
+                                Toast.LENGTH_SHORT
+                        ).show();
+
+                        /*
+                         * RBAC navigation.
+                         */
+                        navigateByRole(user.getRole());
                     }
 
                     @Override
@@ -173,6 +202,64 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 }
         );
+    }
+
+    /*
+     * Central RBAC navigation method.
+     *
+     * PocketBase roles:
+     * patient
+     * practitioner
+     * admin
+     */
+    private void navigateByRole(String role) {
+
+        Intent intent;
+
+        if ("patient".equals(role)) {
+
+            intent = new Intent(
+                    LoginActivity.this,
+                    PatientHomeActivity.class
+            );
+
+        } else if ("practitioner".equals(role)) {
+
+            intent = new Intent(
+                    LoginActivity.this,
+                    DentistHomeActivity.class
+            );
+
+        } else if ("admin".equals(role)) {
+
+            intent = new Intent(
+                    LoginActivity.this,
+                    AdminHomeActivity.class
+            );
+
+        } else {
+
+            sessionManager.clearSession();
+
+            Toast.makeText(
+                    LoginActivity.this,
+                    "Your account does not have a valid role.",
+                    Toast.LENGTH_LONG
+            ).show();
+
+            return;
+        }
+
+        /*
+         * Remove LoginActivity from the back stack.
+         */
+        intent.setFlags(
+                Intent.FLAG_ACTIVITY_NEW_TASK
+                        | Intent.FLAG_ACTIVITY_CLEAR_TASK
+        );
+
+        startActivity(intent);
+        finish();
     }
 
     private boolean validateInput(
@@ -211,13 +298,16 @@ public class LoginActivity extends AppCompatActivity {
         return isValid;
     }
 
-    private String getText(TextInputEditText editText) {
+    private String getText(
+            TextInputEditText editText
+    ) {
 
         if (editText.getText() == null) {
             return "";
         }
 
-        return editText.getText()
+        return editText
+                .getText()
                 .toString()
                 .trim();
     }
@@ -232,6 +322,13 @@ public class LoginActivity extends AppCompatActivity {
 
         btnLogin.setEnabled(!loading);
 
+        /*
+         * Disable the other controls while authenticating.
+         */
+        etEmail.setEnabled(!loading);
+        etPassword.setEnabled(!loading);
+        tvRegister.setEnabled(!loading);
+
         if (loading) {
             btnLogin.setText("Signing in...");
         } else {
@@ -239,7 +336,9 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    //Validate existing session method
+    /*
+     * Validate a previously stored PocketBase session.
+     */
     private void validateExistingSession() {
 
         setLoading(true);
@@ -255,10 +354,19 @@ public class LoginActivity extends AppCompatActivity {
 
                         setLoading(false);
 
+                        if (response.getToken() == null
+                                || response.getRecord() == null) {
+
+                            sessionManager.clearSession();
+                            return;
+                        }
+
                         PocketBaseUser user =
                                 response.getRecord();
 
-                        // Save the refreshed token and latest user data.
+                        /*
+                         * Save refreshed PocketBase session.
+                         */
                         sessionManager.saveSession(
                                 response.getToken(),
                                 user.getId(),
@@ -266,7 +374,11 @@ public class LoginActivity extends AppCompatActivity {
                                 user.getRole()
                         );
 
-                        routeToRoleHome(user.getRole());
+                        /*
+                         * Use exactly the same RBAC routing
+                         * as a normal login.
+                         */
+                        navigateByRole(user.getRole());
                     }
 
                     @Override
@@ -296,23 +408,5 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 }
         );
-    }
-
-    private void routeToRoleHome(String role) {
-        Intent intent;
-
-        if ("admin".equals(role)) {
-            intent = new Intent(LoginActivity.this, AdminHomeActivity.class);
-        } else if ("dentist".equals(role)) {
-            intent = new Intent(LoginActivity.this, DentistHomeActivity.class);
-        } else if ("patient".equals(role)) {
-            intent = new Intent(LoginActivity.this, PatientDashboardActivity.class);
-        } else {
-            intent = new Intent(LoginActivity.this, PatientHomeActivity.class);
-        }
-
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(intent);
-        finish();
     }
 }

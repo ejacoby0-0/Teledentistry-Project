@@ -10,12 +10,13 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.teledentistry_project.R;
-import com.example.teledentistry_project.data.model.auth.AuthResponse;
 import com.example.teledentistry_project.data.repository.AuthRepository;
 import com.example.teledentistry_project.utils.SessionManager;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.example.teledentistry_project.data.model.auth.PocketBaseAuthResponse;
+import com.example.teledentistry_project.data.model.auth.PocketBaseUser;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -88,47 +89,36 @@ public class RegisterActivity extends AppCompatActivity {
         authRepository.register(
                 email,
                 password,
+                confirmPassword,
                 new AuthRepository.AuthCallback() {
 
                     @Override
-                    public void onSuccess(AuthResponse response) {
+                    public void onRegistrationSuccess(
+                            PocketBaseUser user
+                    ) {
 
                         setLoading(false);
 
-                        /*
-                         * Supabase may return an access token immediately
-                         * when email confirmation is disabled.
-                         *
-                         * If email confirmation is enabled, the account may
-                         * be created without an active session.
-                         */
-                        if (response.getAccessToken() != null
-                                && response.getUser() != null) {
+                        Toast.makeText(
+                                RegisterActivity.this,
+                                "Account created successfully. Please sign in.",
+                                Toast.LENGTH_LONG
+                        ).show();
 
-                            sessionManager.saveSession(
-                                    response.getAccessToken(),
-                                    response.getRefreshToken(),
-                                    response.getUser().getId(),
-                                    response.getUser().getEmail()
-                            );
+                        Intent intent = new Intent(
+                                RegisterActivity.this,
+                                LoginActivity.class
+                        );
 
-                            Toast.makeText(
-                                    RegisterActivity.this,
-                                    "Account created successfully.",
-                                    Toast.LENGTH_LONG
-                            ).show();
+                        startActivity(intent);
+                        finish();
+                    }
 
-                            // Later we will redirect to the patient
-                            // onboarding/home screen.
-
-                        } else {
-
-                            Toast.makeText(
-                                    RegisterActivity.this,
-                                    "Account created. Please check your email to confirm your account.",
-                                    Toast.LENGTH_LONG
-                            ).show();
-                        }
+                    @Override
+                    public void onLoginSuccess(
+                            PocketBaseAuthResponse response
+                    ) {
+                        // Not used during registration.
                     }
 
                     @Override

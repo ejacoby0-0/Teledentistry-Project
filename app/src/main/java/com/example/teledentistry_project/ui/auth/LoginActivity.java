@@ -9,10 +9,12 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.teledentistry_project.R;
-import com.example.teledentistry_project.data.model.auth.AuthResponse;
+import com.example.teledentistry_project.data.model.auth.PocketBaseAuthResponse;
+import com.example.teledentistry_project.data.model.auth.PocketBaseUser;
 import com.example.teledentistry_project.data.repository.AuthRepository;
 import com.example.teledentistry_project.ui.admin.AdminHomeActivity;
 import com.example.teledentistry_project.ui.dentist.DentistHomeActivity;
+import com.example.teledentistry_project.ui.patient.PatientDashboardActivity;
 import com.example.teledentistry_project.ui.patient.PatientHomeActivity;
 import com.example.teledentistry_project.utils.SessionManager;
 import com.google.android.material.button.MaterialButton;
@@ -46,27 +48,30 @@ public class LoginActivity extends AppCompatActivity {
         authRepository = new AuthRepository();
         sessionManager = new SessionManager(this);
 
+        if (sessionManager.isLoggedIn()) {
+            validateExistingSession();
+            return;
+        }
+
         btnLogin.setOnClickListener(view -> attemptLogin());
 
         if (btnQuickPatient != null) {
-            btnQuickPatient.setOnClickListener(v -> {
-                startActivity(new Intent(LoginActivity.this, PatientHomeActivity.class));
-            });
+            btnQuickPatient.setOnClickListener(v ->
+                    startActivity(new Intent(LoginActivity.this, PatientHomeActivity.class)));
         }
 
         if (btnQuickDentist != null) {
-            btnQuickDentist.setOnClickListener(v -> {
-                startActivity(new Intent(LoginActivity.this, DentistHomeActivity.class));
-            });
+            btnQuickDentist.setOnClickListener(v ->
+                    startActivity(new Intent(LoginActivity.this, DentistHomeActivity.class)));
         }
 
         if (btnQuickAdmin != null) {
-            btnQuickAdmin.setOnClickListener(v -> {
-                startActivity(new Intent(LoginActivity.this, AdminHomeActivity.class));
-            });
+            btnQuickAdmin.setOnClickListener(v ->
+                    startActivity(new Intent(LoginActivity.this, AdminHomeActivity.class)));
         }
 
         tvRegister.setOnClickListener(view -> {
+
             Intent intent = new Intent(
                     LoginActivity.this,
                     RegisterActivity.class
@@ -111,29 +116,39 @@ public class LoginActivity extends AppCompatActivity {
                 new AuthRepository.AuthCallback() {
 
                     @Override
-                    public void onSuccess(AuthResponse response) {
+                    public void onRegistrationSuccess(
+                            PocketBaseUser user
+                    ) {
+                        // Not used during login.
+                    }
+
+                    @Override
+                    public void onLoginSuccess(
+                            PocketBaseAuthResponse response
+                    ) {
 
                         setLoading(false);
 
-                        if (response.getAccessToken() != null
-                                && response.getUser() != null) {
+                        if (response.getToken() != null
+                                && response.getRecord() != null) {
+
+                            PocketBaseUser user =
+                                    response.getRecord();
 
                             sessionManager.saveSession(
-                                    response.getAccessToken(),
-                                    response.getRefreshToken(),
-                                    response.getUser().getId(),
-                                    response.getUser().getEmail()
+                                    response.getToken(),
+                                    user.getId(),
+                                    user.getEmail(),
+                                    user.getRole()
                             );
+
+                            routeToRoleHome(user.getRole());
 
                             Toast.makeText(
                                     LoginActivity.this,
-                                    "Login successful. Redirecting to Patient Dashboard...",
+                                    "Login successful.",
                                     Toast.LENGTH_SHORT
                             ).show();
-
-                            Intent intent = new Intent(LoginActivity.this, PatientHomeActivity.class);
-                            startActivity(intent);
-                            finish();
 
                         } else {
 
@@ -222,5 +237,82 @@ public class LoginActivity extends AppCompatActivity {
         } else {
             btnLogin.setText("Sign In");
         }
+    }
+
+    //Validate existing session method
+    private void validateExistingSession() {
+
+        setLoading(true);
+
+        authRepository.validateSession(
+                sessionManager.getAuthToken(),
+                new AuthRepository.SessionCallback() {
+
+                    @Override
+                    public void onValid(
+                            PocketBaseAuthResponse response
+                    ) {
+
+                        setLoading(false);
+
+                        PocketBaseUser user =
+                                response.getRecord();
+
+                        // Save the refreshed token and latest user data.
+                        sessionManager.saveSession(
+                                response.getToken(),
+                                user.getId(),
+                                user.getEmail(),
+                                user.getRole()
+                        );
+
+                        routeToRoleHome(user.getRole());
+                    }
+
+                    @Override
+                    public void onInvalid() {
+
+                        setLoading(false);
+
+                        sessionManager.clearSession();
+
+                        Toast.makeText(
+                                LoginActivity.this,
+                                "Your session has expired. Please sign in again.",
+                                Toast.LENGTH_SHORT
+                        ).show();
+                    }
+
+                    @Override
+                    public void onError(String error) {
+
+                        setLoading(false);
+
+                        Toast.makeText(
+                                LoginActivity.this,
+                                "Unable to verify your session. Check your connection.",
+                                Toast.LENGTH_LONG
+                        ).show();
+                    }
+                }
+        );
+    }
+
+    private void routeToRoleHome(String role) {
+        Intent intent;
+
+        if ("admin".equals(role)) {
+            intent = new Intent(LoginActivity.this, AdminHomeActivity.class);
+        } else if ("dentist".equals(role)) {
+            intent = new Intent(LoginActivity.this, DentistHomeActivity.class);
+        } else if ("patient".equals(role)) {
+            intent = new Intent(LoginActivity.this, PatientDashboardActivity.class);
+        } else {
+            intent = new Intent(LoginActivity.this, PatientHomeActivity.class);
+        }
+
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
     }
 }

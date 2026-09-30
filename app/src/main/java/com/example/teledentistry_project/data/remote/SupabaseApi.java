@@ -13,7 +13,7 @@ import retrofit2.http.POST;
 public interface SupabaseApi {
 
     @GET("auth/v1/health")
-    Call<HealthResponse> checkAuthHealth();;
+    Call<HealthResponse> checkAuthHealth();
 
     @POST("auth/v1/signup")
     Call<AuthResponse> signUp(

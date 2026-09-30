@@ -2,8 +2,8 @@ package com.example.teledentistry_project.data.model.auth;
 
 public class SignInRequest {
 
-    private String email;
-    private String password;
+    private final String email;
+    private final String password;
 
     public SignInRequest(String email, String password) {
         this.email = email;

@@ -30,15 +30,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".ui.patient.PatientDashboardActivity"
-            android:exported="false" />
-
-        <activity
             android:name=".ui.auth.RegisterActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".ui.auth.SupabaseTestActivity"
             android:exported="false" />
 
         <!-- Patient Portal Activities -->

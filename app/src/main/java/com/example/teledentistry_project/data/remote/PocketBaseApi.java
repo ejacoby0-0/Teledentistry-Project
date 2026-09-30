@@ -1,14 +1,22 @@
 package com.example.teledentistry_project.data.remote;
 
+import com.example.teledentistry_project.data.model.PocketBaseListResponse;
 import com.example.teledentistry_project.data.model.auth.PocketBaseAuthResponse;
 import com.example.teledentistry_project.data.model.auth.PocketBaseLoginRequest;
 import com.example.teledentistry_project.data.model.auth.PocketBaseRegisterRequest;
 import com.example.teledentistry_project.data.model.auth.PocketBaseUser;
+import com.example.teledentistry_project.data.model.patient.Patient;
+import com.example.teledentistry_project.data.model.patient.PatientUpdateRequest;
+import com.example.teledentistry_project.data.model.practitioner.Practitioner;
 
-import retrofit2.Call;
 import retrofit2.http.Body;
-import retrofit2.http.POST;
+import retrofit2.http.PATCH;
+import retrofit2.http.Path;
+import retrofit2.Call;
+import retrofit2.http.GET;
 import retrofit2.http.Header;
+import retrofit2.http.Query;
+import retrofit2.http.POST;
 
 public interface PocketBaseApi {
 
@@ -28,4 +36,27 @@ public interface PocketBaseApi {
     Call<PocketBaseAuthResponse> refreshAuth(
             @Header("Authorization") String authToken
     );
+
+    //Endpoint for PocketBaseListResponse
+    @GET("api/collections/patients/records")
+    Call<PocketBaseListResponse<Patient>> getPatients(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    //Endpoint for PatientUpdateRequest
+    @PATCH("api/collections/patients/records/{id}")
+    Call<Patient> updatePatient(
+            @Header("Authorization") String authToken,
+            @Path("id") String patientId,
+            @Body PatientUpdateRequest request
+    );
+
+    //Endpoint for Practitioner
+    @GET("api/collections/practitioners/records")
+    Call<PocketBaseListResponse<Practitioner>> getPractitioners(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
 }

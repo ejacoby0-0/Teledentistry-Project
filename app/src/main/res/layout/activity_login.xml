@@ -44,7 +44,7 @@
             android:layout_marginTop="4dp"
             android:layout_marginBottom="24dp"
             android:gravity="center"
-            android:text="Sign in or jump directly to role portals below."
+            android:text="Sign in"
             android:textColor="@color/text_secondary"
             android:textSize="14sp" />
 
@@ -95,44 +95,6 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:cornerRadius="12dp" />
-
-        <!-- Quick Access Section Divider -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="12dp"
-            android:text="— Quick Preview Role Portals —"
-            android:textColor="@color/text_secondary"
-            android:textSize="12sp"
-            android:textStyle="bold"/>
-
-        <!-- 3 Quick Access Role Buttons -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnQuickPatient"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:layout_marginBottom="8dp"
-            android:text="Open Patient Dashboard"
-            style="?attr/materialButtonOutlinedStyle"
-            app:cornerRadius="10dp"/>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnQuickDentist"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:layout_marginBottom="8dp"
-            android:text="Open Practitioner Portal"
-            style="?attr/materialButtonOutlinedStyle"
-            app:cornerRadius="10dp"/>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnQuickAdmin"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:text="Open Admin Portal"
-            style="?attr/materialButtonOutlinedStyle"
-            app:cornerRadius="10dp"/>
 
         <!-- Register Link -->
         <TextView

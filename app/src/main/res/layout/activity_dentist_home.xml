@@ -39,19 +39,21 @@
                         android:textColor="@color/text_secondary"/>
 
                     <TextView
+                        android:id="@+id/tvPractitionerName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dr. Emily Johnson"
+                        android:text="Practitioner"
                         android:textSize="22sp"
                         android:textStyle="bold"
                         android:textColor="@color/dental_primary"/>
                 </LinearLayout>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnPractitionerProfile"
+                    android:id="@+id/btnPractitionerLogout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dr. Watson"
+                    android:text="Logout"
+                    android:textAllCaps="false"
                     style="?attr/materialButtonOutlinedStyle"
                     app:cornerRadius="10dp"/>
             </LinearLayout>

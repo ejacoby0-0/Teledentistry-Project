@@ -48,10 +48,11 @@
                 </LinearLayout>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnAdminProfile"
+                    android:id="@+id/btnAdminLogout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Admin"
+                    android:text="Logout"
+                    android:textAllCaps="false"
                     style="?attr/materialButtonOutlinedStyle"
                     app:cornerRadius="10dp"/>
             </LinearLayout>

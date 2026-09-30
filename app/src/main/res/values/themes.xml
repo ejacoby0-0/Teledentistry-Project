@@ -1,8 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.TeledentistryProject" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/dental_primary</item>
+        <item name="colorSecondary">@color/dental_secondary</item>
+        <item name="android:windowBackground">@color/dental_background</item>
+        <item name="colorSurface">@color/dental_surface</item>
     </style>
 
     <style name="Theme.TeledentistryProject" parent="Base.Theme.TeledentistryProject" />

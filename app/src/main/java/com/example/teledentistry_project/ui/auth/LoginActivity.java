@@ -11,6 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.teledentistry_project.R;
 import com.example.teledentistry_project.data.model.auth.AuthResponse;
 import com.example.teledentistry_project.data.repository.AuthRepository;
+import com.example.teledentistry_project.ui.admin.AdminHomeActivity;
+import com.example.teledentistry_project.ui.dentist.DentistHomeActivity;
+import com.example.teledentistry_project.ui.patient.PatientHomeActivity;
 import com.example.teledentistry_project.utils.SessionManager;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -25,6 +28,9 @@ public class LoginActivity extends AppCompatActivity {
     private TextInputEditText etPassword;
 
     private MaterialButton btnLogin;
+    private MaterialButton btnQuickPatient;
+    private MaterialButton btnQuickDentist;
+    private MaterialButton btnQuickAdmin;
     private TextView tvRegister;
 
     private AuthRepository authRepository;
@@ -42,8 +48,25 @@ public class LoginActivity extends AppCompatActivity {
 
         btnLogin.setOnClickListener(view -> attemptLogin());
 
-        tvRegister.setOnClickListener(view -> {
+        if (btnQuickPatient != null) {
+            btnQuickPatient.setOnClickListener(v -> {
+                startActivity(new Intent(LoginActivity.this, PatientHomeActivity.class));
+            });
+        }
 
+        if (btnQuickDentist != null) {
+            btnQuickDentist.setOnClickListener(v -> {
+                startActivity(new Intent(LoginActivity.this, DentistHomeActivity.class));
+            });
+        }
+
+        if (btnQuickAdmin != null) {
+            btnQuickAdmin.setOnClickListener(v -> {
+                startActivity(new Intent(LoginActivity.this, AdminHomeActivity.class));
+            });
+        }
+
+        tvRegister.setOnClickListener(view -> {
             Intent intent = new Intent(
                     LoginActivity.this,
                     RegisterActivity.class
@@ -63,6 +86,9 @@ public class LoginActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
 
         btnLogin = findViewById(R.id.btnLogin);
+        btnQuickPatient = findViewById(R.id.btnQuickPatient);
+        btnQuickDentist = findViewById(R.id.btnQuickDentist);
+        btnQuickAdmin = findViewById(R.id.btnQuickAdmin);
         tvRegister = findViewById(R.id.tvRegister);
     }
 
@@ -101,19 +127,14 @@ public class LoginActivity extends AppCompatActivity {
 
                             Toast.makeText(
                                     LoginActivity.this,
-                                    "Login successful.",
+                                    "Login successful. Redirecting to Patient Dashboard...",
                                     Toast.LENGTH_SHORT
                             ).show();
 
-                            /*
-                             * Later:
-                             *
-                             * Redirect the user according to their role:
-                             *
-                             * Patient      -> Patient dashboard
-                             * Practitioner -> Dentist dashboard
-                             * Admin        -> Admin dashboard
-                             */
+                            Intent intent = new Intent(LoginActivity.this, PatientHomeActivity.class);
+                            startActivity(intent);
+                            finish();
+
                         } else {
 
                             Toast.makeText(

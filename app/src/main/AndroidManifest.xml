@@ -64,6 +64,9 @@
             android:name=".ui.dentist.DentistHomeActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.dentist.DentistProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.dentist.PatientRecordsActivity"
             android:exported="false" />
         <activity

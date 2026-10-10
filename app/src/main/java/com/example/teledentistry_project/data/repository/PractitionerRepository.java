@@ -2,6 +2,7 @@ package com.example.teledentistry_project.data.repository;
 
 import com.example.teledentistry_project.data.model.PocketBaseListResponse;
 import com.example.teledentistry_project.data.model.practitioner.Practitioner;
+import com.example.teledentistry_project.data.model.practitioner.PractitionerUpdateRequest;
 import com.example.teledentistry_project.data.remote.PocketBaseClient;
 
 import retrofit2.Call;
@@ -13,6 +14,11 @@ public class PractitionerRepository {
     public interface PractitionerCallback {
         void onSuccess(Practitioner practitioner);
         void onNotFound();
+        void onError(String message);
+    }
+
+    public interface PractitionerUpdateCallback {
+        void onSuccess(Practitioner practitioner);
         void onError(String message);
     }
 
@@ -78,4 +84,50 @@ public class PractitionerRepository {
                     }
                 });
     }
+
+    public void updatePractitioner(
+            String authToken,
+            String practitionerId,
+            PractitionerUpdateRequest request,
+            PractitionerUpdateCallback callback
+    ) {
+
+        PocketBaseClient.api
+                .updatePractitioner(authToken, practitionerId, request)
+                .enqueue(new Callback<Practitioner>() {
+
+                    @Override
+                    public void onResponse(
+                            Call<Practitioner> call,
+                            Response<Practitioner> response
+                    ) {
+
+                        if (response.isSuccessful() && response.body() != null) {
+
+                            callback.onSuccess(response.body());
+
+                        } else {
+
+                            callback.onError(
+                                    "Failed to update practitioner profile. Code: "
+                                            + response.code()
+                            );
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(
+                            Call<Practitioner> call,
+                            Throwable throwable
+                    ) {
+
+                        callback.onError(
+                                throwable.getMessage() != null
+                                        ? throwable.getMessage()
+                                        : "Network error"
+                        );
+                    }
+                });
+    }
+
 }

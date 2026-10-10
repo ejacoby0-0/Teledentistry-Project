@@ -144,8 +144,8 @@ public class DentistHomeActivity extends AppCompatActivity {
         Button btnTreatmentManagement =
                 findViewById(R.id.btnTreatmentManagement);
 
-        Button btnLogout =
-                findViewById(R.id.btnPractitionerLogout);
+        Button btnProfile =
+                findViewById(R.id.btnDentistProfile);
 
 
         // VIDEO CONSULTATION
@@ -203,10 +203,16 @@ public class DentistHomeActivity extends AppCompatActivity {
         );
 
 
-        // LOGOUT
-        btnLogout.setOnClickListener(v ->
-                logoutPractitioner()
-        );
+        // Profile
+        btnProfile.setOnClickListener(v -> {
+
+            Intent intent = new Intent(
+                    DentistHomeActivity.this,
+                    DentistProfileActivity.class
+            );
+
+            startActivity(intent);
+        });
     }
 
 

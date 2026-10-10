@@ -22,7 +22,7 @@ PocketBase provides a lightweight realtime backend with built-in database, authe
 
 1. Navigate to the backend directory:
    ```bash
-   cd backend
+   cd pocketbase
    ```
 2. Start PocketBase and PostgreSQL services using Docker Compose:
    ```bash

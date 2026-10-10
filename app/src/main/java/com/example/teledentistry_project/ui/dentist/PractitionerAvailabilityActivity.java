@@ -45,6 +45,7 @@ public class PractitionerAvailabilityActivity extends AppCompatActivity {
     private java.util.List<PractitionerAvailability> currentAvailabilityList =
             new java.util.ArrayList<>();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -203,8 +204,11 @@ public class PractitionerAvailabilityActivity extends AppCompatActivity {
 
             TextView availabilityView = new TextView(this);
 
+            String formattedDate =
+                    formatDate(availability.getDate());
+
             String displayText =
-                    availability.getDate()
+                    formattedDate
                             + "\n"
                             + availability.getStartTime()
                             + " - "
@@ -392,7 +396,6 @@ public class PractitionerAvailabilityActivity extends AppCompatActivity {
                     public void onSuccess(
                             PractitionerAvailability availability
                     ) {
-
                         btnSaveAvailability.setEnabled(true);
 
                         Toast.makeText(
@@ -402,7 +405,6 @@ public class PractitionerAvailabilityActivity extends AppCompatActivity {
                         ).show();
 
                         clearSelection();
-
                         loadAvailability();
                     }
 
@@ -463,5 +465,18 @@ public class PractitionerAvailabilityActivity extends AppCompatActivity {
         }
 
         return false;
+    }
+
+    private String formatDate(String date) {
+
+        if (date == null || date.isEmpty()) {
+            return "";
+        }
+
+        if (date.length() >= 10) {
+            return date.substring(0, 10);
+        }
+
+        return date;
     }
 }

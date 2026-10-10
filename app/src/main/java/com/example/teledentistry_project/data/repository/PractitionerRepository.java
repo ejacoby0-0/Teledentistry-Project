@@ -5,6 +5,8 @@ import com.example.teledentistry_project.data.model.practitioner.Practitioner;
 import com.example.teledentistry_project.data.model.practitioner.PractitionerUpdateRequest;
 import com.example.teledentistry_project.data.remote.PocketBaseClient;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -126,6 +128,53 @@ public class PractitionerRepository {
                                         ? throwable.getMessage()
                                         : "Network error"
                         );
+                    }
+                });
+    }
+
+    public interface PractitionerListCallback {
+
+        void onSuccess(List<Practitioner> practitioners);
+
+        void onError(String message);
+    }
+
+    public void getAllPractitioners(
+            String authToken,
+            PractitionerListCallback callback
+    ) {
+
+        PocketBaseClient.api
+                .getPractitioners(authToken, "")
+                .enqueue(new Callback<PocketBaseListResponse<Practitioner>>() {
+
+                    @Override
+                    public void onResponse(
+                            Call<PocketBaseListResponse<Practitioner>> call,
+                            Response<PocketBaseListResponse<Practitioner>> response
+                    ) {
+
+                        if (response.isSuccessful() && response.body() != null) {
+
+                            callback.onSuccess(
+                                    response.body().getItems()
+                            );
+
+                        } else {
+
+                            callback.onError(
+                                    "Failed to load practitioners."
+                            );
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(
+                            Call<PocketBaseListResponse<Practitioner>> call,
+                            Throwable t
+                    ) {
+
+                        callback.onError(t.getMessage());
                     }
                 });
     }

@@ -13,6 +13,8 @@ import com.example.teledentistry_project.data.model.practitioner.PractitionerApp
 import com.example.teledentistry_project.data.model.practitioner.PractitionerApplicationUpdateRequest;
 import com.example.teledentistry_project.data.model.practitioner.PractitionerAvailability;
 import com.example.teledentistry_project.data.model.practitioner.PractitionerAvailabilityRequest;
+import com.example.teledentistry_project.data.model.appointment.Appointment;
+import com.example.teledentistry_project.data.model.appointment.AppointmentCreateRequest;
 
 import retrofit2.http.Body;
 import retrofit2.http.PATCH;
@@ -100,6 +102,20 @@ public interface PocketBaseApi {
     Call<PractitionerAvailability> createPractitionerAvailability(
             @Header("Authorization") String authToken,
             @Body PractitionerAvailabilityRequest request
+    );
+
+    // Get appointments using a PocketBase filter
+    @GET("api/collections/appointments/records")
+    Call<PocketBaseListResponse<Appointment>> getAppointments(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    // Create a new appointment
+    @POST("api/collections/appointments/records")
+    Call<Appointment> createAppointment(
+            @Header("Authorization") String authToken,
+            @Body AppointmentCreateRequest request
     );
 
 }

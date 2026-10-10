@@ -1,82 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
-    android:background="#F8F9FA">
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="24dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Book Consultation"
-            android:textSize="22sp"
+            android:text="Book Appointment"
+            android:textSize="26sp"
             android:textStyle="bold"
-            android:textColor="#006874"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select Practitioner:"
+            android:text="Choose a practitioner and an available appointment time."
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Practitioner -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practitioner"
             android:textStyle="bold"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="8dp" />
 
-        <Spinner
-            android:id="@+id/spPractitioner"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginBottom="16dp"/>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <Button
+            android:id="@+id/btnSelectPractitioner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Preferred Date (YYYY-MM-DD)"
-            android:layout_marginBottom="12dp">
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etDate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="2026-10-05"/>
-        </com.google.android.material.textfield.TextInputLayout>
+            android:text="Select Practitioner" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <!-- Available Slots -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Appointments"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvSelectPractitionerMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a practitioner to view available appointments."
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/layoutAvailableSlots"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Preferred Time Slot"
-            android:layout_marginBottom="12dp">
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="10:30 AM"/>
-        </com.google.android.material.textfield.TextInputLayout>
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <!-- Selected Appointment -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Appointment"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvSelectedAppointment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Reason for Consultation &amp; Symptoms"
-            android:layout_marginBottom="20dp">
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etReason"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:lines="3"
-                android:text="Tooth sensitivity in lower molar when drinking cold water."/>
-        </com.google.android.material.textfield.TextInputLayout>
+            android:text="No appointment selected."
+            android:textSize="16sp"
+            android:padding="12dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnConfirmBooking"
+        <!-- Book -->
+
+        <Button
+            android:id="@+id/btnBookAppointment"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:text="Confirm Booking"/>
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            android:enabled="false"
+            android:layout_marginTop="24dp" />
 
     </LinearLayout>
+
 </ScrollView>

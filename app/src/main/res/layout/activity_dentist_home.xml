@@ -125,6 +125,14 @@
                     android:text="Appointments"/>
 
                 <Button
+                    android:id="@+id/btnManageAvailability"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Manage Availability" />
+
+                <Button
                     android:id="@+id/btnPatientRecords"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

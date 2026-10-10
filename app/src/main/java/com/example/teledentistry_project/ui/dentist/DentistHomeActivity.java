@@ -223,6 +223,19 @@ public class DentistHomeActivity extends AppCompatActivity {
 
             startActivity(intent);
         });
+
+        Button btnManageAvailability =
+                findViewById(R.id.btnManageAvailability);
+
+        btnManageAvailability.setOnClickListener(v -> {
+
+            Intent intent = new Intent(
+                    DentistHomeActivity.this,
+                    PractitionerAvailabilityActivity.class
+            );
+
+            startActivity(intent);
+        });
     }
 
 

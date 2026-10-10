@@ -11,7 +11,8 @@ import com.example.teledentistry_project.data.model.practitioner.Practitioner;
 import com.example.teledentistry_project.data.model.practitioner.PractitionerUpdateRequest;
 import com.example.teledentistry_project.data.model.practitioner.PractitionerApplication;
 import com.example.teledentistry_project.data.model.practitioner.PractitionerApplicationUpdateRequest;
-
+import com.example.teledentistry_project.data.model.practitioner.PractitionerAvailability;
+import com.example.teledentistry_project.data.model.practitioner.PractitionerAvailabilityRequest;
 
 import retrofit2.http.Body;
 import retrofit2.http.PATCH;
@@ -84,6 +85,21 @@ public interface PocketBaseApi {
             @Header("Authorization") String authToken,
             @Path("id") String applicationId,
             @Body PractitionerApplicationUpdateRequest request
+    );
+
+    //creating and retrieving availability
+    // Get practitioner availability records
+    @GET("api/collections/practitioner_availability/records")
+    Call<PocketBaseListResponse<PractitionerAvailability>> getPractitionerAvailability(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    // Create practitioner availability record
+    @POST("api/collections/practitioner_availability/records")
+    Call<PractitionerAvailability> createPractitionerAvailability(
+            @Header("Authorization") String authToken,
+            @Body PractitionerAvailabilityRequest request
     );
 
 }

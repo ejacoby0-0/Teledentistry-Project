@@ -73,6 +73,16 @@ public class DentistHomeActivity extends AppCompatActivity {
         initializeNavigation();
     }
 
+    //Updates practitoner name when changed
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (sessionManager != null && sessionManager.isLoggedIn()) {
+            loadPractitionerInformation();
+        }
+    }
+
     private void loadPractitionerInformation() {
 
         String token = sessionManager.getAuthToken();

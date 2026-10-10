@@ -65,6 +65,16 @@ public class PatientHomeActivity extends AppCompatActivity {
         loadPatientName();
     }
 
+    //Update the name changes
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (sessionManager != null && sessionManager.isLoggedIn()) {
+            loadPatientName();
+        }
+    }
+
     private void initializeNavigation() {
 
         Button btnProfile =

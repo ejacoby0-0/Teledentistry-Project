@@ -9,6 +9,9 @@ import com.example.teledentistry_project.data.model.patient.Patient;
 import com.example.teledentistry_project.data.model.patient.PatientUpdateRequest;
 import com.example.teledentistry_project.data.model.practitioner.Practitioner;
 import com.example.teledentistry_project.data.model.practitioner.PractitionerUpdateRequest;
+import com.example.teledentistry_project.data.model.practitioner.PractitionerApplication;
+import com.example.teledentistry_project.data.model.practitioner.PractitionerApplicationUpdateRequest;
+
 
 import retrofit2.http.Body;
 import retrofit2.http.PATCH;
@@ -66,6 +69,21 @@ public interface PocketBaseApi {
             @Header("Authorization") String authToken,
             @Path("id") String practitionerId,
             @Body PractitionerUpdateRequest request
+    );
+
+    //Gets the data in practitioner_application records
+    @GET("api/collections/practitioner_applications/records")
+    Call<PocketBaseListResponse<PractitionerApplication>> getPractitionerApplications(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    //
+    @PATCH("api/collections/practitioner_applications/records/{id}")
+    Call<PractitionerApplication> updatePractitionerApplication(
+            @Header("Authorization") String authToken,
+            @Path("id") String applicationId,
+            @Body PractitionerApplicationUpdateRequest request
     );
 
 }

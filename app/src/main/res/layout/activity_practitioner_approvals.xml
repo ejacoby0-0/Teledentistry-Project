@@ -25,19 +25,22 @@
             android:orientation="vertical"
             android:padding="16dp">
             <TextView
+                android:id="@+id/tvApplicantName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dr. Sarah Brown (BDS, MSc)"
+                android:text="Practitioner Name"
                 android:textStyle="bold"
                 android:textSize="16sp"/>
             <TextView
+                android:id="@+id/tvApplicantDetails"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Reg #: DEN-44129-PENDING | Practice: Apex Dental"/>
+                android:text="Practitioner details"/>
             <TextView
+                android:id="@+id/tvApplicationStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Status: PENDING APPROVAL"
+                android:text="Status"
                 android:textColor="#DC3545"
                 android:textStyle="bold"
                 android:layout_marginBottom="12dp"/>

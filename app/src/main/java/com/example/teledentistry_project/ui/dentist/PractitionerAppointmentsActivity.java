@@ -13,6 +13,9 @@ import com.example.teledentistry_project.data.repository.AppointmentRepository;
 import com.example.teledentistry_project.data.repository.PractitionerRepository;
 import com.example.teledentistry_project.utils.SessionManager;
 import com.example.teledentistry_project.data.model.appointment.Appointment;
+import android.content.Intent;
+
+import com.example.teledentistry_project.ui.consultation.ConsultationActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -360,6 +363,68 @@ public class PractitionerAppointmentsActivity extends AppCompatActivity {
                     appointment.getStatus()
             )) {
 
+                // Open Consultation button
+                Button btnConsultation =
+                        new Button(this);
+
+                btnConsultation.setText(
+                        "Open Consultation"
+                );
+
+                LinearLayout.LayoutParams consultationParams =
+                        new LinearLayout.LayoutParams(
+                                LinearLayout.LayoutParams.MATCH_PARENT,
+                                LinearLayout.LayoutParams.WRAP_CONTENT
+                        );
+
+                consultationParams.setMargins(
+                        0,
+                        8,
+                        0,
+                        8
+                );
+
+                btnConsultation.setLayoutParams(
+                        consultationParams
+                );
+
+                btnConsultation.setOnClickListener(v -> {
+
+                    Intent intent =
+                            new Intent(
+                                    PractitionerAppointmentsActivity.this,
+                                    ConsultationActivity.class
+                            );
+
+                    intent.putExtra(
+                            "appointmentId",
+                            appointment.getId()
+                    );
+
+                    intent.putExtra(
+                            "appointmentDate",
+                            appointment.getDateTime()
+                    );
+
+                    intent.putExtra(
+                            "appointmentStartTime",
+                            appointment.getStartTime()
+                    );
+
+                    intent.putExtra(
+                            "appointmentEndTime",
+                            appointment.getEndTime()
+                    );
+
+                    startActivity(intent);
+                });
+
+                cardContent.addView(
+                        btnConsultation
+                );
+
+
+                // Complete Appointment button
                 Button btnComplete =
                         new Button(this);
 

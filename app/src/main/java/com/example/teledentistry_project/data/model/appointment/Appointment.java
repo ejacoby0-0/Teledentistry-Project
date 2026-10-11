@@ -7,6 +7,7 @@ public class Appointment {
     private String practitioner;
 
     private String dateTime;
+
     private String startTime;
     private String endTime;
 

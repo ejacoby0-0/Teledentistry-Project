@@ -122,7 +122,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
                     android:layout_margin="6dp"
-                    android:text="Book Consult"/>
+                    android:text="Book Appointment"/>
+                <Button
+                    android:id="@+id/btnAppointments"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="My Appointments" />
 
                 <Button
                     android:id="@+id/btnChatDentist"

@@ -9,13 +9,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="16dp">
 
+        <!-- Page Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Book Appointment"
-            android:textSize="26sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp" />
 
@@ -26,8 +27,8 @@
             android:textSize="16sp"
             android:layout_marginBottom="24dp" />
 
-        <!-- Practitioner -->
 
+        <!-- Practitioner -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,61 +40,63 @@
             android:id="@+id/btnSelectPractitioner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Select Practitioner" />
+            android:text="Select Practitioner"
+            android:layout_marginBottom="24dp" />
 
-        <!-- Available Slots -->
 
+        <!-- Available Appointments -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Available Appointments"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:id="@+id/tvSelectPractitionerMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Select a practitioner to view available appointments."
-            android:textSize="15sp" />
+            android:layout_marginBottom="8dp" />
 
+
+        <!-- Dynamically generated appointment buttons -->
         <LinearLayout
             android:id="@+id/layoutAvailableSlots"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="8dp" />
+            android:orientation="vertical" />
+
 
         <!-- Selected Appointment -->
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Selected Appointment"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="24dp"
             android:layout_marginBottom="8dp" />
 
         <TextView
             android:id="@+id/tvSelectedAppointment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="No appointment selected."
+            android:text="No appointment selected"
             android:textSize="16sp"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
 
         <!-- Book -->
-
         <Button
             android:id="@+id/btnBookAppointment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Book Appointment"
             android:enabled="false"
-            android:layout_marginTop="24dp" />
+            android:layout_marginBottom="32dp" />
 
     </LinearLayout>
 

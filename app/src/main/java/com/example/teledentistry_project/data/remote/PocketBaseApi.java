@@ -15,6 +15,7 @@ import com.example.teledentistry_project.data.model.practitioner.PractitionerAva
 import com.example.teledentistry_project.data.model.practitioner.PractitionerAvailabilityRequest;
 import com.example.teledentistry_project.data.model.appointment.Appointment;
 import com.example.teledentistry_project.data.model.appointment.AppointmentCreateRequest;
+import com.example.teledentistry_project.data.model.appointment.AppointmentStatusUpdateRequest;
 
 import retrofit2.http.Body;
 import retrofit2.http.PATCH;
@@ -116,6 +117,14 @@ public interface PocketBaseApi {
     Call<Appointment> createAppointment(
             @Header("Authorization") String authToken,
             @Body AppointmentCreateRequest request
+    );
+
+    //Confriming appointment
+    @PATCH("api/collections/appointments/records/{id}")
+    Call<Appointment> updateAppointmentStatus(
+            @Header("Authorization") String authToken,
+            @Path("id") String appointmentId,
+            @Body AppointmentStatusUpdateRequest request
     );
 
 }

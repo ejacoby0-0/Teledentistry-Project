@@ -4,7 +4,7 @@ import com.example.teledentistry_project.data.model.PocketBaseListResponse;
 import com.example.teledentistry_project.data.model.appointment.Appointment;
 import com.example.teledentistry_project.data.model.appointment.AppointmentCreateRequest;
 import com.example.teledentistry_project.data.remote.PocketBaseClient;
-
+import com.example.teledentistry_project.data.model.appointment.AppointmentStatusUpdateRequest;
 
 import java.util.List;
 
@@ -40,9 +40,29 @@ public class AppointmentRepository {
 
                         } else {
 
-                            callback.onError(
-                                    "Failed to create appointment."
+                            String errorMessage =
+                                    "Failed to book appointment. HTTP "
+                                            + response.code();
+
+                            try {
+
+                                if (response.errorBody() != null) {
+                                    errorMessage += "\n"
+                                            + response.errorBody().string();
+                                }
+
+                            } catch (Exception e) {
+
+                                errorMessage +=
+                                        "\nCould not read PocketBase error.";
+                            }
+
+                            android.util.Log.e(
+                                    "AppointmentBooking",
+                                    errorMessage
                             );
+
+                            callback.onError(errorMessage);
                         }
                     }
 
@@ -148,6 +168,75 @@ public class AppointmentRepository {
                 );
     }
 
+    //---------------------------------------------------------
+    // UPDATE APPOINTMENTSTATUS
+    // --------------------------------------------------------
+
+    public void updateAppointmentStatus(
+            String authToken,
+            String appointmentId,
+            String status,
+            AppointmentUpdateCallback callback
+    ) {
+
+        AppointmentStatusUpdateRequest request =
+                new AppointmentStatusUpdateRequest(status);
+
+        PocketBaseClient.api
+                .updateAppointmentStatus(
+                        authToken,
+                        appointmentId,
+                        request
+                )
+                .enqueue(new Callback<Appointment>() {
+
+                    @Override
+                    public void onResponse(
+                            Call<Appointment> call,
+                            Response<Appointment> response
+                    ) {
+
+                        if (response.isSuccessful()
+                                && response.body() != null) {
+
+                            callback.onSuccess(
+                                    response.body()
+                            );
+
+                        } else {
+
+                            String errorMessage =
+                                    "Failed to update appointment. HTTP "
+                                            + response.code();
+
+                            try {
+
+                                if (response.errorBody() != null) {
+                                    errorMessage += "\n"
+                                            + response.errorBody().string();
+                                }
+
+                            } catch (Exception ignored) {
+                            }
+
+                            callback.onError(errorMessage);
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(
+                            Call<Appointment> call,
+                            Throwable t
+                    ) {
+
+                        callback.onError(
+                                t.getMessage() != null
+                                        ? t.getMessage()
+                                        : "Network error."
+                        );
+                    }
+                });
+    }
 
     // ---------------------------------------------------------
     // CALLBACKS
@@ -164,6 +253,13 @@ public class AppointmentRepository {
     public interface AppointmentListCallback {
 
         void onSuccess(List<Appointment> appointments);
+
+        void onError(String message);
+    }
+
+    public interface AppointmentUpdateCallback {
+
+        void onSuccess(Appointment appointment);
 
         void onError(String message);
     }

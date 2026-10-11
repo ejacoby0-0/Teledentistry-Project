@@ -58,6 +58,9 @@
         <activity
             android:name=".ui.patient.VideoCallActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.patient.PatientAppointmentsActivity"
+            android:exported="false" />
 
         <!-- Practitioner Portal Activities -->
         <activity
@@ -77,6 +80,9 @@
             android:exported="false" />
         <activity
             android:name=".ui.dentist.TreatmentManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dentist.PractitionerAppointmentsActivity"
             android:exported="false" />
 
         <!-- Admin Portal Activities -->

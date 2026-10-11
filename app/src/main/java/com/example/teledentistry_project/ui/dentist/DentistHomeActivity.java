@@ -174,7 +174,7 @@ public class DentistHomeActivity extends AppCompatActivity {
                 startActivity(
                         new Intent(
                                 DentistHomeActivity.this,
-                                PatientRecordsActivity.class
+                                PractitionerAppointmentsActivity.class
                         )
                 )
         );

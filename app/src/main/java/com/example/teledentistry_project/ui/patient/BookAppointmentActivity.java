@@ -117,15 +117,6 @@ public class BookAppointmentActivity extends AppCompatActivity {
 
         btnBookAppointment.setOnClickListener(v -> bookAppointment());
 
-        // Booking will be connected later
-        btnBookAppointment.setOnClickListener(v ->
-                Toast.makeText(
-                        this,
-                        "Select an appointment first.",
-                        Toast.LENGTH_SHORT
-                ).show()
-        );
-
         loadPractitioners();
         loadPatient();
     }
@@ -504,7 +495,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
                         dateTime,
                         selectedAppointmentStartTime,
                         selectedAppointmentEndTime,
-                        "scheduled"
+                        "pending"
                 );
 
         btnBookAppointment.setEnabled(false);

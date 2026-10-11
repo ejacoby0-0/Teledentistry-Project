@@ -86,6 +86,9 @@ public class PatientHomeActivity extends AppCompatActivity {
         Button btnBookAppointment =
                 findViewById(R.id.btnBookAppointment);
 
+        Button btnAppointments =
+                findViewById(R.id.btnAppointments);
+
         Button btnChatDentist =
                 findViewById(R.id.btnChatDentist);
 
@@ -136,6 +139,19 @@ public class PatientHomeActivity extends AppCompatActivity {
                         )
                 )
         );
+
+        /*
+         * VIEWING APPOINTMENT
+         */
+        btnAppointments.setOnClickListener(v -> {
+
+            Intent intent = new Intent(
+                    PatientHomeActivity.this,
+                    PatientAppointmentsActivity.class
+            );
+
+            startActivity(intent);
+        });
 
 
         /*

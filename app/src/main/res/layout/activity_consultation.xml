@@ -59,6 +59,14 @@
             android:text="View Dental Record"
             android:layout_marginBottom="12dp" />
 
+        <!-- Treatment plan -->
+        <Button
+            android:id="@+id/btnTreatmentPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Treatment Plan"
+            android:layout_marginBottom="12dp" />
+
         <!-- Save Consultation -->
         <Button
             android:id="@+id/btnSaveConsultation"

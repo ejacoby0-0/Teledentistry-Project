@@ -22,6 +22,9 @@ import com.example.teledentistry_project.data.model.dental.DentalRecord;
 import com.example.teledentistry_project.data.model.dental.DentalRecordRequest;
 import com.example.teledentistry_project.data.model.dental.Tooth;
 import com.example.teledentistry_project.data.model.dental.ToothRequest;
+import com.example.teledentistry_project.data.model.treatment.TreatmentPlan;
+import com.example.teledentistry_project.data.model.treatment.TreatmentPlanRequest;
+import com.example.teledentistry_project.data.model.treatment.TreatmentPlanUpdateRequest;
 
 import retrofit2.http.Body;
 import retrofit2.http.PATCH;
@@ -185,6 +188,28 @@ public interface PocketBaseApi {
             @Path("id") String toothId,
             @Body ToothRequest request
     );
+
+    //Treastmetn plan
+    @GET("api/collections/treatment_plans/records")
+    Call<PocketBaseListResponse<TreatmentPlan>> getTreatmentPlans(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    @POST("api/collections/treatment_plans/records")
+    Call<TreatmentPlan> createTreatmentPlan(
+            @Header("Authorization") String authToken,
+            @Body TreatmentPlanRequest request
+    );
+
+    @PATCH("api/collections/treatment_plans/records/{id}")
+    Call<TreatmentPlan> updateTreatmentPlan(
+            @Header("Authorization") String authToken,
+            @Path("id") String treatmentPlanId,
+            @Body TreatmentPlanUpdateRequest request
+    );
+
+
 
 
 }

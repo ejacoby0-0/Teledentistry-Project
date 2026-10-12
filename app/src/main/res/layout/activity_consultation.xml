@@ -51,6 +51,14 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Veiw Dental Record -->
+        <Button
+            android:id="@+id/btnViewDentalRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Dental Record"
+            android:layout_marginBottom="12dp" />
+
         <!-- Save Consultation -->
         <Button
             android:id="@+id/btnSaveConsultation"

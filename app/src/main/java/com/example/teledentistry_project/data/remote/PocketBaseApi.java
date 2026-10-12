@@ -18,6 +18,10 @@ import com.example.teledentistry_project.data.model.appointment.AppointmentCreat
 import com.example.teledentistry_project.data.model.appointment.AppointmentStatusUpdateRequest;
 import com.example.teledentistry_project.data.model.consultation.Consultation;
 import com.example.teledentistry_project.data.model.consultation.ConsultationRequest;
+import com.example.teledentistry_project.data.model.dental.DentalRecord;
+import com.example.teledentistry_project.data.model.dental.DentalRecordRequest;
+import com.example.teledentistry_project.data.model.dental.Tooth;
+import com.example.teledentistry_project.data.model.dental.ToothRequest;
 
 import retrofit2.http.Body;
 import retrofit2.http.PATCH;
@@ -148,5 +152,39 @@ public interface PocketBaseApi {
             @Path("id") String consultationId,
             @Body ConsultationRequest request
     );
+
+    //
+    @GET("api/collections/dental_records/records")
+    Call<PocketBaseListResponse<DentalRecord>> getDentalRecords(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    @POST("api/collections/dental_records/records")
+    Call<DentalRecord> createDentalRecord(
+            @Header("Authorization") String authToken,
+            @Body DentalRecordRequest request
+    );
+
+
+    @GET("api/collections/teeth/records")
+    Call<PocketBaseListResponse<Tooth>> getTeeth(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    @POST("api/collections/teeth/records")
+    Call<Tooth> createTooth(
+            @Header("Authorization") String authToken,
+            @Body ToothRequest request
+    );
+
+    @PATCH("api/collections/teeth/records/{id}")
+    Call<Tooth> updateTooth(
+            @Header("Authorization") String authToken,
+            @Path("id") String toothId,
+            @Body ToothRequest request
+    );
+
 
 }

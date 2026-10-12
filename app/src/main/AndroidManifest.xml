@@ -84,6 +84,9 @@
         <activity
             android:name=".ui.dentist.PractitionerAppointmentsActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.dentist.DentalRecordActivity"
+            android:exported="false" />
 
         <!-- Admin Portal Activities -->
         <activity

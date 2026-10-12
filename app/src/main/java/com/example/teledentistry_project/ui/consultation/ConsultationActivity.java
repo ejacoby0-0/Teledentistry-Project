@@ -5,6 +5,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
+
+import com.example.teledentistry_project.ui.dentist.DentalRecordActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -30,6 +33,10 @@ public class ConsultationActivity extends AppCompatActivity {
     private String appointmentEndTime;
 
     private Consultation existingConsultation;
+
+    private String patientId;
+
+    private Button btnViewDentalRecord;
 
 
     @Override
@@ -71,6 +78,9 @@ public class ConsultationActivity extends AppCompatActivity {
         btnSaveConsultation =
                 findViewById(R.id.btnSaveConsultation);
 
+        btnViewDentalRecord =
+                findViewById(R.id.btnViewDentalRecord);
+
 
         // Receive appointment information
         appointmentId =
@@ -85,13 +95,18 @@ public class ConsultationActivity extends AppCompatActivity {
         appointmentEndTime =
                 getIntent().getStringExtra("appointmentEndTime");
 
+        patientId =
+                getIntent().getStringExtra("patientId");
+
 
         if (appointmentId == null
-                || appointmentId.isEmpty()) {
+                || appointmentId.isEmpty()
+                || patientId == null
+                || patientId.isEmpty()) {
 
             Toast.makeText(
                     this,
-                    "Invalid appointment.",
+                    "Invalid appointment or patient.",
                     Toast.LENGTH_LONG
             ).show();
 
@@ -108,6 +123,22 @@ public class ConsultationActivity extends AppCompatActivity {
         btnSaveConsultation.setOnClickListener(v ->
                 saveConsultation()
         );
+
+        btnViewDentalRecord.setOnClickListener(v -> {
+
+            Intent intent =
+                    new Intent(
+                            ConsultationActivity.this,
+                            DentalRecordActivity.class
+                    );
+
+            intent.putExtra(
+                    "patientId",
+                    patientId
+            );
+
+            startActivity(intent);
+        });
     }
 
 

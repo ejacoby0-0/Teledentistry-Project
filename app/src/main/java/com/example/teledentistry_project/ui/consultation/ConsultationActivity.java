@@ -15,6 +15,7 @@ import com.example.teledentistry_project.R;
 import com.example.teledentistry_project.data.model.consultation.Consultation;
 import com.example.teledentistry_project.data.model.consultation.ConsultationRequest;
 import com.example.teledentistry_project.data.repository.ConsultationRepository;
+import com.example.teledentistry_project.ui.dentist.PrescriptionActivity;
 import com.example.teledentistry_project.utils.SessionManager;
 import com.google.android.material.textfield.TextInputEditText;
 import com.example.teledentistry_project.ui.dentist.TreatmentPlanActivity;
@@ -40,6 +41,8 @@ public class ConsultationActivity extends AppCompatActivity {
     private Button btnViewDentalRecord;
 
     private Button btnTreatmentPlan;
+
+    private Button btnPrescriptions;
 
 
     @Override
@@ -103,6 +106,25 @@ public class ConsultationActivity extends AppCompatActivity {
 
         btnTreatmentPlan =
                 findViewById(R.id.btnTreatmentPlan);
+
+        btnPrescriptions =
+                findViewById(R.id.btnPrescriptions);
+
+        btnPrescriptions.setOnClickListener(v -> {
+
+            Intent intent =
+                    new Intent(
+                            ConsultationActivity.this,
+                            PrescriptionActivity.class
+                    );
+
+            intent.putExtra(
+                    "patientId",
+                    patientId
+            );
+
+            startActivity(intent);
+        });
 
 
         if (appointmentId == null

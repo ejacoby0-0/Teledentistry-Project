@@ -25,6 +25,9 @@ import com.example.teledentistry_project.data.model.dental.ToothRequest;
 import com.example.teledentistry_project.data.model.treatment.TreatmentPlan;
 import com.example.teledentistry_project.data.model.treatment.TreatmentPlanRequest;
 import com.example.teledentistry_project.data.model.treatment.TreatmentPlanUpdateRequest;
+import com.example.teledentistry_project.data.model.prescription.Prescription;
+import com.example.teledentistry_project.data.model.prescription.PrescriptionRequest;
+import com.example.teledentistry_project.data.model.prescription.PrescriptionUpdateRequest;
 
 import retrofit2.http.Body;
 import retrofit2.http.PATCH;
@@ -209,7 +212,24 @@ public interface PocketBaseApi {
             @Body TreatmentPlanUpdateRequest request
     );
 
+    //Prescriptions Endpoints
+    //Retrieve prescriptions for a particular patient
+    @GET("api/collections/prescriptions/records")
+    Call<PocketBaseListResponse<Prescription>> getPrescriptions(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
 
+    @POST("api/collections/prescriptions/records")
+    Call<Prescription> createPrescription(
+            @Header("Authorization") String authToken,
+            @Body PrescriptionRequest request
+    );
 
-
+    @PATCH("api/collections/prescriptions/records/{id}")
+    Call<Prescription> updatePrescription(
+            @Header("Authorization") String authToken,
+            @Path("id") String prescriptionId,
+            @Body PrescriptionUpdateRequest request
+    );
 }

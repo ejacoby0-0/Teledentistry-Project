@@ -90,6 +90,9 @@
         <activity
             android:name=".ui.dentist.TreatmentPlanActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.dentist.PrescriptionActivity"
+            android:exported="false" />
 
         <!-- Admin Portal Activities -->
         <activity

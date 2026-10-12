@@ -28,6 +28,9 @@ import com.example.teledentistry_project.data.model.treatment.TreatmentPlanUpdat
 import com.example.teledentistry_project.data.model.prescription.Prescription;
 import com.example.teledentistry_project.data.model.prescription.PrescriptionRequest;
 import com.example.teledentistry_project.data.model.prescription.PrescriptionUpdateRequest;
+import com.example.teledentistry_project.data.model.billing.Billing;
+import com.example.teledentistry_project.data.model.billing.BillingRequest;
+import com.example.teledentistry_project.data.model.billing.BillingUpdateRequest;
 
 import retrofit2.http.Body;
 import retrofit2.http.PATCH;
@@ -232,4 +235,27 @@ public interface PocketBaseApi {
             @Path("id") String prescriptionId,
             @Body PrescriptionUpdateRequest request
     );
+
+
+    //Endpoints for billing
+    @GET("api/collections/billing/records")
+    Call<PocketBaseListResponse<Billing>> getBillingRecords(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    @POST("api/collections/billing/records")
+    Call<Billing> createBilling(
+            @Header("Authorization") String authToken,
+            @Body BillingRequest request
+    );
+
+    @PATCH("api/collections/billing/records/{id}")
+    Call<Billing> updateBilling(
+            @Header("Authorization") String authToken,
+            @Path("id") String billingId,
+            @Body BillingUpdateRequest request
+    );
+
+
 }

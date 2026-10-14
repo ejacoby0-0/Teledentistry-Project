@@ -61,6 +61,21 @@
         <activity
             android:name=".ui.patient.PatientAppointmentsActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.patient.PatientDentalRecordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.PatientTreatmentPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.PatientPrescriptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.PatientBillingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.PatientInsuranceClaimsActivity"
+            android:exported="false" />
 
         <!-- Practitioner Portal Activities -->
         <activity

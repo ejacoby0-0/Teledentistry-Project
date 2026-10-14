@@ -132,6 +132,14 @@
                     android:text="My Appointments" />
 
                 <Button
+                    android:id="@+id/btnDentalRecord"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="My Dental Record"/>
+
+                <Button
                     android:id="@+id/btnChatDentist"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -156,12 +164,28 @@
                     android:text="Treatment Plan"/>
 
                 <Button
+                    android:id="@+id/btnPrescriptions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="My Prescriptions"/>
+
+                <Button
                     android:id="@+id/btnBilling"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
                     android:layout_margin="6dp"
                     android:text="Billing &amp; Rx"/>
+
+                <Button
+                    android:id="@+id/btnInsuranceClaims"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="My Insurance Claims"/>
             </GridLayout>
 
         </LinearLayout>

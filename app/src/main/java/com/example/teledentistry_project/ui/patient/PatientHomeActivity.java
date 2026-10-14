@@ -89,6 +89,9 @@ public class PatientHomeActivity extends AppCompatActivity {
         Button btnAppointments =
                 findViewById(R.id.btnAppointments);
 
+        Button btnDentalRecord =
+                findViewById(R.id.btnDentalRecord);
+
         Button btnChatDentist =
                 findViewById(R.id.btnChatDentist);
 
@@ -98,8 +101,14 @@ public class PatientHomeActivity extends AppCompatActivity {
         Button btnTreatmentPlan =
                 findViewById(R.id.btnTreatmentPlan);
 
+        Button btnPrescriptions =
+                findViewById(R.id.btnPrescriptions);
+
         Button btnBilling =
                 findViewById(R.id.btnBilling);
+
+        Button btnInsuranceClaims =
+                findViewById(R.id.btnInsuranceClaims);
 
 
         /*
@@ -153,6 +162,18 @@ public class PatientHomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        /*
+         * MY DENTAL RECORD
+         */
+        btnDentalRecord.setOnClickListener(view ->
+                startActivity(
+                        new Intent(
+                                PatientHomeActivity.this,
+                                PatientDentalRecordActivity.class
+                        )
+                )
+        );
+
 
         /*
          * CHAT
@@ -181,26 +202,51 @@ public class PatientHomeActivity extends AppCompatActivity {
 
 
         /*
-         * TREATMENT PLAN
+         * MY TREATMENT PLANS
          */
         btnTreatmentPlan.setOnClickListener(view ->
                 startActivity(
                         new Intent(
                                 PatientHomeActivity.this,
-                                TreatmentPlanActivity.class
+                                PatientTreatmentPlanActivity.class
+                        )
+                )
+        );
+
+        /*
+         * MY PRESCRIPTIONS
+         */
+        btnPrescriptions.setOnClickListener(view ->
+                startActivity(
+                        new Intent(
+                                PatientHomeActivity.this,
+                                PatientPrescriptionsActivity.class
                         )
                 )
         );
 
 
+
         /*
-         * BILLING
+         * MY BILLING
          */
         btnBilling.setOnClickListener(view ->
                 startActivity(
                         new Intent(
                                 PatientHomeActivity.this,
-                                BillingActivity.class
+                                PatientBillingActivity.class
+                        )
+                )
+        );
+
+        /*
+         * MY INSURANCE CLAIMS
+         */
+        btnInsuranceClaims.setOnClickListener(view ->
+                startActivity(
+                        new Intent(
+                                PatientHomeActivity.this,
+                                PatientInsuranceClaimsActivity.class
                         )
                 )
         );

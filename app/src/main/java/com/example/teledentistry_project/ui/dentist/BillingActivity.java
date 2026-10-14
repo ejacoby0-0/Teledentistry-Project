@@ -22,6 +22,7 @@ import android.widget.EditText;
 import com.example.teledentistry_project.data.model.billing.BillingRequest;
 import com.example.teledentistry_project.data.model.billing.BillingUpdateRequest;
 
+import android.content.Intent;
 import java.util.List;
 import java.util.Locale;
 
@@ -513,6 +514,62 @@ public class BillingActivity extends AppCompatActivity {
 
 
         card.addView(content);
+
+        Button btnInsuranceClaim =
+                new Button(this);
+
+        btnInsuranceClaim.setText(
+                "Insurance Claim"
+        );
+
+        btnInsuranceClaim.setAllCaps(false);
+
+        LinearLayout.LayoutParams claimButtonParams =
+                new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+                );
+
+        claimButtonParams.setMargins(
+                0,
+                12,
+                0,
+                0
+        );
+
+        btnInsuranceClaim.setLayoutParams(
+                claimButtonParams
+        );
+
+        btnInsuranceClaim.setOnClickListener(v -> {
+
+            Intent intent =
+                    new Intent(
+                            BillingActivity.this,
+                            InsuranceClaimActivity.class
+                    );
+
+            intent.putExtra(
+                    "billingId",
+                    billing.getId()
+            );
+
+            intent.putExtra(
+                    "billingAmount",
+                    billing.getAmount()
+            );
+
+            intent.putExtra(
+                    "insuranceCoverage",
+                    billing.getInsuranceCoverage()
+            );
+
+            startActivity(intent);
+        });
+
+        content.addView(
+                btnInsuranceClaim
+        );
 
         Button btnEditBilling =
                 new Button(this);

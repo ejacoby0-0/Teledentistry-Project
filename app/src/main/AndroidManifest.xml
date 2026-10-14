@@ -96,6 +96,10 @@
         <activity
             android:name=".ui.dentist.BillingActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.dentist.InsuranceClaimActivity"
+            android:exported="false" />
+
 
         <!-- Admin Portal Activities -->
         <activity

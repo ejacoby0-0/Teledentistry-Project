@@ -31,6 +31,9 @@ import com.example.teledentistry_project.data.model.prescription.PrescriptionUpd
 import com.example.teledentistry_project.data.model.billing.Billing;
 import com.example.teledentistry_project.data.model.billing.BillingRequest;
 import com.example.teledentistry_project.data.model.billing.BillingUpdateRequest;
+import com.example.teledentistry_project.data.model.insurance.InsuranceClaim;
+import com.example.teledentistry_project.data.model.insurance.InsuranceClaimRequest;
+import com.example.teledentistry_project.data.model.insurance.InsuranceClaimUpdateRequest;
 
 import retrofit2.http.Body;
 import retrofit2.http.PATCH;
@@ -255,6 +258,26 @@ public interface PocketBaseApi {
             @Header("Authorization") String authToken,
             @Path("id") String billingId,
             @Body BillingUpdateRequest request
+    );
+
+    //Endpoints for Insurance
+    @GET("api/collections/insurance_claims/records")
+    Call<PocketBaseListResponse<InsuranceClaim>> getInsuranceClaims(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    @POST("api/collections/insurance_claims/records")
+    Call<InsuranceClaim> createInsuranceClaim(
+            @Header("Authorization") String authToken,
+            @Body InsuranceClaimRequest request
+    );
+
+    @PATCH("api/collections/insurance_claims/records/{id}")
+    Call<InsuranceClaim> updateInsuranceClaim(
+            @Header("Authorization") String authToken,
+            @Path("id") String claimId,
+            @Body InsuranceClaimUpdateRequest request
     );
 
 

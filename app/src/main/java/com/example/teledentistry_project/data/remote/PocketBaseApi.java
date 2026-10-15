@@ -18,6 +18,22 @@ import com.example.teledentistry_project.data.model.appointment.AppointmentCreat
 import com.example.teledentistry_project.data.model.appointment.AppointmentStatusUpdateRequest;
 import com.example.teledentistry_project.data.model.consultation.Consultation;
 import com.example.teledentistry_project.data.model.consultation.ConsultationRequest;
+import com.example.teledentistry_project.data.model.dental.DentalRecord;
+import com.example.teledentistry_project.data.model.dental.DentalRecordRequest;
+import com.example.teledentistry_project.data.model.dental.Tooth;
+import com.example.teledentistry_project.data.model.dental.ToothRequest;
+import com.example.teledentistry_project.data.model.treatment.TreatmentPlan;
+import com.example.teledentistry_project.data.model.treatment.TreatmentPlanRequest;
+import com.example.teledentistry_project.data.model.treatment.TreatmentPlanUpdateRequest;
+import com.example.teledentistry_project.data.model.prescription.Prescription;
+import com.example.teledentistry_project.data.model.prescription.PrescriptionRequest;
+import com.example.teledentistry_project.data.model.prescription.PrescriptionUpdateRequest;
+import com.example.teledentistry_project.data.model.billing.Billing;
+import com.example.teledentistry_project.data.model.billing.BillingRequest;
+import com.example.teledentistry_project.data.model.billing.BillingUpdateRequest;
+import com.example.teledentistry_project.data.model.insurance.InsuranceClaim;
+import com.example.teledentistry_project.data.model.insurance.InsuranceClaimRequest;
+import com.example.teledentistry_project.data.model.insurance.InsuranceClaimUpdateRequest;
 
 import retrofit2.http.Body;
 import retrofit2.http.PATCH;
@@ -148,5 +164,121 @@ public interface PocketBaseApi {
             @Path("id") String consultationId,
             @Body ConsultationRequest request
     );
+
+    //
+    @GET("api/collections/dental_records/records")
+    Call<PocketBaseListResponse<DentalRecord>> getDentalRecords(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    @POST("api/collections/dental_records/records")
+    Call<DentalRecord> createDentalRecord(
+            @Header("Authorization") String authToken,
+            @Body DentalRecordRequest request
+    );
+
+
+    @GET("api/collections/teeth/records")
+    Call<PocketBaseListResponse<Tooth>> getTeeth(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    @POST("api/collections/teeth/records")
+    Call<Tooth> createTooth(
+            @Header("Authorization") String authToken,
+            @Body ToothRequest request
+    );
+
+    @PATCH("api/collections/teeth/records/{id}")
+    Call<Tooth> updateTooth(
+            @Header("Authorization") String authToken,
+            @Path("id") String toothId,
+            @Body ToothRequest request
+    );
+
+    //Treastmetn plan
+    @GET("api/collections/treatment_plans/records")
+    Call<PocketBaseListResponse<TreatmentPlan>> getTreatmentPlans(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    @POST("api/collections/treatment_plans/records")
+    Call<TreatmentPlan> createTreatmentPlan(
+            @Header("Authorization") String authToken,
+            @Body TreatmentPlanRequest request
+    );
+
+    @PATCH("api/collections/treatment_plans/records/{id}")
+    Call<TreatmentPlan> updateTreatmentPlan(
+            @Header("Authorization") String authToken,
+            @Path("id") String treatmentPlanId,
+            @Body TreatmentPlanUpdateRequest request
+    );
+
+    //Prescriptions Endpoints
+    //Retrieve prescriptions for a particular patient
+    @GET("api/collections/prescriptions/records")
+    Call<PocketBaseListResponse<Prescription>> getPrescriptions(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    @POST("api/collections/prescriptions/records")
+    Call<Prescription> createPrescription(
+            @Header("Authorization") String authToken,
+            @Body PrescriptionRequest request
+    );
+
+    @PATCH("api/collections/prescriptions/records/{id}")
+    Call<Prescription> updatePrescription(
+            @Header("Authorization") String authToken,
+            @Path("id") String prescriptionId,
+            @Body PrescriptionUpdateRequest request
+    );
+
+
+    //Endpoints for billing
+    @GET("api/collections/billing/records")
+    Call<PocketBaseListResponse<Billing>> getBillingRecords(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    @POST("api/collections/billing/records")
+    Call<Billing> createBilling(
+            @Header("Authorization") String authToken,
+            @Body BillingRequest request
+    );
+
+    @PATCH("api/collections/billing/records/{id}")
+    Call<Billing> updateBilling(
+            @Header("Authorization") String authToken,
+            @Path("id") String billingId,
+            @Body BillingUpdateRequest request
+    );
+
+    //Endpoints for Insurance
+    @GET("api/collections/insurance_claims/records")
+    Call<PocketBaseListResponse<InsuranceClaim>> getInsuranceClaims(
+            @Header("Authorization") String authToken,
+            @Query("filter") String filter
+    );
+
+    @POST("api/collections/insurance_claims/records")
+    Call<InsuranceClaim> createInsuranceClaim(
+            @Header("Authorization") String authToken,
+            @Body InsuranceClaimRequest request
+    );
+
+    @PATCH("api/collections/insurance_claims/records/{id}")
+    Call<InsuranceClaim> updateInsuranceClaim(
+            @Header("Authorization") String authToken,
+            @Path("id") String claimId,
+            @Body InsuranceClaimUpdateRequest request
+    );
+
 
 }

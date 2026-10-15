@@ -61,6 +61,21 @@
         <activity
             android:name=".ui.patient.PatientAppointmentsActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.patient.PatientDentalRecordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.PatientTreatmentPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.PatientPrescriptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.PatientBillingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.PatientInsuranceClaimsActivity"
+            android:exported="false" />
 
         <!-- Practitioner Portal Activities -->
         <activity
@@ -84,6 +99,22 @@
         <activity
             android:name=".ui.dentist.PractitionerAppointmentsActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.dentist.DentalRecordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dentist.TreatmentPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dentist.PrescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dentist.BillingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dentist.InsuranceClaimActivity"
+            android:exported="false" />
+
 
         <!-- Admin Portal Activities -->
         <activity

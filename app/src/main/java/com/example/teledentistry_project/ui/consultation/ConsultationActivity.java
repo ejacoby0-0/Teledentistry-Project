@@ -5,6 +5,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
+
+import com.example.teledentistry_project.ui.dentist.DentalRecordActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,8 +15,11 @@ import com.example.teledentistry_project.R;
 import com.example.teledentistry_project.data.model.consultation.Consultation;
 import com.example.teledentistry_project.data.model.consultation.ConsultationRequest;
 import com.example.teledentistry_project.data.repository.ConsultationRepository;
+import com.example.teledentistry_project.ui.dentist.PrescriptionActivity;
 import com.example.teledentistry_project.utils.SessionManager;
 import com.google.android.material.textfield.TextInputEditText;
+import com.example.teledentistry_project.ui.dentist.TreatmentPlanActivity;
+import com.example.teledentistry_project.ui.dentist.BillingActivity;
 
 public class ConsultationActivity extends AppCompatActivity {
 
@@ -30,6 +36,16 @@ public class ConsultationActivity extends AppCompatActivity {
     private String appointmentEndTime;
 
     private Consultation existingConsultation;
+
+    private String patientId;
+
+    private Button btnViewDentalRecord;
+
+    private Button btnTreatmentPlan;
+
+    private Button btnPrescriptions;
+
+    private Button btnBilling;
 
 
     @Override
@@ -71,6 +87,9 @@ public class ConsultationActivity extends AppCompatActivity {
         btnSaveConsultation =
                 findViewById(R.id.btnSaveConsultation);
 
+        btnViewDentalRecord =
+                findViewById(R.id.btnViewDentalRecord);
+
 
         // Receive appointment information
         appointmentId =
@@ -85,13 +104,67 @@ public class ConsultationActivity extends AppCompatActivity {
         appointmentEndTime =
                 getIntent().getStringExtra("appointmentEndTime");
 
+        patientId =
+                getIntent().getStringExtra("patientId");
+
+        btnTreatmentPlan =
+                findViewById(R.id.btnTreatmentPlan);
+
+        btnPrescriptions =
+                findViewById(R.id.btnPrescriptions);
+
+        btnPrescriptions.setOnClickListener(v -> {
+
+            Intent intent =
+                    new Intent(
+                            ConsultationActivity.this,
+                            PrescriptionActivity.class
+                    );
+
+            intent.putExtra(
+                    "patientId",
+                    patientId
+            );
+
+            startActivity(intent);
+        });
+
+        btnBilling = findViewById(R.id.btnBilling);
+
+        btnBilling.setOnClickListener(v -> {
+
+            Intent intent = new Intent(
+                    ConsultationActivity.this,
+                    BillingActivity.class
+            );
+
+            intent.putExtra(
+                    "appointmentId",
+                    appointmentId
+            );
+
+            intent.putExtra(
+                    "appointmentDate",
+                    appointmentDate
+            );
+
+            intent.putExtra(
+                    "appointmentStartTime",
+                    appointmentStartTime
+            );
+
+            startActivity(intent);
+        });
+
 
         if (appointmentId == null
-                || appointmentId.isEmpty()) {
+                || appointmentId.isEmpty()
+                || patientId == null
+                || patientId.isEmpty()) {
 
             Toast.makeText(
                     this,
-                    "Invalid appointment.",
+                    "Invalid appointment or patient.",
                     Toast.LENGTH_LONG
             ).show();
 
@@ -108,6 +181,38 @@ public class ConsultationActivity extends AppCompatActivity {
         btnSaveConsultation.setOnClickListener(v ->
                 saveConsultation()
         );
+
+        btnViewDentalRecord.setOnClickListener(v -> {
+
+            Intent intent =
+                    new Intent(
+                            ConsultationActivity.this,
+                            DentalRecordActivity.class
+                    );
+
+            intent.putExtra(
+                    "patientId",
+                    patientId
+            );
+
+            startActivity(intent);
+        });
+
+        btnTreatmentPlan.setOnClickListener(v -> {
+
+            Intent intent =
+                    new Intent(
+                            ConsultationActivity.this,
+                            TreatmentPlanActivity.class
+                    );
+
+            intent.putExtra(
+                    "patientId",
+                    patientId
+            );
+
+            startActivity(intent);
+        });
     }
 
 

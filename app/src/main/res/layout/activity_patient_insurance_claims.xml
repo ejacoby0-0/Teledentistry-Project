@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Insurance Claims"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#006874"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvPatientClaimInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient"
+            android:textSize="16sp"
+            android:textColor="#6C757D"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvPatientClaimStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading insurance claims..."
+            android:textSize="14sp"
+            android:textColor="#6C757D"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Read-only insurance claim cards -->
+        <LinearLayout
+            android:id="@+id/layoutPatientInsuranceClaims"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+</ScrollView>

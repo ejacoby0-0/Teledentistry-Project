@@ -51,6 +51,42 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Veiw Dental Record -->
+        <Button
+            android:id="@+id/btnViewDentalRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Dental Record"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Treatment plan -->
+        <Button
+            android:id="@+id/btnTreatmentPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Treatment Plan"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Prescription -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPrescriptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Prescriptions"
+            android:textAllCaps="false"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Billing -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBilling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Billing"
+            android:textAllCaps="false"
+            android:layout_marginBottom="12dp" />
+
         <!-- Save Consultation -->
         <Button
             android:id="@+id/btnSaveConsultation"

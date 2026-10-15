@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
@@ -17,73 +18,44 @@
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="#006874"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvTreatmentPatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient"
+            android:textSize="16sp"
+            android:textColor="#6C757D"
             android:layout_marginBottom="16dp"/>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tvTreatmentPlanStatus"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Stage 1: Initial Tele-consultation"
-                    android:textStyle="bold"
-                    android:textColor="#198754"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Status: Completed"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            android:text="Loading treatment plans..."
+            android:textColor="#6C757D"
+            android:layout_marginBottom="12dp"/>
 
-        <androidx.cardview.widget.CardView
+        <!--
+            Treatment plan cards will be dynamically
+            added here from PocketBase.
+        -->
+        <LinearLayout
+            android:id="@+id/layoutTreatmentPlans"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Stage 2: Desensitizing Therapy"
-                    android:textStyle="bold"
-                    android:textColor="#0D6EFD"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Status: In Progress (Current)"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            android:orientation="vertical"/>
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddTreatmentPlan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Stage 3: Composite Restoration"
-                    android:textStyle="bold"
-                    android:textColor="#6C757D"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Status: Upcoming"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            android:text="Create Treatment Plan"
+            android:textAllCaps="false"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"/>
 
     </LinearLayout>
+
 </ScrollView>

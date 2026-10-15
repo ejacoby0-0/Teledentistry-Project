@@ -416,6 +416,11 @@ public class PractitionerAppointmentsActivity extends AppCompatActivity {
                             appointment.getEndTime()
                     );
 
+                    intent.putExtra(
+                            "patientId",
+                            appointment.getPatient()
+                    );
+
                     startActivity(intent);
                 });
 
@@ -460,6 +465,77 @@ public class PractitionerAppointmentsActivity extends AppCompatActivity {
                         btnComplete
                 );
             }
+
+            else if ("completed".equalsIgnoreCase(
+                    appointment.getStatus()
+            )) {
+
+                Button btnViewConsultation =
+                        new Button(this);
+
+                btnViewConsultation.setText(
+                        "View Consultation"
+                );
+
+                LinearLayout.LayoutParams viewConsultationParams =
+                        new LinearLayout.LayoutParams(
+                                LinearLayout.LayoutParams.MATCH_PARENT,
+                                LinearLayout.LayoutParams.WRAP_CONTENT
+                        );
+
+                viewConsultationParams.setMargins(
+                        0,
+                        8,
+                        0,
+                        0
+                );
+
+                btnViewConsultation.setLayoutParams(
+                        viewConsultationParams
+                );
+
+                btnViewConsultation.setOnClickListener(v -> {
+
+                    Intent intent =
+                            new Intent(
+                                    PractitionerAppointmentsActivity.this,
+                                    ConsultationActivity.class
+                            );
+
+                    intent.putExtra(
+                            "appointmentId",
+                            appointment.getId()
+                    );
+
+                    intent.putExtra(
+                            "patientId",
+                            appointment.getPatient()
+                    );
+
+                    intent.putExtra(
+                            "appointmentDate",
+                            appointment.getDateTime()
+                    );
+
+                    intent.putExtra(
+                            "appointmentStartTime",
+                            appointment.getStartTime()
+                    );
+
+                    intent.putExtra(
+                            "appointmentEndTime",
+                            appointment.getEndTime()
+                    );
+
+                    startActivity(intent);
+                });
+
+                cardContent.addView(
+                        btnViewConsultation
+                );
+            }
+
+
 
 
             cardView.addView(

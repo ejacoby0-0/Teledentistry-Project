@@ -2,11 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="dental_primary">#006874</color>
-    <color name="dental_primary_container">#97F0FF</color>
-    <color name="dental_secondary">#00A3B4</color>
-    <color name="dental_background">#F6FAF9</color>
-    <color name="dental_surface">#FFFFFF</color>
+    <color name="dental_primary">#244138</color>
+    <color name="dental_primary_container">#FAFAEB</color>
+    <color name="dental_secondary">#30635E</color>
+    <color name="dental_background">#F0F0EB</color>
+    <color name="dental_surface">#FFB30F</color>
     <color name="text_primary">#191C1D</color>
     <color name="text_secondary">#3F4849</color>
     <color name="success_green">#2E7D32</color>

@@ -90,8 +90,29 @@
         android:paddingBottom="16dp"
         tools:listitem="@layout/item_chat"
         app:layout_constraintTop_toBottomOf="@id/tvMessagesHeading"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navbarContainer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Navbars: show one depending on who is logged in -->
+    <LinearLayout
+        android:id="@+id/navbarContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/navbarPatient"
+            layout="@layout/navbar_patient" />
+
+        <include
+            android:id="@+id/navbarPractitioner"
+            layout="@layout/navbar_practitioner"
+            android:visibility="gone" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

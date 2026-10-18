@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
         android:paddingStart="28dp"
@@ -22,31 +22,32 @@
             android:id="@+id/tvAppName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TELEDENTISTRY"
+            android:text="@string/smil_e"
             android:textColor="@color/dental_primary"
-            android:textSize="28sp"
-            android:textStyle="bold" />
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.02" />
+
+        <!-- Slogan -->
+        <TextView
+            android:id="@+id/tvSlogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/slogan_message"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
 
         <!-- Heading -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Welcome back"
+            android:layout_marginTop="36dp"
+            android:text="@string/welcome_back"
             android:textColor="@color/text_primary"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
-
-        <!-- Description -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="24dp"
-            android:gravity="center"
-            android:text="Sign in"
-            android:textColor="@color/text_secondary"
-            android:textSize="14sp" />
 
         <!-- Email -->
         <com.google.android.material.textfield.TextInputLayout
@@ -54,14 +55,18 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email address">
+            android:hint="@string/email_address"
+            app:boxStrokeColor="@color/dental_secondary"
+            app:hintTextColor="@color/dental_secondary">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:maxLines="1" />
+                android:maxLines="1"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,15 +77,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Password"
-            app:endIconMode="password_toggle">
+            android:hint="@string/password"
+            app:boxStrokeColor="@color/dental_secondary"
+            app:hintTextColor="@color/dental_secondary"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/dental_secondary">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:maxLines="1" />
+                android:maxLines="1"
+                android:textColor="@color/text_primary" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,12 +97,14 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginTop="20dp"
-            android:text="Sign In"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/sign_in"
             android:textAllCaps="false"
+            android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
+            app:backgroundTint="@color/dental_primary"
             app:cornerRadius="12dp" />
 
         <!-- Register Link -->
@@ -101,10 +112,10 @@
             android:id="@+id/tvRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:padding="8dp"
-            android:text="Don't have an account? Create account"
-            android:textColor="@color/dental_primary"
+            android:text="@string/account_create_account"
+            android:textColor="@color/dental_secondary"
             android:textSize="14sp"
             android:textStyle="bold" />
 

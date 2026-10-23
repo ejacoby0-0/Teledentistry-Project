@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navbarPatient"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:background="@color/dental_primary"
+    android:elevation="8dp">
+
+    <!-- Home -->
+    <ImageButton
+        android:id="@+id/navHome"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/icon_home"
+        android:contentDescription="@string/nav_home"
+        android:scaleType="fitCenter"
+        android:padding="13dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:tint="@color/dental_primary" />
+
+    <!-- Search -->
+    <ImageButton
+        android:id="@+id/navSearch"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/icon_search"
+        android:contentDescription="@string/nav_search"
+        android:scaleType="fitCenter"
+        android:padding="13dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:tint="@color/dental_primary" />
+
+    <!-- Schedule -->
+    <ImageButton
+        android:id="@+id/navSchedule"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/icon_schedule"
+        android:contentDescription="@string/nav_schedule"
+        android:scaleType="fitCenter"
+        android:padding="13dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:tint="@color/dental_primary" />
+
+    <!-- Profile -->
+    <ImageButton
+        android:id="@+id/navProfile"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/icon_profile"
+        android:contentDescription="@string/nav_profile"
+        android:scaleType="fitCenter"
+        android:padding="13dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:tint="@color/dental_primary" />
+
+</LinearLayout>

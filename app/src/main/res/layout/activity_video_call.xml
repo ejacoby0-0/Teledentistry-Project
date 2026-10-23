@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1B2A">
+
+    <!-- Remote video (full screen) -->
+    <org.webrtc.SurfaceViewRenderer
+        android:id="@+id/remoteVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tvRemotePlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Waiting for the other participant…"
+        android:textColor="#80FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- Top Status Header -->
+    <LinearLayout
+        android:id="@+id/topHeaderBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#B0000000"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Live Tele-consultation"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCallStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Connecting…"
+            android:textColor="#FFC107"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Interactive Teeth Outline Overlay Component -->
+    <com.example.teledentistry_project.ui.components.TeethOverlayView
+        android:id="@+id/teethOverlayView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_below="@id/topHeaderBar"
+        android:layout_margin="12dp"
+        android:visibility="gone" />
+
+    <!-- Local camera preview -->
+    <FrameLayout
+        android:id="@+id/localVideoContainer"
+        android:layout_width="104dp"
+        android:layout_height="140dp"
+        android:layout_above="@id/bottomControlsLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        android:background="#00E5FF"
+        android:padding="2dp">
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/localVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <!-- Bottom Controls Layout -->
+    <LinearLayout
+        android:id="@+id/bottomControlsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#D0000000">
+
+        <!-- Controls Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <!-- Toggle Teeth Overlay Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnToggleTeethOverlay"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:text="Teeth Outline Overlay"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                app:backgroundTint="#00838F"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_launcher_foreground"
+                app:iconTint="#FFFFFF" />
+
+            <!-- Mic Mute Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnToggleMic"
+                android:layout_width="60dp"
+                android:layout_height="54dp"
+                android:layout_marginEnd="6dp"
+                android:text=""
+                app:backgroundTint="#37474F"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/icon_call"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconTint="#FFFFFF" />
+
+            <!-- Camera Toggle Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnToggleCamera"
+                android:layout_width="60dp"
+                android:layout_height="54dp"
+                android:text=""
+                app:backgroundTint="#37474F"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/icon_gallery"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconTint="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- End Call Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEndCall"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="End Tele-Consultation"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#DC3545"
+            app:cornerRadius="14dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

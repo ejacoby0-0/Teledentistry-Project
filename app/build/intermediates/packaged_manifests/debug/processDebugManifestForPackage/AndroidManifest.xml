@@ -8,11 +8,23 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="36" />
 
-    <!--
-     Internet permission for Pocketbase's Android documentation to
-     requires the Internet permission for network communication.
-    -->
+    <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <permission
         android:name="com.example.teledentistry_project.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -21,6 +33,7 @@
     <uses-permission android:name="com.example.teledentistry_project.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
+        android:name="com.example.teledentistry_project.TeledentistryApp"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -31,7 +44,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.TeledentistryProject"
         android:usesCleartextTraffic="true" >
         <activity
@@ -48,6 +60,11 @@
             android:exported="false" />
         <activity
             android:name="com.example.teledentistry_project.ui.auth.RegisterActivity"
+            android:exported="false" />
+
+        <!-- Forgot Password -->
+        <activity
+            android:name="com.example.teledentistry_project.ui.auth.ForgotPasswordActivity"
             android:exported="false" />
 
         <!-- Patient Portal Activities -->
@@ -74,12 +91,11 @@
             android:exported="false" />
         <activity
             android:name="com.example.teledentistry_project.ui.patient.VideoCallActivity"
-            android:exported="false" />
+            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.teledentistry_project.ui.patient.PatientAppointmentsActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.teledentistry_project.ui.patient.PatientDentalRecordActivity"
             android:exported="false" />
         <activity
             android:name="com.example.teledentistry_project.ui.patient.PatientTreatmentPlanActivity"
@@ -89,6 +105,9 @@
             android:exported="false" />
         <activity
             android:name="com.example.teledentistry_project.ui.patient.PatientBillingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.teledentistry_project.ui.patient.PatientDentalRecordActivity"
             android:exported="false" />
         <activity
             android:name="com.example.teledentistry_project.ui.patient.PatientInsuranceClaimsActivity"
@@ -115,21 +134,6 @@
             android:exported="false" />
         <activity
             android:name="com.example.teledentistry_project.ui.dentist.PractitionerAppointmentsActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.teledentistry_project.ui.dentist.DentalRecordActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.teledentistry_project.ui.dentist.TreatmentPlanActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.teledentistry_project.ui.dentist.PrescriptionActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.teledentistry_project.ui.dentist.BillingActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.teledentistry_project.ui.dentist.InsuranceClaimActivity"
             android:exported="false" />
 
         <!-- Admin Portal Activities -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/tvPatientInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient Info"/>
+    <TextView
+        android:id="@+id/tvDentalRecordStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Record Status"/>
+    <LinearLayout
+        android:id="@+id/layoutTeeth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <Button
+        android:id="@+id/btnAddTooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Tooth"/>
+</LinearLayout>

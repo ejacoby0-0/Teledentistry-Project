@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dental_primary">#1B4332</color>
+    <color name="dental_primary_container">#E8F5E9</color>
+    <color name="dental_secondary">#2D6A4F</color>
+    <color name="dental_background">#F1F8F5</color>
+    <color name="dental_surface">#40916C</color>
+    <color name="text_primary">#081C15</color>
+    <color name="text_secondary">#1B4332</color>
+    <color name="success_green">#2D6A4F</color>
+    <color name="pending_amber">#52B788</color>
+    <color name="error_red">#C62828</color>
+</resources>

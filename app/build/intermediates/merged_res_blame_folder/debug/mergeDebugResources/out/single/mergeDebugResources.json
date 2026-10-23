@@ -1,390 +1,414 @@
 [
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_practitioner_appointments.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_practitioner_appointments.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_bg_message_received.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/bg_message_received.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_upload_image.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_upload_image.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_register.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_treatment_management.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_treatment_management.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_patient_treatment_plan.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_patient_treatment_plan.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_ic_billing.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\ic_billing.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_ic_upload.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/ic_upload.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_patient_treatment_plan.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_patient_treatment_plan.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_appointments.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_appointments.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_patient_prescriptions.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_patient_prescriptions.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_patient_home.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_patient_home.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_book_appointment.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_book_appointment.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\color_chip_background.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\color\\chip_background.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_bg_message_input.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/bg_message_input.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_bg_session_cost.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\bg_session_cost.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_item_dentist_search.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/item_dentist_search.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_patient_profile.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_patient_profile.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_dental_record.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_dental_record.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_icon_send.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\icon_send.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_logo.png.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/logo.png"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_item_prescription_given.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\item_prescription_given.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_consultation.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_consultation.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_item_upcoming_appointment.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/item_upcoming_appointment.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_ic_profile.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\ic_profile.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_practitioner_schedule.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_practitioner_schedule.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_edit_profile.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_edit_profile.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_icon_profile.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/icon_profile.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_profile.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_profile.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_patient_list.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_patient_list.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_patient_details.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_patient_details.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_patient_insurance_claims.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_patient_insurance_claims.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_item_session_opened.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/item_session_opened.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_ic_upload.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\ic_upload.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_ic_chat.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/ic_chat.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_ic_calendar.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\ic_calendar.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_prescription.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_prescription.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_ic_billing.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/ic_billing.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_patient_records.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_patient_records.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_dentist_home.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_dentist_home.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_manage_users.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_manage_users.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\color_chip_text.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\color\\chip_text.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_icon_search.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/icon_search.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_item_prescription_given.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/item_prescription_given.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_reports.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_reports.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_patient_profile.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_patient_profile.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_item_prescription.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\item_prescription.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_icon_schedule.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/icon_schedule.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_navbar_patient.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\navbar_patient.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/color_chip_text.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/color/chip_text.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.teledentistry_project.app-debug-36:/color_chip_background.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/color/chip_background.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_ic_search.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\ic_search.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_dental_record.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_dental_record.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_ic_home.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/ic_home.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\xml\\backup_rules.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_manage_users.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_manage_users.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_patient_dental_record.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_patient_dental_record.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_ic_launcher_logo_padded.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/ic_launcher_logo_padded.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_item_message_sent.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\item_message_sent.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_item_reciept.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/item_reciept.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_billing.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_billing.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_bg_unread_badge.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/bg_unread_badge.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_bg_message_input.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\bg_message_input.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_bg_prescription_box.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\bg_prescription_box.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_icon_send.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/icon_send.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_patient_records.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_patient_records.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_search.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_search.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_ic_smile_white.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/ic_smile_white.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_practitioner_approvals.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_practitioner_approvals.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_patient_details.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_patient_details.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_user_enquiries.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_user_enquiries.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_ic_treatment.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/ic_treatment.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_dentist_home.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_dentist_home.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_consultation.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_consultation.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_ic_profile.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/ic_profile.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_item_reciept.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\item_reciept.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_forgot_password.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_forgot_password.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_register.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_icon_gallery.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/icon_gallery.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_patient_prescriptions.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_patient_prescriptions.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_bg_session.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\bg_session.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_profile_view.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_profile_view.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_patient_list.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_patient_list.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_splash.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_chat.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_chat.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_ic_home.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\ic_home.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_video_call.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_video_call.xml"
+    },
+    {
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_practitioner_availability.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_practitioner_availability.xml"
+    },
+    {
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_icon_patients.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/icon_patients.xml"
+    },
+    {
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_receipts.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_receipts.xml"
+    },
+    {
+        "merged": "com.example.teledentistry_project.app-debug-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.teledentistry_project.app-debug-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_practitioner_appointments.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_practitioner_appointments.xml"
+    },
+    {
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_search.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_search.xml"
     },
     {
         "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_chat.xml.flat",
         "source": "com.example.teledentistry_project.app-main-38:/layout/activity_chat.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_navbar_practitioner.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\navbar_practitioner.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_dialog_confirm.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/dialog_confirm.xml"
+    },
+    {
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_edit_profile.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_edit_profile.xml"
+    },
+    {
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_patient_dental_record.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_patient_dental_record.xml"
     },
     {
         "merged": "com.example.teledentistry_project.app-debug-36:/layout_navbar_patient.xml.flat",
         "source": "com.example.teledentistry_project.app-main-38:/layout/navbar_patient.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_upload_image.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_upload_image.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_ic_chat.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\ic_chat.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_item_patient.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/item_patient.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_appointments.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_appointments.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_patient_appointments.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_patient_appointments.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_patient_insurance_claims.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_patient_insurance_claims.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_item_prescription.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/item_prescription.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_patient_home.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_patient_home.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_user_enquiries.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_user_enquiries.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_bg_message_received.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\bg_message_received.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_practitioner_availability.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_practitioner_availability.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_bg_session.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/bg_session.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_bg_unread_badge.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\bg_unread_badge.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_bg_message_sent.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/bg_message_sent.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_treatment_plan.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_treatment_plan.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_item_chat.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\item_chat.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_item_session_opened.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\item_session_opened.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_insurance_claim.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_insurance_claim.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_login.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_patient_appointments.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_patient_appointments.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_patient_payment.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_patient_payment.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_dentist_profile.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_dentist_profile.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_practitioner_schedule.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_practitioner_schedule.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_ic_logo.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/ic_logo.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_video_call.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_video_call.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_treatment_plan.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_treatment_plan.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_profile.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_profile.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_icon_call.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/icon_call.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_profile_view.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_profile_view.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_item_message_sent.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/item_message_sent.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_uploaded_images.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_uploaded_images.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_uploaded_images.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_uploaded_images.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_item_upcoming_appointment.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\item_upcoming_appointment.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_item_message_received.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/item_message_received.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_ic_patients.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\ic_patients.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_bg_session_cost.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/bg_session_cost.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_bg_message_sent.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\bg_message_sent.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_reports.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_reports.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_item_message_received.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\item_message_received.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/xml_backup_rules.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_book_appointment.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_book_appointment.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_ic_video.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/ic_video.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_admin_home.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_admin_home.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_main.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_item_session_closed.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\item_session_closed.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_item_session_closed.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/item_session_closed.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_item_patient.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\item_patient.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_item_chat.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/item_chat.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_dentist_profile.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_dentist_profile.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_ic_calendar.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/ic_calendar.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_item_dentist_search.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\item_dentist_search.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_bg_prescription_box.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/bg_prescription_box.xml"
+    },
+    {
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_practitioner_approvals.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_practitioner_approvals.xml"
     },
     {
         "merged": "com.example.teledentistry_project.app-debug-36:/layout_navbar_practitioner.xml.flat",
         "source": "com.example.teledentistry_project.app-main-38:/layout/navbar_practitioner.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_main.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_patient_billing.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_patient_billing.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_insurance_claim.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_insurance_claim.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_treatment_management.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_treatment_management.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_patient_billing.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_patient_billing.xml"
-    },
-    {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_ic_treatment.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\ic_treatment.xml"
-    },
-    {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_prescription.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_prescription.xml"
-    },
-    {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_dialog_confirm.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\dialog_confirm.xml"
-    },
-    {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.teledentistry_project.app-debug-36:/drawable_icon_home.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/drawable/icon_home.xml"
     },
     {
         "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_billing.xml.flat",
         "source": "com.example.teledentistry_project.app-main-38:/layout/activity_billing.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\drawable_ic_video.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\drawable\\ic_video.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_login.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-debug-36:\\layout_activity_receipts.xml.flat",
-        "source": "C:\\Users\\rayma\\.gradle\\daemon\\8.14.5\\com.example.teledentistry_project.app-main-38:\\layout\\activity_receipts.xml"
+        "merged": "com.example.teledentistry_project.app-debug-36:/layout_activity_admin_home.xml.flat",
+        "source": "com.example.teledentistry_project.app-main-38:/layout/activity_admin_home.xml"
     }
 ]

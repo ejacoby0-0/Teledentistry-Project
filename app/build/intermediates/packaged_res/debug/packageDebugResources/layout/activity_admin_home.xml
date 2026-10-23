@@ -17,7 +17,7 @@
             android:orientation="vertical"
             android:padding="20dp">
 
-            <!-- Header -->
+            <!-- Header with Logo -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -31,18 +31,19 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="System Administration"
-                        android:textSize="14sp"
-                        android:textColor="@color/text_secondary"/>
+                    <ImageView
+                        android:layout_width="165dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/logo"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitStart"
+                        android:layout_marginBottom="4dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Admin Portal"
-                        android:textSize="22sp"
+                        android:text="System Administration Portal"
+                        android:textSize="14sp"
                         android:textStyle="bold"
                         android:textColor="@color/dental_primary"/>
                 </LinearLayout>
@@ -64,7 +65,7 @@
                 android:layout_marginBottom="20dp"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="3dp"
-                app:cardBackgroundColor="@color/dental_surface">
+                app:cardBackgroundColor="@color/white">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -84,8 +85,8 @@
                         android:id="@+id/tvPendingCount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1 Practitioner awaiting license verification"
-                        android:textSize="16sp"
+                        android:text="Practitioner license verification queue active"
+                        android:textSize="15sp"
                         android:textColor="@color/text_primary"
                         android:layout_marginBottom="16dp"/>
 
@@ -94,6 +95,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:text="REVIEW &amp; APPROVE PRACTITIONERS"
+                        app:backgroundTint="@color/dental_primary"
                         app:cornerRadius="12dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -159,7 +161,7 @@
         android:layout_alignParentBottom="true"
         app:cardElevation="12dp"
         app:cardCornerRadius="0dp"
-        app:cardBackgroundColor="@color/dental_surface">
+        app:cardBackgroundColor="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -1,72 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/prescriptionsScreen"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/dental_background">
-
-    <!-- Header: Back button and title -->
-    <LinearLayout
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/tvPatientPrescriptionInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingStart="12dp"
-        android:paddingEnd="16dp"
-        android:paddingTop="14dp"
-        android:paddingBottom="14dp"
-        android:background="@color/dental_primary">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginStart="12dp"
-            android:text="@string/prescriptions"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <!-- Prescription list + empty state -->
-    <FrameLayout
+        android:text="Prescription Info"/>
+    <TextView
+        android:id="@+id/tvPatientPrescriptionStatus"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvPrescriptions"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:clipToPadding="false"
-            android:overScrollMode="never"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_prescription" />
-
-        <TextView
-            android:id="@+id/tvNoPrescriptions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/no_prescriptions"
-            android:textColor="@color/text_secondary"
-            android:textSize="15sp"
-            android:visibility="gone" />
-
-    </FrameLayout>
-
-    <!-- Navbar -->
-    <include
-        android:id="@+id/navbarPatient"
-        layout="@layout/navbar_patient" />
-
+        android:layout_height="wrap_content"
+        android:text="Status"/>
+    <LinearLayout
+        android:id="@+id/layoutPatientPrescriptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
 </LinearLayout>

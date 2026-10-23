@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Green circular background -->
+    <path
+        android:fillColor="#244138"
+        android:pathData="M54,0 A54,54 0 1,1 53.99,0 Z" />
+
+    <!-- White smile curve -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="7"
+        android:strokeLineCap="round"
+        android:pathData="M30,52 Q54,80 78,52" />
+
+</vector>

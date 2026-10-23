@@ -14,25 +14,22 @@
         android:gravity="center_horizontal"
         android:paddingStart="28dp"
         android:paddingEnd="28dp"
-        android:paddingTop="40dp"
+        android:paddingTop="32dp"
         android:paddingBottom="30dp">
 
-        <!-- App Name -->
-        <TextView
-            android:id="@+id/logoAppName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/smil_e"
-            android:textColor="@color/dental_primary"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            android:letterSpacing="0.02" />
+        <!-- App Logo -->
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="72dp"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"/>
 
         <!-- Subtitle -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:text="@string/create_your_account"
             android:textColor="@color/text_primary"
             android:textSize="22sp"
@@ -42,8 +39,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="28dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp"
             android:gravity="center"
             android:text="@string/slogan_message"
             android:textColor="@color/text_secondary"

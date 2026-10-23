@@ -1,0 +1,27 @@
+====================== MOCK DATA ====================================
+Created Mock Users:
+1.
+Patient Account:
+◦
+Email: patient@example.com
+◦
+Password: password123
+◦
+Role: patient
+2.
+Practitioner / Dentist Account:
+◦
+Email: practitioner@example.com
+◦
+Password: password123
+◦
+Role: practitioner
+3.
+Admin Account:
+◦
+Email: admin@example.com
+◦
+Password: password123
+◦
+Role: admin
+======================================================================

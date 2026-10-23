@@ -1,0 +1,63 @@
+{
+  "name": "consultations",
+  "type": "base",
+  "system": false,
+  "schema": [
+    {
+      "system": false,
+      "id": "field_appointment",
+      "name": "appointment",
+      "type": "relation",
+      "required": true,
+      "unique": true,
+      "options": {
+        "collectionId": "appointments_collection_id",
+        "cascadeDelete": true,
+        "minSelect": null,
+        "maxSelect": 1,
+        "displayFields": []
+      }
+    },
+    {
+      "system": false,
+      "id": "field_diagnosisNotes",
+      "name": "diagnosisNotes",
+      "type": "text",
+      "required": false,
+      "unique": false,
+      "options": {
+        "min": null,
+        "max": null,
+        "pattern": ""
+      }
+    },
+    {
+      "system": false,
+      "id": "field_chatLog",
+      "name": "chatLog",
+      "type": "json",
+      "required": false,
+      "unique": false,
+      "options": {
+        "maxSize": 2097152
+      }
+    },
+    {
+      "system": false,
+      "id": "field_overlayState",
+      "name": "overlayState",
+      "type": "json",
+      "required": false,
+      "unique": false,
+      "options": {
+        "maxSize": 2097152
+      }
+    }
+  ],
+  "indexes": [],
+  "listRule": "",
+  "viewRule": "",
+  "createRule": "",
+  "updateRule": "",
+  "deleteRule": ""
+}

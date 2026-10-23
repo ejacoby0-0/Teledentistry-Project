@@ -12,28 +12,26 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:paddingStart="28dp"
-        android:paddingEnd="28dp"
-        android:paddingTop="40dp"
-        android:paddingBottom="30dp">
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="24dp">
 
-        <!-- App Name -->
-        <TextView
-            android:id="@+id/tvAppName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/smil_e"
-            android:textColor="@color/dental_primary"
-            android:textSize="32sp"
-            android:textStyle="bold"
-            android:letterSpacing="0.02" />
+        <!-- App Logo - Balanced size with proper top margin so it's never cut off -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
 
         <!-- Slogan -->
         <TextView
             android:id="@+id/tvSlogan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="8dp"
             android:gravity="center"
             android:text="@string/slogan_message"
             android:textColor="@color/text_secondary"
@@ -43,7 +41,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="24dp"
             android:text="@string/welcome_back"
             android:textColor="@color/text_primary"
             android:textSize="22sp"
@@ -55,6 +53,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:hint="@string/email_address"
             app:boxStrokeColor="@color/dental_secondary"
             app:hintTextColor="@color/dental_secondary">
@@ -93,12 +92,25 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Forgot Password Link -->
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="8dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/dental_secondary"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true" />
+
         <!-- Login Button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:text="@string/sign_in"
             android:textAllCaps="false"
             android:textColor="@color/white"

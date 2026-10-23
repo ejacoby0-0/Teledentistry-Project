@@ -1,0 +1,58 @@
+# Matrix Synapse Homeserver Configuration for Teledentistry Project
+server_name: "localhost"
+pid_file: "/data/homeserver.pid"
+report_stats: false
+
+presence:
+  enabled: true
+
+listeners:
+  - port: 8008
+    tls: false
+    type: http
+    x_forwarded: true
+    bind_addresses: ['0.0.0.0']
+    resources:
+      - names: [client, federation]
+        compress: true
+
+database:
+  name: sqlite3
+  args:
+    database: "/data/homeserver.db"
+
+log_config: "/data/localhost.log.config"
+media_store_path: "/data/media_store"
+
+registration_shared_secret: "teledentistry_secret_registration_key_2026"
+# Open registration is OFF: accounts are created only by PocketBase via the
+# shared-secret admin API (/_synapse/admin/v1/register).
+enable_registration: false
+
+# Dev: PocketBase performs several short-lived server-side logins from one IP.
+rc_login:
+  address: {per_second: 1000, burst_count: 10000}
+  account: {per_second: 1000, burst_count: 10000}
+  failed_attempts: {per_second: 1000, burst_count: 10000}
+# Call signalling (m.call.invite + ICE candidates) and chat bursts exceed the 0.2/s default
+rc_message:
+  per_second: 10
+  burst_count: 50
+rc_joins:
+  local: {per_second: 1000, burst_count: 10000}
+
+macaroon_secret_key: "teledentistry_macaroon_secret_key_2026"
+form_secret: "teledentistry_form_secret_2026"
+signing_key_path: "/data/localhost.signing.key"
+
+# Turn server config for WebRTC Audio/Video calls
+turn_uris:
+  # 127.0.0.1 works for a phone/emulator using `adb reverse tcp:3478 tcp:3478` (TCP only).
+  - "turn:127.0.0.1:3478?transport=tcp"
+  - "turn:127.0.0.1:3478?transport=udp"
+  - "turn:localhost:3478?transport=tcp"
+turn_shared_secret: "teledentistry_turn_shared_secret_2026"
+turn_user_lifetime: 86400000
+turn_allow_guests: true
+
+suppress_key_server_warning: true

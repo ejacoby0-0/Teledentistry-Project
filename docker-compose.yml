@@ -1,0 +1,74 @@
+services:
+  pocketbase:
+    build:
+      context: ./pocketbase
+      dockerfile: Dockerfile
+    container_name: smile-pocketbase
+    ports:
+      - "8090:8090"
+    volumes:
+      - ./pocketbase/pb_data:/pb/pb_data
+      - ./pocketbase/pb_migrations:/pb/pb_migrations
+      - ./pocketbase/pb_hooks:/pb/pb_hooks
+    environment:
+      # PocketBase reaches Synapse over the compose network
+      - MATRIX_INTERNAL_URL=http://matrix-synapse:8008
+      - MATRIX_SERVER_NAME=localhost
+      # must match registration_shared_secret in matrix/homeserver.yaml
+      - MATRIX_REGISTRATION_SHARED_SECRET=teledentistry_secret_registration_key_2026
+      # server-only secret used to derive Matrix passwords; CHANGE IN PRODUCTION
+      - MATRIX_PASSWORD_SECRET=dev-only-teledentistry-matrix-password-secret
+    depends_on:
+      - matrix-synapse
+    restart: unless-stopped
+    networks:
+      - teledentistry-net
+
+  matrix-synapse:
+    image: matrixdotorg/synapse:v1.115.0
+    container_name: matrix-synapse
+    user: "0:0"
+    restart: unless-stopped
+    ports:
+      - "8008:8008"
+      - "8448:8448"
+    volumes:
+      - ./matrix:/data
+    environment:
+      - SYNAPSE_CONFIG_PATH=/data/homeserver.yaml
+    networks:
+      - teledentistry-net
+
+  matrix-coturn:
+    image: coturn/coturn:latest
+    container_name: matrix-coturn
+    # Override the image default CMD (adds --external-ip=$(detect-external-ip)): that makes coturn advertise
+    # the PUBLIC IP as relay address, so relay-to-relay traffic of two clients cannot be delivered.
+    # In production set external-ip in turnserver.conf to the server's public IP instead.
+    command: ["--log-file=/var/tmp/turn.log"]
+    restart: unless-stopped
+    ports:
+      - "3478:3478/tcp"
+      - "3478:3478/udp"
+      - "5349:5349/tcp"
+      - "5349:5349/udp"
+      - "49152-49160:49152-49160/udp"
+    volumes:
+      - ./matrix/turnserver.conf:/etc/coturn/turnserver.conf:ro
+    networks:
+      - teledentistry-net
+
+  matrix-element-web:
+    image: vectorim/element-web:latest
+    container_name: matrix-element-web
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./matrix/element-config.json:/app/config.json:ro
+    networks:
+      - teledentistry-net
+
+networks:
+  teledentistry-net:
+    driver: bridge

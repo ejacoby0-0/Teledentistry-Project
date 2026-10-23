@@ -1,0 +1,12 @@
+To use Pocketbase locally, you need to download it here https://pocketbase.io/docs/, you will get a executable file.
+
+How to run the server:
+
+1. In Linux bash, run the command:
+./pocketbase.exe serve
+
+Run this command directly in the root file where the executable file is (e.g pocketbase/)
+
+2. In Windows Powershell, run command:
+.\pocketbase.exe serve
+Run this command directly in the root file where the executable file is (e.g pocketbase/)

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chatroom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dental_background">
+
+    <!-- Header: Back button, profile picture and dentist details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:background="@color/dental_primary">
+
+        <!-- Back button -->
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/back_button"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:contentDescription="@string/go_back"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Profile picture placeholder -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            app:cardCornerRadius="23dp"
+            app:cardBackgroundColor="@color/dental_primary_container"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp">
+
+            <ImageView
+                android:id="@+id/ivChatProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_launcher_foreground"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/chat_profile_picture" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Name and online status -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDentistName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_surname"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/tvDentistStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/online"
+                android:textColor="@color/dental_primary_container"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Call button -->
+        <ImageButton
+            android:id="@+id/btnCall"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_call"
+            android:contentDescription="@string/video_call"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <!-- Buy a session button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBuySession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/open_session"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/dental_primary"
+        app:cornerRadius="12dp"
+        app:iconTint="@color/white" />
+
+    <!-- Chat history / message thread container -->
+    <ScrollView
+        android:id="@+id/chatScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/chatMessagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp" />
+
+    </ScrollView>
+
+    <!-- Message input bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+
+        <!-- Gallery button -->
+        <ImageButton
+            android:id="@+id/btnGallery"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_gallery"
+            android:contentDescription="@string/open_gallery"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/dental_primary" />
+
+        <!-- Message input -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:hint="@string/type_message"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/bg_message_input"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="4"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Send button -->
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_send"
+            android:contentDescription="Send message"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/dental_primary" />
+
+    </LinearLayout>
+
+</LinearLayout>

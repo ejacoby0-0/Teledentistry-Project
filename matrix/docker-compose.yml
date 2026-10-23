@@ -1,0 +1,48 @@
+services:
+  synapse:
+    image: matrixdotorg/synapse:v1.115.0
+    container_name: matrix-synapse
+    user: "0:0"
+    restart: unless-stopped
+    ports:
+      - "8008:8008"
+      - "8448:8448"
+    volumes:
+      - .:/data
+    environment:
+      - SYNAPSE_CONFIG_PATH=/data/homeserver.yaml
+    networks:
+      - matrix-net
+
+  coturn:
+    image: coturn/coturn:latest
+    container_name: matrix-coturn
+    # Override the image default CMD (adds --external-ip=$(detect-external-ip)): that makes coturn advertise
+    # the PUBLIC IP as relay address, so relay-to-relay traffic of two clients cannot be delivered.
+    command: ["--log-file=/var/tmp/turn.log"]
+    restart: unless-stopped
+    ports:
+      - "3478:3478/tcp"
+      - "3478:3478/udp"
+      - "5349:5349/tcp"
+      - "5349:5349/udp"
+      - "49152-49160:49152-49160/udp"
+    volumes:
+      - ./turnserver.conf:/etc/coturn/turnserver.conf:ro
+    networks:
+      - matrix-net
+
+  element-web:
+    image: vectorim/element-web:latest
+    container_name: matrix-element-web
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./element-config.json:/app/config.json:ro
+    networks:
+      - matrix-net
+
+networks:
+  matrix-net:
+    driver: bridge

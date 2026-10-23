@@ -1,289 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/billingScreen"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/dental_background">
-
-    <!-- Header: Back button and title -->
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/tvBillingAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Billing Appointment"/>
+    <TextView
+        android:id="@+id/tvBillingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Billing Status"/>
     <LinearLayout
+        android:id="@+id/layoutBillingRecords"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingStart="12dp"
-        android:paddingEnd="16dp"
-        android:paddingTop="14dp"
-        android:paddingBottom="14dp"
-        android:background="@color/dental_primary">
-
-        <TextView
-            android:id="@+id/btnBack"
-            android:layout_width="44dp"
-            android:layout_height="48dp"
-            android:gravity="center"
-            android:text="@string/back_button"
-            android:textColor="@color/white"
-            android:textSize="36sp"
-            android:contentDescription="@string/go_back"
-            android:clickable="true"
-            android:focusable="true" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginStart="12dp"
-            android:text="@string/billing"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <!-- Scrollable body -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:overScrollMode="never">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <!-- Appointment card: date + times -->
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp"
-                app:strokeWidth="0dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/select_date"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="12sp" />
-
-                    <!-- Currently selected date -->
-                    <TextView
-                        android:id="@+id/tvSelectedDate"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:textColor="@color/dental_primary"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        tools:text="Monday, 19 October 2026" />
-
-                    <!-- Date picker -->
-                    <CalendarView
-                        android:id="@+id/calendarView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:focusedMonthDateColor="@color/dental_primary"
-                        android:selectedWeekBackgroundColor="@color/dental_primary_container"
-                        android:weekDayTextAppearance="@android:style/TextAppearance.Small" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="12dp"
-                        android:background="@color/dental_background" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/available_times"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="12sp" />
-
-                    <!-- Available time slots (fill from code; samples below show the styling) -->
-                    <com.google.android.material.chip.ChipGroup
-                        android:id="@+id/chipGroupTimes"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        app:chipSpacingHorizontal="8dp"
-                        app:chipSpacingVertical="8dp"
-                        app:singleSelection="true">
-
-                        <com.google.android.material.chip.Chip
-                            style="@style/Widget.MaterialComponents.Chip.Choice"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="09:00"
-                            android:textColor="@color/chip_text"
-                            app:checkedIconVisible="false"
-                            app:chipBackgroundColor="@color/chip_background"
-                            app:chipStrokeColor="@color/dental_secondary"
-                            app:chipStrokeWidth="1dp" />
-
-                        <com.google.android.material.chip.Chip
-                            style="@style/Widget.MaterialComponents.Chip.Choice"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="10:30"
-                            android:textColor="@color/chip_text"
-                            app:checkedIconVisible="false"
-                            app:chipBackgroundColor="@color/chip_background"
-                            app:chipStrokeColor="@color/dental_secondary"
-                            app:chipStrokeWidth="1dp" />
-
-                        <com.google.android.material.chip.Chip
-                            style="@style/Widget.MaterialComponents.Chip.Choice"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="14:00"
-                            android:textColor="@color/chip_text"
-                            app:checkedIconVisible="false"
-                            app:chipBackgroundColor="@color/chip_background"
-                            app:chipStrokeColor="@color/dental_secondary"
-                            app:chipStrokeWidth="1dp" />
-
-                    </com.google.android.material.chip.ChipGroup>
-
-                    <!-- Shown when the chosen date has no free slots -->
-                    <TextView
-                        android:id="@+id/tvNoTimes"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="@string/no_times_available"
-                        android:textColor="@color/error_red"
-                        android:textSize="14sp"
-                        android:visibility="gone" />
-
-                </LinearLayout>
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <!-- Billing summary card -->
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp"
-                app:strokeWidth="0dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/billing_summary"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="12sp" />
-
-                    <!-- Session cost -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/cost_per_session"
-                            android:textColor="@color/text_primary"
-                            android:textSize="15sp" />
-
-                        <TextView
-                            android:id="@+id/tvSessionCost"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/text_primary"
-                            android:textSize="15sp"
-                            tools:text="R650" />
-
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginBottom="12dp"
-                        android:background="@color/dental_background" />
-
-                    <!-- Total -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/total"
-                            android:textColor="@color/text_primary"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/tvTotal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/dental_secondary"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            tools:text="R650" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </com.google.android.material.card.MaterialCardView>
-
-        </LinearLayout>
-
-    </ScrollView>
-
-    <!-- Pinned confirm button -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnConfirmPay"
+        android:orientation="vertical"/>
+    <Button
+        android:id="@+id/btnCreateBilling"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="12dp"
-        android:text="@string/confirm_and_pay"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:backgroundTint="@color/dental_primary"
-        app:cornerRadius="12dp" />
-
-    <!-- Navbar -->
-    <include
-        android:id="@+id/navbarPatient"
-        layout="@layout/navbar_patient" />
-
+        android:text="Create Billing"/>
+    <Button
+        android:id="@+id/btnPayNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Now"/>
 </LinearLayout>

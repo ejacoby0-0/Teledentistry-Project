@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="black">#FF000000</color>
-    <color name="dental_background">#F0F0EB</color>
-    <color name="dental_primary">#244138</color>
-    <color name="dental_primary_container">#FAFAEB</color>
-    <color name="dental_secondary">#30635E</color>
-    <color name="dental_surface">#FFB30F</color>
+    <color name="dental_background">#F1F8F5</color>
+    <color name="dental_primary">#1B4332</color>
+    <color name="dental_primary_container">#E8F5E9</color>
+    <color name="dental_secondary">#2D6A4F</color>
+    <color name="dental_surface">#40916C</color>
     <color name="error_red">#C62828</color>
-    <color name="pending_amber">#F57F17</color>
-    <color name="success_green">#2E7D32</color>
-    <color name="text_primary">#191C1D</color>
-    <color name="text_secondary">#3F4849</color>
+    <color name="pending_amber">#52B788</color>
+    <color name="success_green">#2D6A4F</color>
+    <color name="text_primary">#081C15</color>
+    <color name="text_secondary">#1B4332</color>
     <color name="white">#FFFFFFFF</color>
     <string name="account_create_account">Don\'t have an account? Create account</string>
     <string name="account_sign_in">Already have an account? Sign in</string>
@@ -33,6 +33,7 @@
     <string name="confirm_password">Confirm password</string>
     <string name="cost_high_to_low">Cost: High to Low</string>
     <string name="cost_low_to_high">Cost: Low to High</string>
+    <string name="cost_per_session">Cost per session</string>
     <string name="create_account">Create Account</string>
     <string name="create_your_account">Create your account</string>
     <string name="date_of_birth">Date of birth</string>
@@ -67,6 +68,8 @@
     <string name="new_prescription">New Prescription</string>
     <string name="new_time_slot">New Time Slot</string>
     <string name="no_appointments">You have no appointments yet</string>
+    <string name="no_patients">No patients found</string>
+    <string name="no_prescriptions">No prescriptions found</string>
     <string name="no_prescriptions_given">No Prescriptions Given</string>
     <string name="no_reciepts">No Reciepts</string>
     <string name="no_slots_entered">No Slots Entered</string>
@@ -125,6 +128,8 @@
         <item name="colorSecondary">@color/dental_secondary</item>
         <item name="android:windowBackground">@color/dental_background</item>
         <item name="colorSurface">@color/dental_surface</item>
+        <item name="android:windowSplashScreenBackground" ns1:targetApi="s">@color/dental_primary</item>
+        <item name="android:windowSplashScreenAnimatedIcon" ns1:targetApi="s">@drawable/ic_smile_white</item>
     </style>
     <style name="Theme.TeledentistryProject" parent="Base.Theme.TeledentistryProject"/>
     <style name="Widget.Dental.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">

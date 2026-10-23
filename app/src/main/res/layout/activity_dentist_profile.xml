@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/etPractitionerFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"/>
+    <EditText
+        android:id="@+id/etPractitionerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"/>
+    <EditText
+        android:id="@+id/etPractitionerPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"/>
+    <EditText
+        android:id="@+id/etPractitionerLicense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="License"/>
+    <EditText
+        android:id="@+id/etPractitionerSpecialization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Specialization"/>
+    <EditText
+        android:id="@+id/etPractitionerAvailability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Availability"/>
+    <Button
+        android:id="@+id/btnSavePractitionerProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Profile"/>
+    <Button
+        android:id="@+id/btnPractitionerLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"/>
+</LinearLayout>

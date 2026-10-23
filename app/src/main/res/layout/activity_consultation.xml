@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dental_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clinical Consultation &amp; Notes"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/dental_primary"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvAppointmentInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appointment Info"
+            android:textSize="15sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clinical Diagnosis Notes..."
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDiagnosisNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="3"
+                android:gravity="top"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveConsultation"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Save Diagnosis &amp; Notes"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/dental_primary"
+            app:cornerRadius="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewDentalRecord"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="View Dental Record"
+            android:textAllCaps="false"
+            app:cornerRadius="10dp"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTreatmentPlan"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Treatment Plan"
+            android:textAllCaps="false"
+            app:cornerRadius="10dp"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPrescriptions"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Prescriptions"
+            android:textAllCaps="false"
+            app:cornerRadius="10dp"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBilling"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Billing &amp; Invoices"
+            android:textAllCaps="false"
+            app:cornerRadius="10dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

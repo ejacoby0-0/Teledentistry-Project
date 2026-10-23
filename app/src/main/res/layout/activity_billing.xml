@@ -40,11 +40,85 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+<<<<<<< Updated upstream
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp">
             <LinearLayout
+=======
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_date"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+
+                    <!-- Currently selected date -->
+                    <TextView
+                        android:id="@+id/tvSelectedDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/dental_primary"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:text="Monday, 19 October 2026" />
+
+                    <!-- Date picker -->
+                    <CalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:focusedMonthDateColor="@color/dental_primary"
+                        android:selectedWeekBackgroundColor="@color/dental_primary_container"
+                        android:weekDayTextAppearance="@android:style/TextAppearance.Small" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@color/dental_background" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/available_times"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+
+                    <!-- Available time slots (fill from code; samples below show the styling) -->
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupTimes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:chipSpacingHorizontal="8dp"
+                        app:chipSpacingVertical="8dp"
+                        app:singleSelection="true">
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                    <!-- Shown when the chosen date has no free slots -->
+                    <TextView
+                        android:id="@+id/tvNoTimes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/no_times_available"
+                        android:textColor="@color/error_red"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Billing summary card -->
+            <com.google.android.material.card.MaterialCardView
+>>>>>>> Stashed changes
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -67,5 +141,97 @@
             android:layout_height="52dp"
             android:text="Pay Outstanding Balance ($45.00)"/>
 
+<<<<<<< Updated upstream
     </LinearLayout>
 </ScrollView>
+=======
+                    <!-- Session cost -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/session_cost"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvSessionCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp"
+                            tools:text="R650" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@color/dental_background" />
+
+                    <!-- Total -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/total"
+                            android:textColor="@color/text_primary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/dental_secondary"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:text="R650" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Pinned confirm button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConfirmPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/confirm_and_pay"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/dental_primary"
+        app:cornerRadius="12dp" />
+
+    <!-- Navbar -->
+    <include
+        android:id="@+id/navbarPatient"
+        layout="@layout/navbar_patient" />
+
+</LinearLayout>
+>>>>>>> Stashed changes

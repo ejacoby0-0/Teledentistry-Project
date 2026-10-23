@@ -17,10 +17,53 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< Updated upstream
             android:text="Dr. Emily Johnson (Online)"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold"/>
+=======
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDentistName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_surname"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/tvDentistStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/online"
+                android:textColor="@color/dental_primary_container"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Call button -->
+        <ImageButton
+            android:id="@+id/btnCall"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_call"
+            android:contentDescription="@string/video_call"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/white" />
+
+>>>>>>> Stashed changes
     </LinearLayout>
 
     <!-- Chat messages area -->
@@ -67,7 +110,27 @@
         android:gravity="center_vertical"
         android:background="#FFFFFF">
 
+<<<<<<< Updated upstream
         <EditText
+=======
+        <!-- Gallery button -->
+        <ImageButton
+            android:id="@+id/btnGallery"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_gallery"
+            android:contentDescription="@string/open_gallery"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/dental_primary" />
+
+        <!-- Message input -->
+        <com.google.android.material.textfield.TextInputEditText
+>>>>>>> Stashed changes
             android:id="@+id/etMessage"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -78,10 +141,25 @@
 
         <Button
             android:id="@+id/btnSend"
+<<<<<<< Updated upstream
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Send"
             android:layout_marginStart="8dp"/>
+=======
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_send"
+            android:contentDescription="@string/send_message"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/dental_primary" />
+
+>>>>>>> Stashed changes
     </LinearLayout>
 
 </LinearLayout>

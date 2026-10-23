@@ -5,6 +5,8 @@ import com.example.teledentistry_project.data.model.auth.PocketBaseLoginRequest;
 import com.example.teledentistry_project.data.model.auth.PocketBaseRegisterRequest;
 import com.example.teledentistry_project.data.model.auth.PocketBaseUser;
 import com.example.teledentistry_project.data.remote.PocketBaseClient;
+import com.example.teledentistry_project.data.model.practitioner.Practitioner;
+import com.example.teledentistry_project.data.model.practitioner.PractitionerRegistrationRequest;
 
 import java.io.IOException;
 
@@ -16,22 +18,34 @@ import android.util.Log;
 
 public class AuthRepository {
 
-    /*
-     * Register a new patient account.
-     */
+    /* Register a new patient or practitioner account. */
+
+
     public void register(
+            String name,
+            String surname,
+            String dateOfBirth,
+            String phone,
             String email,
             String password,
             String confirmPassword,
+            String role,
+            String practitionerTitle,
+            String practiceName,
+            String practiceLocation,
+            String consultationFee,
             AuthCallback callback
     ) {
-
         PocketBaseRegisterRequest request =
                 new PocketBaseRegisterRequest(
+                        name,
+                        surname,
+                        dateOfBirth,
+                        phone,
                         email,
                         password,
                         confirmPassword,
-                        "patient"
+                        role
                 );
 
         PocketBaseClient.api.register(request)
@@ -42,16 +56,106 @@ public class AuthRepository {
                             Call<PocketBaseUser> call,
                             Response<PocketBaseUser> response
                     ) {
-
                         if (response.isSuccessful()
                                 && response.body() != null) {
 
-                            callback.onRegistrationSuccess(
-                                    response.body()
-                            );
+                            PocketBaseUser user = response.body();
+
+
+                            if ("practitioner".equals(role)) {
+
+                                PocketBaseLoginRequest loginRequest =
+                                        new PocketBaseLoginRequest(email, password);
+
+                                PocketBaseClient.api.login(loginRequest)
+                                        .enqueue(new Callback<PocketBaseAuthResponse>() {
+
+                                            @Override
+                                            public void onResponse(
+                                                    Call<PocketBaseAuthResponse> call,
+                                                    Response<PocketBaseAuthResponse> loginResponse
+                                            ) {
+                                                if (!loginResponse.isSuccessful()
+                                                        || loginResponse.body() == null) {
+                                                    callback.onError(
+                                                            "Account created, but login failed. "
+                                                                    + "Your practitioner profile was not saved."
+                                                    );
+                                                    return;
+                                                }
+
+                                                String token = loginResponse.body().getToken();
+
+                                                double fee;
+                                                try {
+                                                    fee = Double.parseDouble(consultationFee);
+                                                } catch (NumberFormatException e) {
+                                                    callback.onError(
+                                                            "Account created, but the consultation fee is invalid."
+                                                    );
+                                                    return;
+                                                }
+
+                                                PractitionerRegistrationRequest practitionerRequest =
+                                                        new PractitionerRegistrationRequest(
+                                                                user.getId(),
+                                                                practiceName,
+                                                                practiceLocation,
+                                                                fee
+                                                        );
+
+                                                PocketBaseClient.api.createPractitioner(
+                                                        token,
+                                                        practitionerRequest
+                                                ).enqueue(new Callback<Practitioner>() {
+
+                                                    @Override
+                                                    public void onResponse(
+                                                            Call<Practitioner> call,
+                                                            Response<Practitioner> profileResponse
+                                                    ) {
+                                                        if (profileResponse.isSuccessful()
+                                                                && profileResponse.body() != null) {
+                                                            callback.onRegistrationSuccess(user);
+                                                        } else {
+                                                            callback.onError(
+                                                                    "Account created, but the practitioner "
+                                                                            + "profile could not be saved."
+                                                            );
+                                                        }
+                                                    }
+
+                                                    @Override
+                                                    public void onFailure(
+                                                            Call<Practitioner> call,
+                                                            Throwable t
+                                                    ) {
+                                                        callback.onError(
+                                                                "Account created, but saving the profile failed: "
+                                                                        + t.getMessage()
+                                                        );
+                                                    }
+                                                });
+                                            }
+
+                                            @Override
+                                            public void onFailure(
+                                                    Call<PocketBaseAuthResponse> call,
+                                                    Throwable t
+                                            ) {
+                                                callback.onError(
+                                                        "Account created, but login failed: "
+                                                                + t.getMessage()
+                                                );
+                                            }
+                                        });
+
+                            } else {
+                                callback.onRegistrationSuccess(user);
+                            }
+
 
                         } else {
-
                             callback.onError(
                                     getErrorMessage(
                                             response.errorBody(),
@@ -66,19 +170,20 @@ public class AuthRepository {
                             Call<PocketBaseUser> call,
                             Throwable t
                     ) {
-
                         Log.e(
                                 "PocketBaseRegister",
-                                "Registration response error",
+                                "Registration failed",
                                 t
                         );
 
                         callback.onError(
-                                "Registration response error. Check Logcat."
+                                "Registration network error: "
+                                        + t.getMessage()
                         );
                     }
                 });
     }
+
 
 
     /*

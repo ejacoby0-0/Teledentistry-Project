@@ -34,44 +34,80 @@
             android:exported="false" />
 
         <!-- Patient Portal Activities -->
-        <activity
-            android:name=".ui.patient.PatientHomeActivity"
-            android:exported="false" />
-        <activity
+        <!--<activity
             android:name=".ui.patient.PatientProfileActivity"
             android:exported="false" />
-        <activity
+         <activity
             android:name=".ui.patient.BookAppointmentActivity"
             android:exported="false" />
         <activity
             android:name=".ui.patient.ChatActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.patient.UploadImageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.patient.TreatmentPlanActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.patient.BillingActivity"
-            android:exported="false" />
+            android:exported="false" /> -->
         <activity
             android:name=".ui.patient.VideoCallActivity"
             android:exported="false" />
+<<<<<<< Updated upstream
+=======
+        <activity
+            android:name=".ui.patient.PatientScheduleActivity"
+            android:exported="false" />
+        <!-- <activity
+            android:name=".ui.patient.PatientPrescriptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.patient.PatientBillingActivity"
+            android:exported="false" /> -->
+>>>>>>> Stashed changes
 
         <!-- Practitioner Portal Activities -->
-        <activity
+        <!--<activity
             android:name=".ui.dentist.DentistHomeActivity"
+            android:exported="false" /> -->
+        <activity
+            android:name=".ui.dentist.PatientListActivity"
             android:exported="false" />
         <activity
+<<<<<<< Updated upstream
             android:name=".ui.dentist.PatientRecordsActivity"
+=======
+            android:name=".ui.dentist.PractitionerScheduleActivity"
             android:exported="false" />
+
         <activity
+            android:name=".ui.userActivities.HomeActivity"
+>>>>>>> Stashed changes
+            android:exported="false" />
+
+        <activity
+<<<<<<< Updated upstream
             android:name=".ui.dentist.UploadedImagesActivity"
+=======
+            android:name=".ui.userActivities.ProfileActivity"
             android:exported="false" />
+
         <activity
-            android:name=".ui.dentist.TreatmentManagementActivity"
+            android:name=".ui.patient.SearchActivity"
+>>>>>>> Stashed changes
             android:exported="false" />
+
+        <activity
+            android:name=".ui.userActivities.ProfileViewActivity"
+            android:exported="false" />
+<<<<<<< Updated upstream
+=======
+
+        <activity
+            android:name=".ui.userActivities.EditProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.patient.PatientPrescriptionsActivity"
+            android:exported="false" />
+
+>>>>>>> Stashed changes
 
         <!-- Admin Portal Activities -->
         <activity

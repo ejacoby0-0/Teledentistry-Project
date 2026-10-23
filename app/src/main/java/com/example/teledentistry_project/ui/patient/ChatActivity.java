@@ -1,4 +1,4 @@
-package com.example.teledentistry_project.ui.patient;
+/*package com.example.teledentistry_project.ui.patient;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -35,4 +35,4 @@ public class ChatActivity extends AppCompatActivity {
             });
         }
     }
-}
+}*/

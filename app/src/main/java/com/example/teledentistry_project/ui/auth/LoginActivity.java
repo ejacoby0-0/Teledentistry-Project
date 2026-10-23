@@ -13,8 +13,8 @@ import com.example.teledentistry_project.data.model.auth.PocketBaseAuthResponse;
 import com.example.teledentistry_project.data.model.auth.PocketBaseUser;
 import com.example.teledentistry_project.data.repository.AuthRepository;
 import com.example.teledentistry_project.ui.admin.AdminHomeActivity;
-import com.example.teledentistry_project.ui.dentist.DentistHomeActivity;
-import com.example.teledentistry_project.ui.patient.PatientHomeActivity;
+import com.example.teledentistry_project.ui.userActivities.HomeActivity;
+import com.example.teledentistry_project.ui.userActivities.ProfileActivity;
 import com.example.teledentistry_project.utils.SessionManager;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -102,7 +102,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onRegistrationSuccess(
                             PocketBaseUser user
                     ) {
-                        // Not used during login.
+
                     }
 
                     @Override
@@ -180,14 +180,14 @@ public class LoginActivity extends AppCompatActivity {
 
             intent = new Intent(
                     LoginActivity.this,
-                    PatientHomeActivity.class
+                    HomeActivity.class
             );
 
         } else if ("practitioner".equals(role)) {
 
             intent = new Intent(
                     LoginActivity.this,
-                    DentistHomeActivity.class
+                    HomeActivity.class
             );
 
         } else if ("admin".equals(role)) {

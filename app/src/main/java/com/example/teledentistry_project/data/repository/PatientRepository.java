@@ -4,6 +4,7 @@ import com.example.teledentistry_project.data.model.patient.Patient;
 import com.example.teledentistry_project.data.model.PocketBaseListResponse;
 import com.example.teledentistry_project.data.remote.PocketBaseClient;
 import com.example.teledentistry_project.data.model.patient.PatientUpdateRequest;
+import android.util.Log;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -125,36 +126,91 @@ public class PatientRepository {
     public void createPatient(
             String authToken,
             String userId,
+            String fullName,
+            String phoneNumber,
+            String dateOfBirth,
             PatientCallback callback
     ) {
-        com.google.gson.JsonObject request = new com.google.gson.JsonObject();
+
+        com.google.gson.JsonObject request =
+                new com.google.gson.JsonObject();
+
         request.addProperty("user", userId);
-        request.addProperty("fullName", "Patient User");
-        request.addProperty("dateOfBirth", "2000-01-01 00:00:00.000Z");
+        request.addProperty("fullName", fullName);
+        request.addProperty("phoneNumber", phoneNumber);
+
+        // PocketBase date fields accept a full datetime value.
+        request.addProperty(
+                "dateOfBirth",
+                dateOfBirth + " 00:00:00.000Z"
+        );
 
         PocketBaseClient.api
                 .createPatient(authToken, request)
                 .enqueue(new Callback<Patient>() {
+
                     @Override
-                    public void onResponse(Call<Patient> call, Response<Patient> response) {
-                        if (response.isSuccessful() && response.body() != null) {
-                            callback.onSuccess(response.body());
-                        } else {
-                            String err = "Failed to create patient profile. Code: " + response.code();
+                    public void onResponse(
+                            Call<Patient> call,
+                            Response<Patient> response
+                    ) {
+
+                        if (response.isSuccessful()
+                                && response.body() != null) {
+
+                            callback.onSuccess(
+                                    response.body()
+                            );
+
+                        }  else {
+
+                            String error =
+                                    "Failed to create patient profile. Code: "
+                                            + response.code();
+
                             try {
                                 if (response.errorBody() != null) {
-                                    err += "\n" + response.errorBody().string();
+                                    error += "\n" + response.errorBody().string();
                                 }
-                            } catch (Exception ignored) {}
-                            callback.onError(err);
+                            } catch (Exception e) {
+                                error += "\nUnable to read PocketBase error.";
+                            }
+
+                            Log.e("PatientCreate", error);
+
+                            callback.onError(error);
                         }
                     }
 
                     @Override
-                    public void onFailure(Call<Patient> call, Throwable t) {
-                        callback.onError(t.getMessage() != null ? t.getMessage() : "Network error");
+                    public void onFailure(
+                            Call<Patient> call,
+                            Throwable throwable
+                    ) {
+
+                        callback.onError(
+                                throwable.getMessage() != null
+                                        ? throwable.getMessage()
+                                        : "Network error"
+                        );
                     }
                 });
+    }
+
+    public void createPatient(
+            String authToken,
+            String userId,
+            PatientCallback callback
+    ) {
+
+        createPatient(
+                authToken,
+                userId,
+                "Patient User",
+                "",
+                "2000-01-01",
+                callback
+        );
     }
 
     public void ensurePatientRecord(

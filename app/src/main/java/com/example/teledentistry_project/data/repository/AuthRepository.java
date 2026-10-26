@@ -23,6 +23,7 @@ public class AuthRepository {
             String email,
             String password,
             String confirmPassword,
+            String fullName,
             AuthCallback callback
     ) {
 
@@ -31,7 +32,8 @@ public class AuthRepository {
                         email,
                         password,
                         confirmPassword,
-                        "patient"
+                        "patient",
+                        fullName
                 );
 
         PocketBaseClient.api.register(request)

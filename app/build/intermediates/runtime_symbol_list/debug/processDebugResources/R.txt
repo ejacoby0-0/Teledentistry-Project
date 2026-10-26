@@ -3974,9 +3974,8 @@ int id end 0x7f080117
 int id endToStart 0x7f080118
 int id entDateOfBirth 0x7f080119
 int id entEmail 0x7f08011a
-int id entName 0x7f08011b
+int id entFullName 0x7f08033f
 int id entPhone 0x7f08011c
-int id entSurname 0x7f08011d
 int id enterAlways 0x7f08011e
 int id enterAlwaysCollapsed 0x7f08011f
 int id entireSpace 0x7f080120
@@ -4032,6 +4031,7 @@ int id floating 0x7f080151
 int id forever 0x7f080152
 int id fragment_container_view_tag 0x7f080153
 int id frost 0x7f080154
+int id fullNameInputLayout 0x7f080340
 int id fullscreen_header 0x7f080155
 int id ghost_view 0x7f080156
 int id ghost_view_holder 0x7f080157
@@ -4163,7 +4163,6 @@ int id mtrl_picker_text_input_range_start 0x7f0801d4
 int id mtrl_picker_title_text 0x7f0801d5
 int id mtrl_view_tag_bottom_padding 0x7f0801d6
 int id multiply 0x7f0801d7
-int id nameInputLayout 0x7f0801d8
 int id navHome 0x7f0801d9
 int id navPatients 0x7f0801da
 int id navProfile 0x7f0801db
@@ -4342,7 +4341,6 @@ int id stretch 0x7f080287
 int id submenuarrow 0x7f080288
 int id submit_area 0x7f080289
 int id supportScrollUp 0x7f08028a
-int id surnameInputLayout 0x7f08028b
 int id switchAccountRole 0x7f08028c
 int id tabMode 0x7f08028d
 int id tag_accessibility_actions 0x7f08028e

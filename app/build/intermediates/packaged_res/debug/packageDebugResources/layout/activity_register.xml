@@ -46,48 +46,21 @@
             android:textColor="@color/text_secondary"
             android:textSize="14sp" />
 
-        <!-- Name -->
+        <!-- Full Name -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/nameInputLayout"
+            android:id="@+id/fullNameInputLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:hint="@string/name"
-            app:boxStrokeColor="@color/dental_secondary"
-            app:hintTextColor="@color/dental_secondary">
+            android:layout_marginTop="16dp"
+            android:hint="Full Name">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/entName"
+                android:id="@+id/entFullName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:maxLines="1"
-                android:textColor="@color/text_primary"
-                android:textColorHint="@color/text_secondary"
-                android:minHeight="56dp" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <!-- Surname -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/surnameInputLayout"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:hint="@string/surname"
-            app:boxStrokeColor="@color/dental_secondary"
-            app:hintTextColor="@color/dental_secondary">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/entSurname"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:maxLines="1"
-                android:textColor="@color/text_primary"
-                android:minHeight="56dp" />
+                android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

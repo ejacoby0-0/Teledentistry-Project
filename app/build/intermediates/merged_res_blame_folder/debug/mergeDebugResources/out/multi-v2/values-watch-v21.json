@@ -4,7 +4,7 @@
             "outputFile": "com.example.teledentistry_project.app-mergeDebugResources-34:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\wwwne\\.gradle\\caches\\8.14.5\\transforms\\8f79f8530c2f5241f624d3ffd0065095\\transformed\\appcompat-1.7.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\rayma\\.gradle\\caches\\8.14.5\\transforms\\8f79f8530c2f5241f624d3ffd0065095\\transformed\\appcompat-1.7.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

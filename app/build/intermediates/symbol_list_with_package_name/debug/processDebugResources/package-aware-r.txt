@@ -3975,9 +3975,8 @@ id end
 id endToStart
 id entDateOfBirth
 id entEmail
-id entName
+id entFullName
 id entPhone
-id entSurname
 id enterAlways
 id enterAlwaysCollapsed
 id entireSpace
@@ -4033,6 +4032,7 @@ id floating
 id forever
 id fragment_container_view_tag
 id frost
+id fullNameInputLayout
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
@@ -4164,7 +4164,6 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id nameInputLayout
 id navHome
 id navPatients
 id navProfile
@@ -4343,7 +4342,6 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
-id surnameInputLayout
 id switchAccountRole
 id tabMode
 id tag_accessibility_actions

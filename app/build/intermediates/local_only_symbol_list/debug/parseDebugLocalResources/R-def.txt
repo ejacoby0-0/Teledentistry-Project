@@ -142,9 +142,8 @@ id editProfile
 id emailInputLayout
 id entDateOfBirth
 id entEmail
-id entName
+id entFullName
 id entPhone
-id entSurname
 id etBirthDate
 id etConfirmPassword
 id etConsultationFee
@@ -177,6 +176,7 @@ id etSearchPatient
 id etSlotTime
 id etSurname
 id filterSortSection
+id fullNameInputLayout
 id header
 id ivChatProfile
 id ivCompanyLogo
@@ -205,7 +205,6 @@ id localVideoContainer
 id localVideoView
 id main
 id manageAvailability
-id nameInputLayout
 id navHome
 id navPatients
 id navProfile
@@ -249,7 +248,6 @@ id scrollNotes
 id searchInputLayout
 id searchPage
 id spImageType
-id surnameInputLayout
 id switchAccountRole
 id teethOverlayView
 id topHeaderBar

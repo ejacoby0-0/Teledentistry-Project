@@ -1,521 +1,521 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:2:1-141:12
-INJECTED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:2:1-141:12
-INJECTED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:2:1-141:12
-INJECTED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:2:1-141:12
-MERGED from [com.google.android.material:material:1.13.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1d3fa3482ce6e235b28f66e3728002b0\transformed\material-1.13.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1ce23ecc5bfa70940f7d0d39f642981a\transformed\constraintlayout-2.2.1\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\e96f7a00c9f1ba21e22d551303b8efd2\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.appcompat:appcompat:1.7.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\8f79f8530c2f5241f624d3ffd0065095\transformed\appcompat-1.7.1\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\effae89e4525479a02f0f314fb27abb4\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\3031a4d4216264763e318ec4bf667caa\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.12.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\a244a8431e6b25dd0cc808689f06b9e5\transformed\activity-1.12.2\AndroidManifest.xml:17:1-22:12
-MERGED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\bf246ffea48c9e9ea5263ada51df0134\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\200ce33e2c718eb8b2f865f0ed8a9cc7\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d3af6bc4425392a2358fb3a17e78f5b1\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\285f5a04a6d256a704ee12fd7b867336\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.5.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\de6972abc57b8b38950e6c0568907e55\transformed\transition-1.5.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\e7c371f5c7f129c7eb66192b28ebac86\transformed\dynamicanimation-1.1.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31a67a6d34d66a51812d133c483cff17\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\c980c1aaf19cfab1a8e5905fa0cef72f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\5c0af87e2a2faf1fd0a740869b9410e8\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d0db431dc4087f8b7982597c1ec676d8\transformed\graphics-shapes-release\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.core:core-ktx:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\5baceb23b0ceb730e81d0a280d05fa48\transformed\core-ktx-1.16.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d763341c0347a0028506a34f50aa100f\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1de7d5105e3d6b7016d74e9a3c64f18c\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\b01f879aaae1f157e1407fcf1a98fff9\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\6d34eb9ccffd63bf61c5d93fbabd02b2\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\02767ffc238640c84d538cbd81a1d219\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\a28b8d92b116276cf54dc05134cb4281\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\8646262f8bcaefbab2e1926f7c35ad96\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1eae1a74870a7af537ce47812c96bcb4\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\27ab1bccd30ffd91653ce3efa0bc5332\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\e4df773f9a98c5061f35a99b4544da09\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:17:1-55:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\c1584adc093cbc147e5ff257c8f08d91\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.navigationevent:navigationevent-android:1.0.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\c2c7b15691a20c85148dc5fb77887ff1\transformed\navigationevent\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7a675533b0c6f2b79de489cb762efc43\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\19c259a5c06272538037823abdcaa918\transformed\tracing-1.2.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7d92803a82dc47e03ecc4c2ddab0a322\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\4e6295e18df2c3ecec422d6c54d6e17c\transformed\core-viewtree-1.0.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\5ca696261b8214acb70329394b397e75\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.runtime:runtime-annotation-android:1.9.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d1288c40f96ee73e48a878bfb245d7b5\transformed\runtime-annotation\AndroidManifest.xml:2:1-7:12
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:2:1-141:12
+INJECTED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:2:1-141:12
+INJECTED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:2:1-141:12
+INJECTED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:2:1-141:12
+MERGED from [com.google.android.material:material:1.13.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1d3fa3482ce6e235b28f66e3728002b0\transformed\material-1.13.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1ce23ecc5bfa70940f7d0d39f642981a\transformed\constraintlayout-2.2.1\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\e96f7a00c9f1ba21e22d551303b8efd2\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat:1.7.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\8f79f8530c2f5241f624d3ffd0065095\transformed\appcompat-1.7.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\effae89e4525479a02f0f314fb27abb4\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\rayma\.gradle\caches\8.14.5\transforms\3031a4d4216264763e318ec4bf667caa\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.12.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\a244a8431e6b25dd0cc808689f06b9e5\transformed\activity-1.12.2\AndroidManifest.xml:17:1-22:12
+MERGED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\bf246ffea48c9e9ea5263ada51df0134\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\200ce33e2c718eb8b2f865f0ed8a9cc7\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d3af6bc4425392a2358fb3a17e78f5b1\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\285f5a04a6d256a704ee12fd7b867336\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\de6972abc57b8b38950e6c0568907e55\transformed\transition-1.5.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\e7c371f5c7f129c7eb66192b28ebac86\transformed\dynamicanimation-1.1.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31a67a6d34d66a51812d133c483cff17\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\c980c1aaf19cfab1a8e5905fa0cef72f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\5c0af87e2a2faf1fd0a740869b9410e8\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d0db431dc4087f8b7982597c1ec676d8\transformed\graphics-shapes-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-ktx:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\5baceb23b0ceb730e81d0a280d05fa48\transformed\core-ktx-1.16.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d763341c0347a0028506a34f50aa100f\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1de7d5105e3d6b7016d74e9a3c64f18c\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\b01f879aaae1f157e1407fcf1a98fff9\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\6d34eb9ccffd63bf61c5d93fbabd02b2\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\02767ffc238640c84d538cbd81a1d219\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\a28b8d92b116276cf54dc05134cb4281\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\8646262f8bcaefbab2e1926f7c35ad96\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1eae1a74870a7af537ce47812c96bcb4\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\27ab1bccd30ffd91653ce3efa0bc5332\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\e4df773f9a98c5061f35a99b4544da09\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\c1584adc093cbc147e5ff257c8f08d91\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.navigationevent:navigationevent-android:1.0.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\c2c7b15691a20c85148dc5fb77887ff1\transformed\navigationevent\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7a675533b0c6f2b79de489cb762efc43\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\19c259a5c06272538037823abdcaa918\transformed\tracing-1.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7d92803a82dc47e03ecc4c2ddab0a322\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\4e6295e18df2c3ecec422d6c54d6e17c\transformed\core-viewtree-1.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\5ca696261b8214acb70329394b397e75\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.9.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d1288c40f96ee73e48a878bfb245d7b5\transformed\runtime-annotation\AndroidManifest.xml:2:1-7:12
 	package
-		INJECTED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:5:5-67
-MERGED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:22:5-67
-MERGED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:22:5-67
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:22:5-67
+MERGED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:22:5-67
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:6:5-65
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:6:5-65
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:6:22-62
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:6:22-62
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:7:5-71
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:7:5-71
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:7:22-68
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:7:22-68
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:8:5-107
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:8:5-107
 	android:maxSdkVersion
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:8:78-104
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:8:78-104
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:8:22-77
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:8:22-77
 uses-permission#android.permission.READ_MEDIA_IMAGES
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:9:5-76
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:9:5-76
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:9:22-73
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:9:22-73
 uses-feature#android.hardware.camera
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:11:5-85
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:11:5-85
 	android:required
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:11:58-82
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:11:58-82
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:11:19-57
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:11:19-57
 uses-feature#android.hardware.microphone
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:12:5-89
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:12:5-89
 	android:required
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:12:62-86
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:12:62-86
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:12:19-61
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:12:19-61
 application
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:14:5-139:19
-INJECTED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:14:5-139:19
-MERGED from [com.google.android.material:material:1.13.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1d3fa3482ce6e235b28f66e3728002b0\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.13.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1d3fa3482ce6e235b28f66e3728002b0\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1ce23ecc5bfa70940f7d0d39f642981a\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1ce23ecc5bfa70940f7d0d39f642981a\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
-MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:28:5-89
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7a675533b0c6f2b79de489cb762efc43\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7a675533b0c6f2b79de489cb762efc43\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:14:5-139:19
+INJECTED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:14:5-139:19
+MERGED from [com.google.android.material:material:1.13.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1d3fa3482ce6e235b28f66e3728002b0\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.13.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1d3fa3482ce6e235b28f66e3728002b0\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1ce23ecc5bfa70940f7d0d39f642981a\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1ce23ecc5bfa70940f7d0d39f642981a\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7a675533b0c6f2b79de489cb762efc43\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7a675533b0c6f2b79de489cb762efc43\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:22:9-35
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:20:9-41
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:20:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:18:9-54
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:18:9-54
 	android:roundIcon
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:21:9-54
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:21:9-54
 	android:icon
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:19:9-43
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:19:9-43
 	android:allowBackup
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:24:9-58
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:24:9-58
 	android:dataExtractionRules
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:17:9-65
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:17:9-65
 	android:usesCleartextTraffic
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:23:9-44
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:23:9-44
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:15:9-41
 activity#com.example.teledentistry_project.ui.auth.LoginActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:26:9-33:20
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:26:9-33:20
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:28:13-36
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:28:13-36
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:27:13-50
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:27:13-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:29:13-32:29
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:29:13-32:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:31:27-74
 activity#com.example.teledentistry_project.MainActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:35:9-37:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:35:9-37:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:36:13-41
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:36:13-41
 activity#com.example.teledentistry_project.ui.auth.RegisterActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:39:9-41:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:39:9-41:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:41:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:40:13-53
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:40:13-53
 activity#com.example.teledentistry_project.ui.auth.ForgotPasswordActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:44:9-46:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:44:9-46:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:46:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:45:13-59
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:45:13-59
 activity#com.example.teledentistry_project.ui.patient.PatientHomeActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:49:9-51:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:49:9-51:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:51:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:51:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:50:13-59
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:50:13-59
 activity#com.example.teledentistry_project.ui.patient.PatientProfileActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:52:9-54:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:52:9-54:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:54:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:54:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:53:13-62
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:53:13-62
 activity#com.example.teledentistry_project.ui.patient.BookAppointmentActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:55:9-57:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:55:9-57:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:57:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:57:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:56:13-63
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:56:13-63
 activity#com.example.teledentistry_project.ui.patient.ChatActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:58:9-60:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:58:9-60:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:60:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:60:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:59:13-52
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:59:13-52
 activity#com.example.teledentistry_project.ui.patient.UploadImageActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:61:9-63:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:61:9-63:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:63:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:63:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:62:13-59
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:62:13-59
 activity#com.example.teledentistry_project.ui.patient.TreatmentPlanActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:64:9-66:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:64:9-66:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:66:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:66:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:65:13-61
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:65:13-61
 activity#com.example.teledentistry_project.ui.patient.BillingActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:67:9-69:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:67:9-69:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:69:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:69:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:68:13-55
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:68:13-55
 activity#com.example.teledentistry_project.ui.patient.VideoCallActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:70:9-74:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:70:9-74:40
 	android:screenOrientation
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:73:13-49
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:73:13-49
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:74:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:74:13-37
 	android:configChanges
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:72:13-87
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:72:13-87
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:71:13-57
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:71:13-57
 activity#com.example.teledentistry_project.ui.patient.PatientAppointmentsActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:75:9-77:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:75:9-77:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:77:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:77:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:76:13-67
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:76:13-67
 activity#com.example.teledentistry_project.ui.patient.PatientTreatmentPlanActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:78:9-80:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:78:9-80:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:80:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:80:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:79:13-68
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:79:13-68
 activity#com.example.teledentistry_project.ui.patient.PatientPrescriptionsActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:81:9-83:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:81:9-83:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:83:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:83:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:82:13-68
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:82:13-68
 activity#com.example.teledentistry_project.ui.patient.PatientBillingActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:84:9-86:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:84:9-86:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:86:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:86:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:85:13-62
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:85:13-62
 activity#com.example.teledentistry_project.ui.patient.PatientDentalRecordActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:87:9-89:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:87:9-89:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:89:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:89:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:88:13-67
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:88:13-67
 activity#com.example.teledentistry_project.ui.patient.PatientInsuranceClaimsActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:90:9-92:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:90:9-92:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:92:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:92:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:91:13-70
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:91:13-70
 activity#com.example.teledentistry_project.ui.dentist.DentistHomeActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:95:9-97:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:95:9-97:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:97:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:97:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:96:13-59
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:96:13-59
 activity#com.example.teledentistry_project.ui.dentist.DentistProfileActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:98:9-100:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:98:9-100:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:100:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:100:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:99:13-62
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:99:13-62
 activity#com.example.teledentistry_project.ui.dentist.PatientRecordsActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:101:9-103:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:101:9-103:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:103:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:103:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:102:13-62
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:102:13-62
 activity#com.example.teledentistry_project.ui.dentist.PractitionerAvailabilityActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:104:9-106:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:104:9-106:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:106:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:106:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:105:13-72
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:105:13-72
 activity#com.example.teledentistry_project.ui.dentist.UploadedImagesActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:107:9-109:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:107:9-109:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:109:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:109:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:108:13-62
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:108:13-62
 activity#com.example.teledentistry_project.ui.dentist.TreatmentManagementActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:110:9-112:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:110:9-112:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:112:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:112:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:111:13-67
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:111:13-67
 activity#com.example.teledentistry_project.ui.dentist.PractitionerAppointmentsActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:113:9-115:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:113:9-115:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:115:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:115:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:114:13-72
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:114:13-72
 activity#com.example.teledentistry_project.ui.admin.AdminHomeActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:118:9-120:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:118:9-120:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:120:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:120:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:119:13-55
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:119:13-55
 activity#com.example.teledentistry_project.ui.admin.PractitionerApprovalsActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:121:9-123:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:121:9-123:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:123:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:123:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:122:13-67
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:122:13-67
 activity#com.example.teledentistry_project.ui.admin.ManageUsersActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:124:9-126:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:124:9-126:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:126:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:126:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:125:13-57
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:125:13-57
 activity#com.example.teledentistry_project.ui.admin.UserEnquiriesActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:127:9-129:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:127:9-129:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:129:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:129:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:128:13-59
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:128:13-59
 activity#com.example.teledentistry_project.ui.admin.ReportsActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:130:9-132:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:130:9-132:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:132:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:132:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:131:13-53
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:131:13-53
 activity#com.example.teledentistry_project.ui.consultation.ConsultationActivity
-ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:135:9-137:40
+ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:135:9-137:40
 	android:exported
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:137:13-37
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:137:13-37
 	android:name
-		ADDED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml:136:13-65
+		ADDED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml:136:13-65
 uses-sdk
-INJECTED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml
-MERGED from [com.google.android.material:material:1.13.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1d3fa3482ce6e235b28f66e3728002b0\transformed\material-1.13.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.13.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1d3fa3482ce6e235b28f66e3728002b0\transformed\material-1.13.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1ce23ecc5bfa70940f7d0d39f642981a\transformed\constraintlayout-2.2.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1ce23ecc5bfa70940f7d0d39f642981a\transformed\constraintlayout-2.2.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\e96f7a00c9f1ba21e22d551303b8efd2\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\e96f7a00c9f1ba21e22d551303b8efd2\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat:1.7.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\8f79f8530c2f5241f624d3ffd0065095\transformed\appcompat-1.7.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat:1.7.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\8f79f8530c2f5241f624d3ffd0065095\transformed\appcompat-1.7.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\effae89e4525479a02f0f314fb27abb4\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\effae89e4525479a02f0f314fb27abb4\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\3031a4d4216264763e318ec4bf667caa\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\3031a4d4216264763e318ec4bf667caa\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.12.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\a244a8431e6b25dd0cc808689f06b9e5\transformed\activity-1.12.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.12.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\a244a8431e6b25dd0cc808689f06b9e5\transformed\activity-1.12.2\AndroidManifest.xml:20:5-44
-MERGED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:20:5-44
-MERGED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\bf246ffea48c9e9ea5263ada51df0134\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\bf246ffea48c9e9ea5263ada51df0134\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\200ce33e2c718eb8b2f865f0ed8a9cc7\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\200ce33e2c718eb8b2f865f0ed8a9cc7\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d3af6bc4425392a2358fb3a17e78f5b1\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d3af6bc4425392a2358fb3a17e78f5b1\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\285f5a04a6d256a704ee12fd7b867336\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\285f5a04a6d256a704ee12fd7b867336\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.5.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\de6972abc57b8b38950e6c0568907e55\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.transition:transition:1.5.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\de6972abc57b8b38950e6c0568907e55\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\e7c371f5c7f129c7eb66192b28ebac86\transformed\dynamicanimation-1.1.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\e7c371f5c7f129c7eb66192b28ebac86\transformed\dynamicanimation-1.1.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31a67a6d34d66a51812d133c483cff17\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31a67a6d34d66a51812d133c483cff17\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\c980c1aaf19cfab1a8e5905fa0cef72f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\c980c1aaf19cfab1a8e5905fa0cef72f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\5c0af87e2a2faf1fd0a740869b9410e8\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\5c0af87e2a2faf1fd0a740869b9410e8\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d0db431dc4087f8b7982597c1ec676d8\transformed\graphics-shapes-release\AndroidManifest.xml:5:5-44
-MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d0db431dc4087f8b7982597c1ec676d8\transformed\graphics-shapes-release\AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\5baceb23b0ceb730e81d0a280d05fa48\transformed\core-ktx-1.16.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\5baceb23b0ceb730e81d0a280d05fa48\transformed\core-ktx-1.16.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d763341c0347a0028506a34f50aa100f\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d763341c0347a0028506a34f50aa100f\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1de7d5105e3d6b7016d74e9a3c64f18c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1de7d5105e3d6b7016d74e9a3c64f18c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\b01f879aaae1f157e1407fcf1a98fff9\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\b01f879aaae1f157e1407fcf1a98fff9\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\6d34eb9ccffd63bf61c5d93fbabd02b2\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\6d34eb9ccffd63bf61c5d93fbabd02b2\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\02767ffc238640c84d538cbd81a1d219\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\02767ffc238640c84d538cbd81a1d219\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\a28b8d92b116276cf54dc05134cb4281\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\a28b8d92b116276cf54dc05134cb4281\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\8646262f8bcaefbab2e1926f7c35ad96\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\8646262f8bcaefbab2e1926f7c35ad96\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1eae1a74870a7af537ce47812c96bcb4\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\1eae1a74870a7af537ce47812c96bcb4\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\27ab1bccd30ffd91653ce3efa0bc5332\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\27ab1bccd30ffd91653ce3efa0bc5332\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\e4df773f9a98c5061f35a99b4544da09\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\e4df773f9a98c5061f35a99b4544da09\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\c1584adc093cbc147e5ff257c8f08d91\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\c1584adc093cbc147e5ff257c8f08d91\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.navigationevent:navigationevent-android:1.0.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\c2c7b15691a20c85148dc5fb77887ff1\transformed\navigationevent\AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigationevent:navigationevent-android:1.0.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\c2c7b15691a20c85148dc5fb77887ff1\transformed\navigationevent\AndroidManifest.xml:5:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7a675533b0c6f2b79de489cb762efc43\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7a675533b0c6f2b79de489cb762efc43\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\19c259a5c06272538037823abdcaa918\transformed\tracing-1.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\19c259a5c06272538037823abdcaa918\transformed\tracing-1.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7d92803a82dc47e03ecc4c2ddab0a322\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7d92803a82dc47e03ecc4c2ddab0a322\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\4e6295e18df2c3ecec422d6c54d6e17c\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\4e6295e18df2c3ecec422d6c54d6e17c\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\5ca696261b8214acb70329394b397e75\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\5ca696261b8214acb70329394b397e75\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-annotation-android:1.9.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d1288c40f96ee73e48a878bfb245d7b5\transformed\runtime-annotation\AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-annotation-android:1.9.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d1288c40f96ee73e48a878bfb245d7b5\transformed\runtime-annotation\AndroidManifest.xml:5:5-44
+INJECTED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.13.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1d3fa3482ce6e235b28f66e3728002b0\transformed\material-1.13.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.13.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1d3fa3482ce6e235b28f66e3728002b0\transformed\material-1.13.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1ce23ecc5bfa70940f7d0d39f642981a\transformed\constraintlayout-2.2.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1ce23ecc5bfa70940f7d0d39f642981a\transformed\constraintlayout-2.2.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\e96f7a00c9f1ba21e22d551303b8efd2\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\e96f7a00c9f1ba21e22d551303b8efd2\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\8f79f8530c2f5241f624d3ffd0065095\transformed\appcompat-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\8f79f8530c2f5241f624d3ffd0065095\transformed\appcompat-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\effae89e4525479a02f0f314fb27abb4\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\effae89e4525479a02f0f314fb27abb4\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\rayma\.gradle\caches\8.14.5\transforms\3031a4d4216264763e318ec4bf667caa\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\rayma\.gradle\caches\8.14.5\transforms\3031a4d4216264763e318ec4bf667caa\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.12.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\a244a8431e6b25dd0cc808689f06b9e5\transformed\activity-1.12.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.12.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\a244a8431e6b25dd0cc808689f06b9e5\transformed\activity-1.12.2\AndroidManifest.xml:20:5-44
+MERGED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:20:5-44
+MERGED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\bf246ffea48c9e9ea5263ada51df0134\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\bf246ffea48c9e9ea5263ada51df0134\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\200ce33e2c718eb8b2f865f0ed8a9cc7\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\200ce33e2c718eb8b2f865f0ed8a9cc7\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d3af6bc4425392a2358fb3a17e78f5b1\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d3af6bc4425392a2358fb3a17e78f5b1\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\285f5a04a6d256a704ee12fd7b867336\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\285f5a04a6d256a704ee12fd7b867336\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\de6972abc57b8b38950e6c0568907e55\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\de6972abc57b8b38950e6c0568907e55\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\e7c371f5c7f129c7eb66192b28ebac86\transformed\dynamicanimation-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\e7c371f5c7f129c7eb66192b28ebac86\transformed\dynamicanimation-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31a67a6d34d66a51812d133c483cff17\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31a67a6d34d66a51812d133c483cff17\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\c980c1aaf19cfab1a8e5905fa0cef72f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\c980c1aaf19cfab1a8e5905fa0cef72f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\5c0af87e2a2faf1fd0a740869b9410e8\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\5c0af87e2a2faf1fd0a740869b9410e8\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d0db431dc4087f8b7982597c1ec676d8\transformed\graphics-shapes-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d0db431dc4087f8b7982597c1ec676d8\transformed\graphics-shapes-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\5baceb23b0ceb730e81d0a280d05fa48\transformed\core-ktx-1.16.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\5baceb23b0ceb730e81d0a280d05fa48\transformed\core-ktx-1.16.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d763341c0347a0028506a34f50aa100f\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d763341c0347a0028506a34f50aa100f\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1de7d5105e3d6b7016d74e9a3c64f18c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1de7d5105e3d6b7016d74e9a3c64f18c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\b01f879aaae1f157e1407fcf1a98fff9\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\b01f879aaae1f157e1407fcf1a98fff9\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\6d34eb9ccffd63bf61c5d93fbabd02b2\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\6d34eb9ccffd63bf61c5d93fbabd02b2\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\02767ffc238640c84d538cbd81a1d219\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\02767ffc238640c84d538cbd81a1d219\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\a28b8d92b116276cf54dc05134cb4281\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\a28b8d92b116276cf54dc05134cb4281\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\8646262f8bcaefbab2e1926f7c35ad96\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\8646262f8bcaefbab2e1926f7c35ad96\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1eae1a74870a7af537ce47812c96bcb4\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\1eae1a74870a7af537ce47812c96bcb4\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\27ab1bccd30ffd91653ce3efa0bc5332\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\27ab1bccd30ffd91653ce3efa0bc5332\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\e4df773f9a98c5061f35a99b4544da09\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\e4df773f9a98c5061f35a99b4544da09\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\c1584adc093cbc147e5ff257c8f08d91\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\c1584adc093cbc147e5ff257c8f08d91\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.navigationevent:navigationevent-android:1.0.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\c2c7b15691a20c85148dc5fb77887ff1\transformed\navigationevent\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigationevent:navigationevent-android:1.0.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\c2c7b15691a20c85148dc5fb77887ff1\transformed\navigationevent\AndroidManifest.xml:5:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7a675533b0c6f2b79de489cb762efc43\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7a675533b0c6f2b79de489cb762efc43\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\19c259a5c06272538037823abdcaa918\transformed\tracing-1.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\19c259a5c06272538037823abdcaa918\transformed\tracing-1.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7d92803a82dc47e03ecc4c2ddab0a322\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7d92803a82dc47e03ecc4c2ddab0a322\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\4e6295e18df2c3ecec422d6c54d6e17c\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\4e6295e18df2c3ecec422d6c54d6e17c\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\5ca696261b8214acb70329394b397e75\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\5ca696261b8214acb70329394b397e75\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.9.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d1288c40f96ee73e48a878bfb245d7b5\transformed\runtime-annotation\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.9.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d1288c40f96ee73e48a878bfb245d7b5\transformed\runtime-annotation\AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
-		INJECTED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\wwwne\Desktop\Smil-E Final App\TeledentistryProject-chat-video-fix\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\rayma\Desktop\Teledentistry-Project\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:23:5-79
+ADDED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:23:22-76
+		ADDED from [io.getstream:stream-webrtc-android:1.3.10] C:\Users\rayma\.gradle\caches\8.14.5\transforms\7a3839a03b0c6cf87ee2e47d708156d8\transformed\stream-webrtc-android-1.3.10\AndroidManifest.xml:23:22-76
 provider#androidx.startup.InitializationProvider
-ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\rayma\.gradle\caches\8.14.5\transforms\d0171b9e0915218a8d07c2159d9a1bde\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
 	tools:node
-		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:28:13-31
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:28:13-31
 	android:authorities
-		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
 	android:exported
-		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
 meta-data#androidx.emoji2.text.EmojiCompatInitializer
-ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\31c6c765743bb6df5dcabc33efefb8d3\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
 permission#com.example.teledentistry_project.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
 uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
 uses-permission#com.example.teledentistry_project.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.16.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.16.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\53d2165b94d7300f4d32f498e1e490e5\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rayma\.gradle\caches\8.14.5\transforms\fd8b24bd5bb3c20d762e769c9c985a9a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
 receiver#androidx.profileinstaller.ProfileInstallReceiver
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
 	android:enabled
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
 	android:permission
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
 	android:directBootAware
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
 intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
 action#androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
 intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
 action#androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
 intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
 action#androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
 intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\wwwne\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rayma\.gradle\caches\8.14.5\transforms\052b44d93b0a359abcdbdb4e90c4790b\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92

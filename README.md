@@ -41,7 +41,7 @@ Before you begin, ensure you have the following installed on your development ma
 
 The app relies on a backend for authentication, database records, and Matrix for real-time chat & WebRTC video calls.
 
-1. Open your terminal in the project directory (`TeledentistryProject-chat-video-fix`).
+1. Open your terminal in the project directory (`Teledentistry-Project`).
 2. Start the Docker containers (PocketBase, Matrix Synapse, PostgreSQL, Coturn, Element Web):
    ```bash
    docker compose up -d

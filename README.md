@@ -113,4 +113,6 @@ You can log into the app using the pre-seeded mock accounts:
 ---
 
 ## 🩺 Step 5: Testing Key Features
-
+1. **Virtual Consultations & Appointments**: Log in as a patient to request a consultation, or log in as a practitioner to review and accept appointments.
+2. **Matrix Real-time Chat (`ChatActivity`)**: Open a consultation room to exchange instant messages between patient and practitioner.
+3. **WebRTC Video Calls & Dental Overlay (`VideoCallActivity`)**: Start a video call. The practitioner can toggle the **Teeth Outline Overlay** and click individual teeth (e.g., Tooth 14, 19, 30) to sync conditions in real-time across devices via Matrix state events (`org.teledentistry.teeth_overlay`).

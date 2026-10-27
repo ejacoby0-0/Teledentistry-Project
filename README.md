@@ -70,7 +70,7 @@ adb reverse tcp:3478 tcp:3478
 
 1. Open **Android Studio**.
 2. Click **Open** and select the folder:
-   `C:/Users/wwwne/Desktop/Smil-E Final App/TeledentistryProject-chat-video-fix`
+   `C:/Users/wwwne/Desktop/Teledentistry-Project`
 3. Allow Gradle to sync all dependencies automatically. If prompted or if needed, click **File > Sync Project with Gradle Files**.
 4. Verify network URLs in your configuration (by default, the Android Emulator uses `10.0.2.2` to access host services):
    - **PocketBase URL**: `http://10.0.2.2:8090` (or `http://127.0.0.1:8090` via ADB reverse)
